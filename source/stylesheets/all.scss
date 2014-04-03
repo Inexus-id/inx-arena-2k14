@@ -1,0 +1,59 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import "compass";
+@import "compass/reset";
+@import "susy";
+
+$total-columns  : 7;
+$column-width   : 4.25em;
+$gutter-width   : 1em;
+$grid-padding   : $gutter-width;
+
+* { 
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  color: white;
+  text-shadow: rgba(0,0,0,0.9) 0 0 10px;
+}
+body { 
+  background-image: url('/images/bg.png');
+  background-repeat: repeat-x;
+  background-color: #0c0c0c;
+}
+
+header, section, footer { 
+  @include container;
+}
+
+header {
+  h1 {
+    @include inline-block;
+    height: 530px;
+    width: 100%;
+    color: transparent;
+    background-image: url('/images/inx.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    text-shadow: none;
+  }
+}
+
+section#message {
+  text-transform: uppercase;
+  margin-top: 1em;
+  margin-bottom: 0;
+  font-weight: bold;
+  padding: 0 2em;
+  position: relative;
+  z-index: 90;
+  font-size: 1.875em;
+  line-height: 1.33333em;
+  #info {
+    font-weight: bold;
+    font-size: 1.8em;
+    color: white;
+    vertical-align: middle;
+  }
+}
+
+footer { margin-top: 1.8em; }
