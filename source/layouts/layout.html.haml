@@ -16,8 +16,28 @@
   
   %body
     %header
-      %a(href="/") 
-        %h1.logo INX-ARENA
+      %nav
+        %ul#nav-links
+          %li.nav-link#news
+            %a(href="#") 
+              %span.icon
+              Noticias
+          %li.nav-link#cal 
+            %a(href="#")
+              %span.icon
+              Calendario
+          %li.nav-link#logo
+            %a(href="/")
+              %span.icon
+              INX-ARENA   
+          %li.nav-link#tournaments 
+            %a(href="#")
+              %span.icon
+              Torneos
+          %li.nav-link#tickets 
+            %a(href="#")
+              %span.icon
+              Entradas
 
     = yield
 

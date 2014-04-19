@@ -3,10 +3,12 @@
 @import "compass/reset";
 @import "susy";
 
-$total-columns  : 7;
-$column-width   : 4.25em;
-$gutter-width   : 1em;
-$grid-padding   : $gutter-width;
+$total-columns: 12;
+$column-width:  60px;
+$gutter-width:  20px;
+$grid-padding:  10px;
+$container-style: static;
+$container-width: 1140px;
 
 * { 
   font-family: 'Montserrat', sans-serif;
@@ -15,44 +17,63 @@ $grid-padding   : $gutter-width;
   text-shadow: rgba(0,0,0,0.9) 0 0 10px;
 }
 body { 
-  background-image: url('/images/bg.png');
-  background-repeat: repeat-x;
-  background-color: #0c0c0c;
-}
-
-header, section, footer { 
-  @include container;
+  background-image: url('/images/bg.jpg');
+  background-repeat: repeat-y;
+  background-position: center;
+  background-color: black;
 }
 
 header {
-  h1 {
-    @include inline-block;
-    height: 530px;
-    width: 100%;
-    color: transparent;
-    background-image: url('/images/inx.png');
-    background-repeat: no-repeat;
-    background-position: top;
-    background-attachment: fixed;
-    text-shadow: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 277px;
+  background-image: url('/images/topbg.jpg');
+  background-position: top;
+  background-attachment: fixed;
+  text-transform: uppercase;
+  nav{
+    @include susy-grid-background;
+    @include container;
+    ul#nav-links{
+      @include horizontal-list;
+      li{
+        @include span-columns(2,12);
+        @include nth-omega(5);
+        padding: 0;
+        a{
+          @include inline-block;
+          margin-top: 213px;
+          margin-right: -4px;
+          span.icon{
+            margin: 0 auto;
+            display: block;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url('/images/starsmenu.png');
+            height: 42px;
+            width: 95px;
+          }
+        }
+        &#logo{
+          @include span-columns(4,12);
+          a{ 
+            color: transparent;
+            margin-top: 73px;
+          }
+          span.icon{
+            background-image: url('/images/logoinx.png');
+            height: 277px;
+            width: 305px;
+         } 
+        }
+      }
+    }
   }
 }
 
 section#message {
   text-transform: uppercase;
-  margin-top: 1em;
-  margin-bottom: 0;
-  font-weight: bold;
-  padding: 0 2em;
-  position: relative;
-  z-index: 90;
-  font-size: 1.875em;
-  line-height: 1.33333em;
   #info {
-    font-weight: bold;
-    font-size: 1.8em;
-    color: white;
-    vertical-align: middle;
   }
 }
 
