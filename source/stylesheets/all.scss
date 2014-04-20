@@ -92,10 +92,41 @@ header {
   }
 }
 
-section#message {
-  text-transform: uppercase;
-  #info {
-  }
+section#home {
+  ul#home-header {
+    list-style: none;
+    height: 405px; 
+
+    .home-header-slide {
+      height: 100%; 
+      display: none;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      &:first-child {
+        display: block;
+      }
+      &:before {
+        display: block;
+        height: 40px;
+        content: "";
+        @include filter-gradient(#a60000, #000000, vertical); // IE6-9
+        @include background-image(linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%));
+      }
+      
+      &:after {
+        display: block;
+        height: 317px;
+        content: "";
+        @include filter-gradient(#000000, #a60000, vertical); // IE6-9
+        @include background-image(linear-gradient(top,  rgba(0,0,0,0) 78%,rgba(0,0,0,0.65) 100%));
+      }
+    }
+
+    #lol {background-image: url('/images/LOL.jpg')}
+
+    #sc2 {background-image: url('/images/starcraft.jpg')}
+  } 
 }
 
 footer { 

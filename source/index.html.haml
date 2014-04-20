@@ -1,1 +1,20 @@
-%section#message
+---
+tournaments: 
+  - 
+    id: lol
+    name: League Of Legends
+  -
+    id: sc2
+    name: Starcraft 2
+---
+%section#home
+  %ul#home-header
+    -current_page.data.tournaments.each do |t|
+      %li.home-header-slide{id: t.id}
+        %h2.home-header-title
+          Torneo
+        .home-header-info  
+          %h3.home-header-tournament-name
+            =t.name
+          %a.home-header-tournament-link(href='#')
+            Próximamente
