@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway:300);
+@import url(http://fonts.googleapis.com/css?family=Raleway:300,200);
 @import "compass";
 @import "compass/reset";
 @import "susy";
@@ -43,10 +43,12 @@ header {
         a{
           @include inline-block;
           @include unstyled-link;
-          margin-top: 142px;
+          font-family: 'Raleway', sans-serif;
+          font-size: 22px;
+          margin-top: 135px;
           margin-right: -4px;
           span.icon{
-            margin: 0 auto 18px 0;
+            margin: 0 auto 17px auto;
             display: block;
             background-position: center;
             background-repeat: no-repeat;
