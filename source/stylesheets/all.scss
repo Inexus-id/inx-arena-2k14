@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Raleway:300);
 @import "compass";
 @import "compass/reset";
 @import "susy";
@@ -11,10 +11,10 @@ $container-style: static;
 $container-width: 1140px;
 
 * { 
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
   text-align: center;
   color: white;
-  text-shadow: rgba(0,0,0,0.9) 0 0 10px;
 }
 body { 
   background-image: url('/images/bg.jpg');
@@ -32,7 +32,7 @@ header {
   background-attachment: fixed;
   text-transform: uppercase;
   nav{
-    @include susy-grid-background;
+    //@include susy-grid-background;
     @include container;
     ul#nav-links{
       @include horizontal-list;
@@ -42,10 +42,11 @@ header {
         padding: 0;
         a{
           @include inline-block;
-          margin-top: 213px;
+          @include unstyled-link;
+          margin-top: 142px;
           margin-right: -4px;
           span.icon{
-            margin: 0 auto;
+            margin: 0 auto 18px 0;
             display: block;
             background-position: center;
             background-repeat: no-repeat;
@@ -58,7 +59,7 @@ header {
           @include span-columns(4,12);
           a{ 
             color: transparent;
-            margin-top: 73px;
+            margin-top: 60px;
           }
           span.icon{
             background-image: url('/images/logoinx.png');
@@ -77,4 +78,4 @@ section#message {
   }
 }
 
-footer { margin-top: 1.8em; }
+//footer { margin-top: 1.8em; }
