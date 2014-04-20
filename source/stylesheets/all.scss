@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway:300,500);
+@import url(http://fonts.googleapis.com/css?family=Raleway:300,400,500);
 @import "compass";
 @import "compass/reset";
 @import "susy";
@@ -98,4 +98,72 @@ section#message {
   }
 }
 
-//footer { margin-top: 1.8em; }
+footer { 
+  margin-top: 56px;
+  
+  #footer-content {
+    @include container; 
+    margin-bottom: 44px;
+    
+    #footer-separator-top {
+      @include span-columns(8,12);
+      @include prefix(2);
+      margin-bottom: 26px;
+      span.line {
+        @include span-columns(3,8);
+        @include nth-omega(3);
+        border-top: 1px solid white;
+        margin-top: 12px;
+      }
+
+      span.stars {
+        @include span-columns(2,8);
+        @include inline-block;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url('/images/starsmenu.png');
+        height: 42px;
+      }
+    }
+
+    #footer-separator-bottom {
+      span.line {
+        @include span-columns(12,12);
+        border-top: 1px solid white;
+      }
+    }
+
+    ul#footer-links {
+      @include horizontal-list;
+      @include inline-block;
+      li.footer-link{
+        border-right: 1px solid white;
+        text-transform: uppercase;
+        margin-top: 27px;
+
+        a{
+          @include inline-block;
+          @include unstyled-link;
+          font-family: 'Raleway', sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+        }
+        &:nth-child(6) { 
+          border-right: 0;
+        }
+      }
+    }
+  }
+
+  #copyright {
+    height: 44px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 44px;
+    text-transform: uppercase;
+    margin-top: 2px;
+    background-color: black;
+    color: #CC3333;
+  }
+}
