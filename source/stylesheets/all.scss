@@ -74,6 +74,10 @@ header {
             width: 95px;
           }
         }
+        a:hover {
+          color: #CC3333;
+          span.icon {background-image: url('/images/bloodystars.png')}
+        }
 
         &#logo {
           @include span-columns(4,12);
@@ -93,6 +97,7 @@ header {
 }
 
 section#home {
+  margin-bottom: -17px;
   .slide-stars {
     background-position: center;
     background-repeat: no-repeat;
