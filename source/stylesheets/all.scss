@@ -70,8 +70,8 @@ header {
             background-position: center;
             background-repeat: no-repeat;
             background-image: url('/images/starsmenu.png');
-            height: 42px;
-            width: 95px;
+            height: 82px;
+            width: 133px;
           }
         }
         a:hover {
@@ -87,7 +87,9 @@ header {
           @include span-columns(4,12);
           a { 
             color: transparent;
-            margin-top: 6px;
+            margin-top: 1px;
+            height: 277px;
+            overflow: hidden;
           }
           span.icon {
             background-image: url('/images/logoinx.png');
