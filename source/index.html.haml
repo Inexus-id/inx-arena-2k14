@@ -11,11 +11,12 @@ tournaments:
   %ul#home-header
     -current_page.data.tournaments.each_with_index do |t,i|
       %li.home-header-slide{id: t.id, class: (i == 0 ? 'active' : '')}
-        %h2.home-header-title
-          Torneo
-        .home-header-info  
-          %h3.home-header-tournament-name
-            =t.name
-          %a.home-header-tournament-link(href='#')
-            Próximamente
+        .home-header-slide-content
+          %h2.home-header-slide-title
+            Torneo
+          .home-header-tournament-info  
+            %h3.home-header-tournament-name
+              =t.name
+            %a.home-header-tournament-link(href='#')
+              Próximamente
   %div.slide-stars    
