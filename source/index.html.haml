@@ -3,9 +3,11 @@ tournaments:
   - 
     id: lol
     name: League Of Legends
+    info: 7 plazas disponibles
   -
     id: sc2
     name: Starcraft 2
+    info: ¡Ya estás inscrito!
 
 events:
   -
@@ -49,11 +51,12 @@ events:
   #home-content-tournaments
     %h3#home-content-main-title
       Torneos
-    %a#home-content-tournaments-all-link(href="#")
+    %a#home-content-tournaments-all-links(href="#")
       Todos los torneos
-  %ul#home-content-tournament-list
-    -current_page.data.tournaments.each do |t|
-      %li.home-content-tournament{id: t.id}
-        %a.home-content-tournament-link(href="#")
-          %span.icon
-            t.name
+    %ul#home-content-tournament-list
+      -current_page.data.tournaments.each do |t|
+        %li.home-content-tournament{id: t.id}
+          %a.home-content-tournament-link(href="#")
+            %span.icon
+            =t.name
+            %p=t.info

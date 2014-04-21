@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway:300,400,500);
+@import url(http://fonts.googleapis.com/css?family=Raleway:200,300,400,500);
 @import "compass";
 @import "compass/reset";
 @import "susy";
@@ -261,10 +261,78 @@ section#home-content {
     }
   }
 
-  #home-content-tournament {
-    @include span-columns(6,12);
-  }
+  #home-content-tournaments {
+    @include span-columns(6 omega, 12);
 
+    h3#home-content-main-title {
+      @include span-columns(3, 6);
+      @include inline-block;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 300;
+      font-size: 24px;
+      text-align: left;
+    }
+
+    a#home-content-tournaments-all-links {
+      @include span-columns(3 omega, 6);
+      font-family: 'Raleway', sans-serif;
+      font-weight: 200;
+      font-size: 18px;  
+      text-decoration: none;
+      line-height: 26px;
+      text-align: right;
+    }
+  
+    ul#home-content-tournament-list {
+      @include span-columns(6, 6);
+      margin-top: 20px;
+
+      #lol {
+        a.home-content-tournament-link{
+          span.icon{
+            background-image: url('/images/LOL.png');
+          }
+        }
+      }
+
+      #sc2 {
+        a.home-content-tournament-link{
+          span.icon{
+            background-image: url('/images/sc2.png');
+          }
+        }
+      }
+      
+      li.home-content-tournament {
+        background-color: white;
+        margin-bottom: 8px;
+        text-align: left;
+
+        a.home-content-tournament-link{
+          @include unstyled-link;
+          @include inline-block;
+          font-family: 'Raleway', sans-serif;
+          font-weight: 200;
+          font-size: 18px;
+          color: black;
+
+          span.icon {
+            @include inline-block;
+            height: 110px;
+            width: 110px;
+          }
+
+          p {
+            @include inline-block;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+            color: black;
+          } 
+        }
+      }
+    }
+  }
 }
 
 footer { 
