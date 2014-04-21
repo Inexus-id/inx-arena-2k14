@@ -226,7 +226,6 @@ section#home {
 
 section#home-content {
   @include container; 
-  @include susy-grid-background;
 
   #home-content-calendar {
     @include span-columns(6,12);
@@ -308,27 +307,25 @@ section#home-content {
         margin-bottom: 8px;
         text-align: left;
 
+        &:last-child {margin-bottom: 0}
+
         a.home-content-tournament-link{
           @include unstyled-link;
-          @include inline-block;
-          font-family: 'Raleway', sans-serif;
-          font-weight: 200;
-          font-size: 18px;
-          color: black;
+
+          span.home-content-tournament-name {
+            @include inline-block;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+            color: black;
+            margin-left: 20px; 
+          }
 
           span.icon {
             @include inline-block;
             height: 110px;
             width: 110px;
           }
-
-          p {
-            @include inline-block;
-            font-family: 'Raleway', sans-serif;
-            font-weight: 400;
-            font-size: 20px;
-            color: black;
-          } 
         }
       }
     }
