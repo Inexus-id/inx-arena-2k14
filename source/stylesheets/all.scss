@@ -224,52 +224,47 @@ section#home {
   } 
 }
 
-section#calendar-tournaments {
+section#home-content {
+  @include container; 
   @include susy-grid-background;
-  @include container;
-  font-family: 'Raleway', sans-serif;
 
-  .main-title {
-    font-weight: 300;
-    font-size: 24px;
-    text-align: left;
-    margin-bottom: 23px;
-  }
-
-  #calendar {
+  #home-content-calendar {
     @include span-columns(6,12);
-    font-weight: 300;
-
-    .calendar-title {
-      font-size: 18px;  
+    
+    #home-content-calendar-title {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 300;
+      font-size: 24px;
+      margin-bottom: 18px;
       text-align: left;
-      margin-bottom: 5px;
     }
 
-    .calendar-event {
-      font-size: 20px;  
-      text-align: left;
-      margin-bottom: 23px;
-    }
-  }
+    #home-content-calendar-list {
+      .home-content-calendar {
+        margin-bottom: 20px;
 
-  #tournaments {
-    @include span-columns(6,12); 
-    @include horizontal-list;
+        .calendar-title {
+          font-family: 'Raleway', sans-serif;
+          font-weight: 300;
+          font-size: 18px;  
+          text-align: left;
+          margin-bottom: 5px;
+        }
 
-    #tournament-titles{
-      .small-title {
-        font-weight: 200;
-        font-size: 18px;
+        .calendar-event {
+          font-family: 'Raleway', sans-serif;
+          font-weight: 300;
+          text-align: left;
+          font-size: 20px;  
+        }
       }
     }
-
-    ul#tournament-information {
-      span.icon {
-        background-image: url('/images/LOL.png');
-      } 
-    }
   }
+
+  #home-content-tournament {
+    @include span-columns(6,12);
+  }
+
 }
 
 footer { 

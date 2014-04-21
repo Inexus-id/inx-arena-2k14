@@ -6,6 +6,20 @@ tournaments:
   -
     id: sc2
     name: Starcraft 2
+
+events:
+  -
+    id: event1
+    name: Nombre del evento del calendario
+    date: 13.05.2014 | 13:30
+  -
+    id: event2
+    name: Cosas que pasan2
+    date: 20.05.2014 | 13:30
+  -
+    id: event3
+    name: Cosas que pasan3
+    date: 27.05.2014 | 13:30
 ---
 %section#home
   %ul#home-header
@@ -21,37 +35,25 @@ tournaments:
               Próximamente
   %div.slide-stars    
 
-%section#calendar-tournaments
-  %ul#calendar
-    .main-title
+%section#home-content
+  #home-content-calendar
+    %h3#home-content-calendar-title
       Calendario
-    %li 
-      .calendar-title
-        Ahora
-      .calendar-event
-        Nombre del evento
-    %li
-      .calendar-title
-        13.05.2014 | 20.05.2014
-      .calendar-event
-        Nombre del evento del calendario
-    %li
-      .calendar-title
-        21.05.2014 | 27.05.2014
-      .calendar-event
-        Nombre del evento del calendario
-    %li
-      .calendar-title
-        27.05.2014 | 31.05.2014
-      .calendar-event
-        Nombre del evento del calendario
-  #tournaments
-    %ul#tournament-titles
-      %li.main-title
-        Torneos
-      %li.small-title
-        Todos los torneos
-    %ul#tournament-information
-      %li
-        .span.icon
-          name
+    %ul#home-content-calendar-list
+      -current_page.data.events.each do |e|
+        %li.home-content-calendar{id: e.id}
+          .calendar-title
+            =e.date
+          .calendar-event
+            =e.name
+  #home-content-tournaments
+    %h3#home-content-main-title
+      Torneos
+    %a#home-content-tournaments-all-link(href="#")
+      Todos los torneos
+  %ul#home-content-tournament-list
+    -current_page.data.tournaments.each do |t|
+      %li.home-content-tournament{id: t.id}
+        %a.home-content-tournament-link(href="#")
+          %span.icon
+            t.name
