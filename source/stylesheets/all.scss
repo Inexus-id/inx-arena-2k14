@@ -18,6 +18,7 @@ $container-width: 1140px;
   text-align: center;
   color: white;
 }
+
 body { 
   background-image: url('/images/bg.jpg');
   background-repeat: repeat-y;
@@ -32,6 +33,7 @@ header {
   background-image: url('/images/topbg.jpg');
   background-position: top;
   background-attachment: fixed;
+
   #header-countdown {
     @include container;
     font-family: 'Raleway', sans-serif;
@@ -52,12 +54,15 @@ header {
   nav{
     @include container;
     text-transform: uppercase;
+
     ul#nav-links {
       @include horizontal-list;
+
       li {
         @include span-columns(2,12);
         @include nth-omega(5);
         padding: 0;
+
         a {
           @include inline-block;
           @include unstyled-link;
@@ -66,6 +71,7 @@ header {
           font-size: 22px;
           margin-top: 77px;
           margin-right: -4px;
+
           span.icon {
             margin: 0 auto -3px auto;
             display: block;
@@ -76,8 +82,10 @@ header {
             width: 133px;
           }
         }
+
         a:hover {
           text-shadow: -3px -1px 6px rgba(204, 51, 51, 1);
+          
           span.icon {
             background-image: url('/images/bloodystars.png');
           }
@@ -87,12 +95,14 @@ header {
           @include span-columns(4,12);
           position: relative;
           z-index: 1;
+          
           a { 
             color: transparent;
             margin-top: 1px;
             height: 277px;
             overflow: hidden;
           }
+
           span.icon {
             background-image: url('/images/logoinx.png');
             height: 277px;
@@ -105,7 +115,8 @@ header {
 }
 
 section#home {
-  margin-bottom: -17px;
+  margin-bottom: 34px;
+  
   .slide-stars {
     background-position: center;
     background-repeat: no-repeat;
@@ -140,34 +151,40 @@ section#home {
       background-position: center;
       background-repeat: no-repeat;
       background-size: 100%;
+      
       &.active {
         opacity: 1;
         pointer-events: auto;
         z-index: 0;
       }
+      
       &.exit {
         @include animation(scaleUpFadeOut, 0.8s, ease-in);
       }
+
       &.enter {
         @include animation(scaleDownFadeIn, 0.8s, ease-in);
       }
+
       &:before {
+        @include filter-gradient(#a60000, #000000, vertical); // IE6-9
+        @include background-image(linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%));
         display: block;
         height: 40px;
         content: "";
-        @include filter-gradient(#a60000, #000000, vertical); // IE6-9
-        @include background-image(linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%));
       }
       
       &:after {
+        @include filter-gradient(#000000, #a60000, vertical); // IE6-9
+        @include background-image(linear-gradient(top,  rgba(0,0,0,0) 78%,rgba(0,0,0,0.65) 100%));
         display: block;
         height: 205px;
         content: "";
-        @include filter-gradient(#000000, #a60000, vertical); // IE6-9
-        @include background-image(linear-gradient(top,  rgba(0,0,0,0) 78%,rgba(0,0,0,0.65) 100%));
       }
+      
       .home-header-slide-content {
         @include container;
+        
         .home-header-slide-title {
           display: block;
           letter-spacing: 10px;
@@ -176,14 +193,17 @@ section#home {
           font-size: 32px;
           text-transform: uppercase;
         }
+        
         .home-header-tournament-info {
           text-align: left;
+          
           .home-header-tournament-name {
             display: block;
             text-align: left;
             font-weight: 400;
             font-size: 60px;
           }
+
           .home-header-tournament-link {
             @include unstyled-link;
             @include inline-block;
@@ -202,6 +222,54 @@ section#home {
     #lol {background-image: url('/images/LOL.jpg')}
     #sc2 {background-image: url('/images/starcraft.jpg')}
   } 
+}
+
+section#calendar-tournaments {
+  @include susy-grid-background;
+  @include container;
+  font-family: 'Raleway', sans-serif;
+
+  .main-title {
+    font-weight: 300;
+    font-size: 24px;
+    text-align: left;
+    margin-bottom: 23px;
+  }
+
+  #calendar {
+    @include span-columns(6,12);
+    font-weight: 300;
+
+    .calendar-title {
+      font-size: 18px;  
+      text-align: left;
+      margin-bottom: 5px;
+    }
+
+    .calendar-event {
+      font-size: 20px;  
+      text-align: left;
+      margin-bottom: 23px;
+    }
+  }
+
+  #tournaments {
+    @include span-columns(6,12); 
+    @include horizontal-list;
+
+    #tournament-titles{
+      .small-title {
+        font-weight: 200;
+        font-size: 18px;
+      }
+    }
+
+    ul#tournament-information {
+      span.icon {
+        background-image: url('/images/LOL.png');
+      } 
+    }
+  }
 }
 
 footer { 

@@ -51,7 +51,8 @@ tournaments:
         Torneos
       %li.small-title
         Todos los torneos
-    %ul#tournament-information
+    %ul.tournament-information
       %li
-        .span.icon
-          name
+        %a
+          .span.icon
+            name
