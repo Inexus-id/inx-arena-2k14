@@ -7,19 +7,7 @@ tournaments:
     id: sc2
     name: Starcraft 2
 
-events:
-  -
-    id: event1
-    name: Nombre del evento del calendario
-    date: 13.05.2014 | 13:30
-  -
-    id: event2
-    name: Cosas que pasan2
-    date: 20.05.2014 | 13:30
-  -
-    id: event3
-    name: Cosas que pasan3
-    date: 27.05.2014 | 13:30
+events: []
 ---
 %section#home
   %ul#home-header
@@ -33,19 +21,23 @@ events:
               =t.name
             %a.home-header-tournament-link(href='#')
               Próximamente
-  %div.slide-stars    
+  .slide-stars    
 
 %section#home-content
   #home-content-calendar
     %h3#home-content-calendar-title
       Calendario
-    %ul#home-content-calendar-list
-      -current_page.data.events.each do |e|
-        %li.home-content-calendar{id: e.id}
-          .calendar-title
-            =e.date
-          .calendar-event
-            =e.name
+    - if current_page.data.events.size > 0
+      %ul#home-content-calendar-list
+        -current_page.data.events.each do |e|
+          %li.home-content-calendar{id: e.id}
+            .calendar-title
+              =e.date
+            .calendar-event
+              =e.name
+    - else
+      #home-content-calendar-empty
+        Próximamente
   #home-content-tournaments
     %h3#home-content-main-title
       Torneos

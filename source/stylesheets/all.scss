@@ -12,18 +12,17 @@ $grid-padding:  10px;
 $container-style: static;
 $container-width: 1140px;
 
-* { 
+body { 
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
   text-align: center;
   color: white;
-}
-
-body { 
   background-image: url('/images/bg.jpg');
   background-repeat: repeat-y;
   background-position: center;
   background-color: black;
+  background-color: black;
+  min-height: 100%;
 }
 
 header {
@@ -31,8 +30,6 @@ header {
   background-position: center;
   height: 277px;
   background-image: url('/images/topbg.jpg');
-  background-position: top;
-  background-attachment: fixed;
 
   #header-countdown {
     @include container;
@@ -187,11 +184,9 @@ section#home {
         
         .home-header-slide-title {
           display: block;
-          letter-spacing: 10px;
           text-align: left;
           font-weight: 400;
           font-size: 32px;
-          text-transform: uppercase;
         }
         
         .home-header-tournament-info {
@@ -210,7 +205,6 @@ section#home {
             margin-top: 20px;
             font-weight: 400;
             font-size: 28px;
-            text-transform: uppercase;
             background: black;
             color: red;
             padding: 10px;
@@ -236,6 +230,14 @@ section#home-content {
       font-size: 24px;
       margin-bottom: 18px;
       text-align: left;
+    }
+
+    #home-content-calendar-empty {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 300;
+      font-size: 18px;  
+      text-align: left;
+      margin-bottom: 5px;
     }
 
     #home-content-calendar-list {
@@ -273,6 +275,7 @@ section#home-content {
     }
 
     a#home-content-tournaments-all-links {
+      @include unstyled-link;
       @include span-columns(3 omega, 6);
       font-family: 'Raleway', sans-serif;
       font-weight: 200;
@@ -307,10 +310,13 @@ section#home-content {
         margin-bottom: 8px;
         text-align: left;
 
-        &:last-child {margin-bottom: 0}
+        &:last-child { margin-bottom: 0; }
 
-        a.home-content-tournament-link{
+        a.home-content-tournament-link {
           @include unstyled-link;
+          @include inline-block;
+          height: 100%;
+          width: 100%;
 
           span.home-content-tournament-name {
             @include inline-block;
@@ -376,11 +382,12 @@ footer {
         margin-top: 27px;
 
         a{
-          @include inline-block;
           @include unstyled-link;
+          @include inline-block;
           font-family: 'Raleway', sans-serif;
           font-weight: 400;
           font-size: 16px;
+          padding: 0 10px;
         }
         &:nth-child(6) { 
           border-right: 0;
@@ -390,7 +397,7 @@ footer {
   }
 
   #copyright {
-    height: 44px;
+    height: 100px;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: 16px;
