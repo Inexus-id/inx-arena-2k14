@@ -2,6 +2,8 @@
 @import "compass";
 @import "compass/reset";
 @import "susy";
+@import "mixins";
+@import "keyframes";
 
 $total-columns: 12;
 $column-width:  60px;
@@ -83,6 +85,8 @@ header {
 
         &#logo {
           @include span-columns(4,12);
+          position: relative;
+          z-index: 1;
           a { 
             color: transparent;
             margin-top: 1px;
@@ -108,20 +112,44 @@ section#home {
     background-image: url('/images/slidestars.png');
     height: 88px;
     margin-top: -42px;
+    z-index: 1;
+    position: relative;
   }
 
   ul#home-header {
     list-style: none;
+    overflow: hidden;
     height: 405px; 
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
 
     .home-header-slide {
-      height: 100%; 
-      display: none;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      opacity: 0;
+      z-index: -1;
       background-position: center;
       background-repeat: no-repeat;
       background-size: 100%;
-      &:first-child {
-        display: block;
+      &.active {
+        opacity: 1;
+        pointer-events: auto;
+        z-index: 0;
+      }
+      &.exit {
+        @include animation(scaleUpFadeOut, 0.8s, ease-in);
+      }
+      &.enter {
+        @include animation(scaleDownFadeIn, 0.8s, ease-in);
       }
       &:before {
         display: block;
