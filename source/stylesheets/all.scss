@@ -5,6 +5,9 @@
 @import "mixins";
 @import "keyframes";
 
+@import "icons/*.png";
+@include all-icons-sprites;
+
 $total-columns: 12;
 $column-width:  60px;
 $gutter-width:  20px;
@@ -70,13 +73,9 @@ header {
           margin-right: -4px;
 
           span.icon {
+            @include icon(starsmenu);
             margin: 0 auto -3px auto;
             display: block;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-image: url('/images/starsmenu.png');
-            height: 82px;
-            width: 133px;
           }
         }
 
@@ -84,7 +83,7 @@ header {
           text-shadow: -3px -1px 6px rgba(204, 51, 51, 1);
           
           span.icon {
-            background-image: url('/images/bloodystars.png');
+            @include icons-sprite(bloodystars);
           }
         }
 
@@ -102,6 +101,7 @@ header {
 
           span.icon {
             background-image: url('/images/logoinx.png');
+            background-position: center;
             height: 277px;
             width: 305px;
          } 
@@ -115,9 +115,7 @@ section#home {
   margin-bottom: 34px;
   
   .slide-stars {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url('/images/slidestars.png');
+    @include icon(slidestars);
     height: 88px;
     margin-top: -42px;
     z-index: 1;
@@ -359,10 +357,12 @@ footer {
       span.stars {
         @include span-columns(2,8);
         @include inline-block;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-image: url('/images/starsmenu.png');
         height: 42px;
+        text-align: center;
+        span.icon-stars {
+          @include icon(starsmenu);
+          margin-top: -20px;
+        }
       }
     }
 
