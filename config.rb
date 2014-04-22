@@ -73,4 +73,7 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
+  activate :google_analytics do |ga|
+    ga.tracking_id = (ENV['GA'] || false)
+  end
 end
