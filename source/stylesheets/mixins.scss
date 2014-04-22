@@ -16,11 +16,11 @@
 }
 
 // call animation
-@mixin animation($animation, $time, $mode) {
-  -webkit-animation: $animation $time $mode;
-  -moz-animation: $animation $time $mode;
-  -ms-animation: $animation $time $mode;
-  animation: $animation $time $mode;
+@mixin animation($animation, $time, $action, $mode) {
+  -webkit-animation: $animation $time $action $mode;
+  -moz-animation: $animation $time $action $mode;
+  -ms-animation: $animation $time $action $mode;
+  animation: $animation $time $action $mode;
 }
 // icons
 @mixin icon($name,$width: icons-sprite-width($name),$height: icons-sprite-height($name)) {
