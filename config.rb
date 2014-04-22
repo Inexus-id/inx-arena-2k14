@@ -75,5 +75,9 @@ configure :build do
   # set :http_prefix, "/Content/images/"
   activate :google_analytics do |ga|
     ga.tracking_id = (ENV['GA'] || false)
+    ga.debug = false
+    ga.anonymize_ip = true
+    ga.domain_name = 'inx-arena.com' # Track for (cross-domain tracking)
+    ga.allow_linker = true # Multiple top-level domains (needs domain_name to be set)
   end
 end
