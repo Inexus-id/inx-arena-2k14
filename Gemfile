@@ -12,4 +12,3 @@ gem "susy"
 gem 'font-awesome-middleman'
 gem "rack-contrib"
 gem "puma"
-gem "middleman-google-analytics"
