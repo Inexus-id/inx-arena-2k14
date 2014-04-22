@@ -154,11 +154,11 @@ section#home {
       }
       
       &.exit {
-        @include animation(scaleUpFadeOut, 0.8s, ease-in);
+        @include animation(scaleUpFadeOut, 1.2s, ease-in);
       }
 
       &.enter {
-        @include animation(scaleDownFadeIn, 0.8s, ease-in);
+        @include animation(scaleDownFadeIn, 1.2s, ease-in);
       }
 
       &:before {
