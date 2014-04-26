@@ -378,128 +378,128 @@ footer {
         margin: 0 10px 10px 10px;
         span.icon#sponsor1 {
           display: block;
-          background-image: url('/images/sponsors/logos-01a.png');
+          @include icon(logos-01a);
           height: 47px;
           width: 237px;
           &:hover{
-            background-image: url('/images/sponsors/logos-01b.png');
+            @include icon(logos-01b);
           }
         }
         span.icon#sponsor2 {
           display: block;
-          background-image: url('/images/sponsors/logos-02a.png');
+          @include icon(logos-02a);
           height: 132px;
           width: 109px;
           &:hover{
-            background-image: url('/images/sponsors/logos-02b.png');
+            @include icon(logos-02b);
           }
         }
         span.icon#sponsor3 {
           display: block;
-          background-image: url('/images/sponsors/logos-03a.png');
+          @include icon(logos-03a);
           height: 134px;
           width: 217px;
           &:hover{
-            background-image: url('/images/sponsors/logos-03b.png');
+            @include icon(logos-03b);
           }
         }
         span.icon#sponsor4 {
           display: block;
-          background-image: url('/images/sponsors/logos-04a.png');
+          @include icon(logos-04a);
           height: 100px;
           width: 99px;
           &:hover{
-            background-image: url('/images/sponsors/logos-04b.png');
+            @include icon(logos-04b);
           }
         }
         span.icon#sponsor5 {
           display: block;
-          background-image: url('/images/sponsors/logos-05a.png');
+          @include icon(logos-05a);
           height: 49px;
           width: 146px;
           &:hover{
-            background-image: url('/images/sponsors/logos-05b.png');
+            @include icon(logos-05b);
           }
         }
         span.icon#sponsor6 {
           display: block;
-          background-image: url('/images/sponsors/logos-06a.png');
+          @include icon(logos-06a);
           height: 116px;
           width: 126px;
           &:hover{
-            background-image: url('/images/sponsors/logos-06b.png');
+            @include icon(logos-06b);
           }
         }
         span.icon#sponsor7 {
           display: block;
-          background-image: url('/images/sponsors/logos-07a.png');
+          @include icon(logos-07a);
           height: 96px;
           width: 91px;
           &:hover{
-            background-image: url('/images/sponsors/logos-07b.png');
+            @include icon(logos-07b);
           }
         }
         span.icon#sponsor8 {
           display: block;
-          background-image: url('/images/sponsors/logos-08a.png');
+          @include icon(logos-08a);
           height: 125px;
           width: 120px;
           &:hover{
-            background-image: url('/images/sponsors/logos-08b.png');
+            @include icon(logos-08b);
           }
         }
         span.icon#sponsor9 {
           display: block;
-          background-image: url('/images/sponsors/logos-09a.png');
+          @include icon(logos-09a);
           height: 131px;
           width: 125px;
           &:hover{
-            background-image: url('/images/sponsors/logos-09b.png');
+            @include icon(logos-09b);
           }
         }
         span.icon#sponsor10 {
           display: block;
-          background-image: url('/images/sponsors/logos-10a.png');
+          @include icon(logos-10a);
           height: 125px;
           width: 140px;
           &:hover{
-            background-image: url('/images/sponsors/logos-10b.png');
+            @include icon(logos-10b);
           }
         }
         span.icon#sponsor11 {
           display: block;
-          background-image: url('/images/sponsors/logos-11a.png');
+          @include icon(logos-11a);
           height: 48px;
           width: 117px;
           &:hover{
-            background-image: url('/images/sponsors/logos-11b.png');
+            @include icon(logos-11b);
           }
         }
         span.icon#sponsor12 {
           display: block;
-          background-image: url('/images/sponsors/logos-12a.png');
+          @include icon(logos-12a);
           height: 120px;
           width: 271px;
           &:hover{
-            background-image: url('/images/sponsors/logos-12b.png');
+            @include icon(logos-12b);
           }
         }
         span.icon#sponsor13 {
           display: block;
-          background-image: url('/images/sponsors/logos-13a.png');
+          @include icon(logos-13a);
           height: 79px;
           width: 236px;
           &:hover{
-            background-image: url('/images/sponsors/logos-13b.png');
+            @include icon(logos-13b);
           }
         }
         span.icon#sponsor14 {
           display: block;
-          background-image: url('/images/sponsors/logos-14a.png');
+          @include icon(logos-14a);
           height: 91px;
           width: 188px;
           &:hover{
-            background-image: url('/images/sponsors/logos-14b.png');
+            @include icon(logos-14b);
           }
         }
       }
