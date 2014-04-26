@@ -496,7 +496,7 @@ footer {
         span.icon#sponsor14 {
           display: block;
           @include icon(logos-14a);
-          height: 91px;
+          height: 90px;
           width: 188px;
           &:hover{
             @include icon(logos-14b);
