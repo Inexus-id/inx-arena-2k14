@@ -1,42 +1,70 @@
 -
     id: 1
     url: "http://www.asus.com/es"
+    width: 50
+    height: 50
 -
     id: 2
     url: "http://www.eii.ulpgc.es/"
+    width: 50
+    height: 50
 -
     id: 3
     url: "http://www.infecar.es"
+    width: 50
+    height: 50
 -
     id: 4
     url: "http://jdrinformatico.es/"
+    width: 50
+    height: 50
 -
     id: 5
     url: "http://www.club-3d.com/"
+    width: 50
+    height: 50
 -
     id: 6
     url: "http://es.gigabyte.com/"
+    width: 50
+    height: 50
 -
     id: 7
     url: "http://cabildo.grancanaria.com/"
+    width: 50
+    height: 50
 -
     id: 8
     url: "http://www.ulpgc.es/"
+    width: 50
+    height: 50
 -
     id: 9
     url: "http://www.movistar.es/"
+    width: 50
+    height: 50
 -
     id: 10
     url: "http://www.corsair.com/es-es"
+    width: 50
+    height: 50
 -
     id: 11
     url: "http://www.voxia.es/"
+    width: 50
+    height: 50
 -
     id: 12
     url: "http://www.monsterenergy.com/es/es"
+    width: 50
+    height: 50
 -
     id: 13
     url: "http://www.dlink.com/es/es"
+    width: 50
+    height: 50
 -
     id: 14
     url: "http://www.lg.com/es"
+    width: 50
+    height: 50
