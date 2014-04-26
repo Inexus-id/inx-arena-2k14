@@ -377,25 +377,131 @@ footer {
         @include inline-block;
         position: relative;
         margin: 0 10px 10px 10px;
-
-        @each $sponsor in $sponsors {
-          $id:     nth($sponsor, 1);
-
-          span.icon#sponsor#{$id} {
-            @if $id <= 9 {
-              @include icon(logos-0#{$id}a);
-            }
-            @else {
-              @include icon(logos-#{$id}a);
-            }
-            &:hover{
-              @if ($id <= 9) {
-                @include icon(logos-0#{$id}b);
-              }
-              @else {
-                @include icon(logos-#{$id}b);
-              }
-            }
+        span.icon#asus {
+          display: block;
+          @include icon(logos-01a);
+          height: 47px;
+          width: 237px;
+          &:hover{
+            @include icon(logos-01b);
+          }
+        }
+        span.icon#eii {
+          display: block;
+          @include icon(logos-02a);
+          height: 132px;
+          width: 109px;
+          &:hover{
+            @include icon(logos-02b);
+          }
+        }
+        span.icon#infecar {
+          display: block;
+          @include icon(logos-03a);
+          height: 134px;
+          width: 217px;
+          &:hover{
+            @include icon(logos-03b);
+          }
+        }
+        span.icon#qicanarias {
+          display: block;
+          @include icon(logos-04a);
+          height: 100px;
+          width: 99px;
+          &:hover{
+            @include icon(logos-04b);
+          }
+        }
+        span.icon#club-3d {
+          display: block;
+          @include icon(logos-05a);
+          height: 49px;
+          width: 146px;
+          &:hover{
+            @include icon(logos-05b);
+          }
+        }
+        span.icon#gigabyte {
+          display: block;
+          @include icon(logos-06a);
+          height: 116px;
+          width: 126px;
+          &:hover{
+            @include icon(logos-06b);
+          }
+        }
+        span.icon#cabildo-gran-canaria {
+          display: block;
+          @include icon(logos-07a);
+          height: 96px;
+          width: 91px;
+          &:hover{
+            @include icon(logos-07b);
+          }
+        }
+        span.icon#ulpgc {
+          display: block;
+          @include icon(logos-08a);
+          height: 125px;
+          width: 120px;
+          &:hover{
+            @include icon(logos-08b);
+          }
+        }
+        span.icon#movistar {
+          display: block;
+          @include icon(logos-09a);
+          height: 131px;
+          width: 125px;
+          &:hover{
+            @include icon(logos-09b);
+          }
+        }
+        span.icon#corsair {
+          display: block;
+          @include icon(logos-10a);
+          height: 125px;
+          width: 140px;
+          &:hover{
+            @include icon(logos-10b);
+          }
+        }
+        span.icon#voxia {
+          display: block;
+          @include icon(logos-11a);
+          height: 48px;
+          width: 117px;
+          &:hover{
+            @include icon(logos-11b);
+          }
+        }
+        span.icon#monster-energy {
+          display: block;
+          @include icon(logos-12a);
+          height: 120px;
+          width: 271px;
+          &:hover{
+            @include icon(logos-12b);
+          }
+        }
+        span.icon#dlink {
+          display: block;
+          @include icon(logos-13a);
+          height: 79px;
+          width: 236px;
+          &:hover{
+            @include icon(logos-13b);
+          }
+        }
+        span.icon#lg {
+          display: block;
+          @include icon(logos-14a);
+          height: 90px;
+          width: 188px;
+          &:hover{
+            @include icon(logos-14b);
+>>>>>>> rename css selectors, include sponsor name in yml file
           }
         }
       }

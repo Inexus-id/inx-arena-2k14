@@ -59,7 +59,7 @@
                 - iter_sponsors.each.with_index do |sponsor, j|
                   %li.icon-sponsors
                     %a(href="#{sponsor['url']}")
-                      %span.icon(id="sponsor#{i*6 + j + 1}")
+                      %span.icon(id="#{sponsor.name}")
 
         #footer-separator-bottom
           %span.line
