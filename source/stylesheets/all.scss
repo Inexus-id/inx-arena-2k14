@@ -391,8 +391,6 @@ footer {
             @else {
               @include icon(logos-#{$id}a);
             }
-            width: #{$width}px;
-            height: #{$height}px;
             &:hover{
               @if ($id <= 9) {
                 @include icon(logos-0#{$id}b);
