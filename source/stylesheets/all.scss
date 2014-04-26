@@ -376,7 +376,7 @@ footer {
         @include horizontal-list;
         @include inline-block;
         position: relative;
-        margin: 10px;
+        margin: 0 10px 10px 10px;
 
         @each $sponsor in $sponsors {
           $id:     nth($sponsor, 1);
@@ -385,20 +385,20 @@ footer {
 
           span.icon#sponsor#{$id} {
             display: block;
-            @if ($id <= 9) {
-              background-image: url('/images/sponsors/logos-0#{$id}a.png');
+            @if $id <= 9 {
+              @include icon(logos-0#{$id}a);
             }
-            else {
-              background-image: url('/images/sponsors/logos-#{$id}a.png');
+            @else {
+              @include icon(logos-#{$id}a);
             }
             width: #{$width}px;
             height: #{$height}px;
             &:hover{
-              @if $id <= 9 {
-                background-image: url('/images/sponsors/logos-0#{$id}b.png');
+              @if ($id <= 9) {
+                @include icon(logos-0#{$id}b);
               }
-              else {
-                background-image: url('/images/sponsors/logos-#{$id}b.png');
+              @else {
+                @include icon(logos-#{$id}b);
               }
             }
           }
