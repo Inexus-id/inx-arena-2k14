@@ -375,7 +375,7 @@ footer {
         @include horizontal-list;
         @include inline-block;
         position: relative;
-        margin: 10px;
+        margin: 0 10px 10px 10px;
         span.icon#sponsor1 {
           display: block;
           background-image: url('/images/sponsors/logos-01a.png');
