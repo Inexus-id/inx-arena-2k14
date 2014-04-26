@@ -1,45 +1,42 @@
----
-sponsors:
-  -
-      id: 1
-      url: "http://www.asus.com/es"
-  -
-      id: 2
-      url: "http://www.eii.ulpgc.es/"
-  -
-      id: 3
-      url: "http://www.infecar.es"
-  -
-      id: 4
-      url: "http://jdrinformatico.es/"
-  -
-      id: 5
-      url: "http://www.club-3d.com/"
-  -
-      id: 6
-      url: "http://es.gigabyte.com/"
-  -
-      id: 7
-      url: "http://cabildo.grancanaria.com/"
-  -
-      id: 8
-      url: "http://www.ulpgc.es/"
-  -
-      id: 9
-      url: "http://www.movistar.es/" 
-  -
-      id: 10
-      url: "http://www.corsair.com/es-es"
-  -
-      id: 11
-      url: "http://www.voxia.es/"
-  -
-      id: 12
-      url: "http://www.monsterenergy.com/es/es"
-  -
-      id: 13
-      url: "http://www.dlink.com/es/es"
-  -
-      id: 14
-      url: "http://www.lg.com/es"
----
+-
+    id: 1
+    url: "http://www.asus.com/es"
+-
+    id: 2
+    url: "http://www.eii.ulpgc.es/"
+-
+    id: 3
+    url: "http://www.infecar.es"
+-
+    id: 4
+    url: "http://jdrinformatico.es/"
+-
+    id: 5
+    url: "http://www.club-3d.com/"
+-
+    id: 6
+    url: "http://es.gigabyte.com/"
+-
+    id: 7
+    url: "http://cabildo.grancanaria.com/"
+-
+    id: 8
+    url: "http://www.ulpgc.es/"
+-
+    id: 9
+    url: "http://www.movistar.es/"
+-
+    id: 10
+    url: "http://www.corsair.com/es-es"
+-
+    id: 11
+    url: "http://www.voxia.es/"
+-
+    id: 12
+    url: "http://www.monsterenergy.com/es/es"
+-
+    id: 13
+    url: "http://www.dlink.com/es/es"
+-
+    id: 14
+    url: "http://www.lg.com/es"

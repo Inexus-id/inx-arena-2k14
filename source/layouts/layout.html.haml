@@ -2,42 +2,42 @@
 %html
   %head
     %meta(charset="utf-8")
-    
+
     <!-- Always force latest IE rendering engine or request Chrome Frame -->
     %meta(content="IE=edge,chrome=1" http-equiv="X-UA-Compatible")
     <!-- responsive viewport -->
     %meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1")
-    
+
     <!-- Use title if it's in the page YAML frontmatter -->
     %title= current_page.data.title || "INX-Arena"
-    
+
     = stylesheet_link_tag "all"
     = javascript_include_tag  "all"
-  
+
   %body
     %header
-      #header-countdown 
+      #header-countdown
         Cuenta atrás
         %span.kkcountdown(data-time="1403788222")
       %nav
         %ul#nav-links
           %li.nav-link#news
-            %a(href="#") 
+            %a(href="#")
               %span.icon
               Noticias
-          %li.nav-link#cal 
+          %li.nav-link#cal
             %a(href="#")
               %span.icon
               Calendario
           %li.nav-link#logo
             %a(href="/")
               %span.icon
-              INX-ARENA   
-          %li.nav-link#tournaments 
+              INX-ARENA
+          %li.nav-link#tournaments
             %a(href="#")
               %span.icon
               Torneos
-          %li.nav-link#tickets 
+          %li.nav-link#tickets
             %a(href="#")
               %span.icon
               Entradas
@@ -52,14 +52,15 @@
             %span.icon-stars
           %span.line
 
-      %ul#footer-sponsors
-        - data.sponsors.each_slice(6).with_index do |iter_sponsors, i|
-          %li
-            - iter_sponsors.each.with_index do |sponsor, j|
-              %li.icon-sponsors
-                %a(href=sponsor) 
-                  %span.icon{ id: "sponsor#{i*6 + j + 1}" }
-            
+        %ul#footer-sponsors
+          - data.sponsors.each_slice(6).with_index do |iter_sponsors, i|
+            %li.sponsor-row
+              %ul
+                - iter_sponsors.each.with_index do |sponsor, j|
+                  %li.icon-sponsors
+                    %a(href="#{sponsor['url']}")
+                      %span.icon(id="sponsor#{i*6 + j + 1}")
+
         #footer-separator-bottom
           %span.line
 
@@ -92,4 +93,4 @@
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
       ga('create', 'UA-17886834-1', 'inx-arena.com');
-      ga('send', 'pageview'); 
+      ga('send', 'pageview');

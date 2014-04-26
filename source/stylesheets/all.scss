@@ -15,12 +15,12 @@ $grid-padding:  10px;
 $container-style: static;
 $container-width: 1140px;
 
-a { 
+a {
   @include unstyled-link;
-  cursor: pointer; 
+  cursor: pointer;
 }
 
-body { 
+body {
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
   text-align: center;
@@ -43,13 +43,13 @@ header {
     @include container;
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
-    font-size: 18px;  
+    font-size: 18px;
     text-align: right;
     padding-top: 37px;
 
     .kkcountdown {
       .kkcountdown-box { margin-left: 10px; }
-      font-weight: 500; 
+      font-weight: 500;
       .kkc-days-text, .kkc-hours-text, .kkc-min-text, .kkc-sec-text {
         margin-right: 6px;
       }
@@ -85,7 +85,7 @@ header {
 
         a:hover {
           text-shadow: -3px -1px 6px rgba(204, 51, 51, 1);
-          
+
           span.icon {
             @include icons-sprite(bloodystars);
           }
@@ -95,8 +95,8 @@ header {
           @include span-columns(4,12);
           position: relative;
           z-index: 1;
-          
-          a { 
+
+          a {
             color: transparent;
             margin-top: 1px;
             height: 277px;
@@ -108,7 +108,7 @@ header {
             background-position: center;
             height: 277px;
             width: 305px;
-         } 
+         }
         }
       }
     }
@@ -117,7 +117,7 @@ header {
 
 section#home {
   margin-bottom: 34px;
-  
+
   .slide-stars {
     @include icon(slidestars);
     height: 88px;
@@ -129,7 +129,7 @@ section#home {
   ul#home-header {
     list-style: none;
     overflow: hidden;
-    height: 405px; 
+    height: 405px;
     width: 100%;
     max-width: 100%;
     position: relative;
@@ -151,13 +151,13 @@ section#home {
       background-position: center;
       background-repeat: no-repeat;
       background-size: 100%;
-      
+
       &.active {
         opacity: 1;
         pointer-events: auto;
         z-index: 0;
       }
-      
+
       &.exit {
         @include animation(scaleUpFadeOut, 1.2s, forwards, ease-in);
       }
@@ -173,7 +173,7 @@ section#home {
         height: 40px;
         content: "";
       }
-      
+
       &:after {
         @include filter-gradient(#000000, #a60000, vertical); // IE6-9
         @include background-image(linear-gradient(top,  rgba(0,0,0,0) 78%,rgba(0,0,0,0.65) 100%));
@@ -181,10 +181,10 @@ section#home {
         height: 205px;
         content: "";
       }
-      
+
       .home-header-slide-content {
         @include container;
-        
+
         .home-header-slide-title {
           display: block;
           text-align: left;
@@ -192,10 +192,10 @@ section#home {
           font-weight: 400;
           font-size: 32px;
         }
-        
+
         .home-header-tournament-info {
           text-align: left;
-          
+
           .home-header-tournament-name {
             display: block;
             text-align: left;
@@ -219,15 +219,15 @@ section#home {
 
     #lol {background-image: url('/images/LOL.jpg')}
     #sc2 {background-image: url('/images/starcraft.jpg')}
-  } 
+  }
 }
 
 section#home-content {
-  @include container; 
+  @include container;
 
   #home-content-calendar {
     @include span-columns(6,12);
-    
+
     #home-content-calendar-title {
       font-family: 'Raleway', sans-serif;
       font-weight: 300;
@@ -239,7 +239,7 @@ section#home-content {
     #home-content-calendar-empty {
       font-family: 'Raleway', sans-serif;
       font-weight: 300;
-      font-size: 18px;  
+      font-size: 18px;
       text-align: left;
       margin-bottom: 5px;
     }
@@ -251,7 +251,7 @@ section#home-content {
         .calendar-title {
           font-family: 'Raleway', sans-serif;
           font-weight: 300;
-          font-size: 18px;  
+          font-size: 18px;
           text-align: left;
           margin-bottom: 5px;
         }
@@ -260,7 +260,7 @@ section#home-content {
           font-family: 'Raleway', sans-serif;
           font-weight: 300;
           text-align: left;
-          font-size: 20px;  
+          font-size: 20px;
         }
       }
     }
@@ -282,12 +282,12 @@ section#home-content {
       @include span-columns(3 omega, 6);
       font-family: 'Raleway', sans-serif;
       font-weight: 200;
-      font-size: 18px;  
+      font-size: 18px;
       text-decoration: none;
       line-height: 26px;
       text-align: right;
     }
-  
+
     ul#home-content-tournament-list {
       @include span-columns(6, 6);
       margin-top: 20px;
@@ -307,7 +307,7 @@ section#home-content {
           }
         }
       }
-      
+
       li.home-content-tournament {
         background-color: white;
         margin-bottom: 8px;
@@ -326,7 +326,7 @@ section#home-content {
             font-weight: 400;
             font-size: 20px;
             color: black;
-            margin-left: 20px; 
+            margin-left: 20px;
           }
 
           span.icon {
@@ -340,13 +340,13 @@ section#home-content {
   }
 }
 
-footer { 
+footer {
   margin-top: 56px;
-  
+
   #footer-content {
-    @include container; 
+    @include container;
     margin-bottom: 44px;
-    
+
     #footer-separator-top {
       @include span-columns(8,12);
       @include prefix(2);
@@ -367,13 +367,6 @@ footer {
           @include icon(starsmenu);
           margin-top: -20px;
         }
-      }
-    }
-
-    #footer-separator-bottom {
-      span.line {
-        @include span-columns(12,12);
-        border-top: 1px solid white;
       }
     }
 
@@ -401,7 +394,7 @@ footer {
             background-image: url('/images/logos-07.png');
           }
         }
-        span.icon#sponsor3 { 
+        span.icon#sponsor3 {
           display: block;
           background-image: url('/images/logos-18.png');
           height: 134px;
@@ -509,7 +502,14 @@ footer {
             background-image: url('/images/logos-12.png');
           }
         }
-      } 
+      }
+    }
+
+    #footer-separator-bottom {
+      span.line {
+        @include span-columns(12,12);
+        border-top: 1px solid white;
+      }
     }
 
     ul#footer-links {
@@ -527,7 +527,7 @@ footer {
           font-size: 16px;
           padding: 0 10px;
         }
-        &:nth-child(6) { 
+        &:nth-child(6) {
           border-right: 0;
         }
       }
