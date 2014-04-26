@@ -384,7 +384,6 @@ footer {
           $height: nth($sponsor, 3);
 
           span.icon#sponsor#{$id} {
-            display: block;
             @if $id <= 9 {
               @include icon(logos-0#{$id}a);
             }
