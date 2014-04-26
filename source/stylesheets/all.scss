@@ -380,8 +380,6 @@ footer {
 
         @each $sponsor in $sponsors {
           $id:     nth($sponsor, 1);
-          $width:  nth($sponsor, 2);
-          $height: nth($sponsor, 3);
 
           span.icon#sponsor#{$id} {
             @if $id <= 9 {
