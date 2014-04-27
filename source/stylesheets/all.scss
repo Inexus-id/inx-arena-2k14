@@ -372,7 +372,6 @@ footer {
     }
 
     ul#footer-sponsors {
-      @include susy-grid-background; 
       @include span-columns(12,12);
       li { 
         @include inline-block;
