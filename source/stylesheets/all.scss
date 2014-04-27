@@ -34,7 +34,7 @@ body {
   min-height: 100%;
 }
 
-header {
+header#header {
   background-repeat: no-repeat;
   background-position: center;
   height: 277px;
@@ -341,7 +341,7 @@ section#home-content {
   }
 }
 
-footer {
+footer#footer {
   margin-top: 56px;
 
   #footer-content {
