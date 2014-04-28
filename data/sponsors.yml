@@ -1,40 +1,30 @@
 -
-    id: 2
     name: eii
     url: "http://www.eii.ulpgc.es/"
 -
-    id: 3
     name: infecar
     url: "http://www.infecar.es"
 -
-    id: 4
     name: qicanarias
     url: "http://www.qicanarias.com/"
 -
-    id: 5
     name: club-3d
     url: "http://www.club-3d.com/"
 -
-    id: 7
     name: cabildo-gran-canaria
     url: "http://cabildo.grancanaria.com/"
 -
-    id: 8
     name: ulpgc
     url: "http://www.ulpgc.es/"
 -
-    id: 9
     name: movistar
     url: "http://www.movistar.es/"
 -
-    id: 11
     name: voxia
     url: "http://www.voxia.es/"
 -
-    id: 12
     name: monster-energy
     url: "http://www.monsterenergy.com/es/es"
 -
-    id: 14
     name: lg
     url: "http://www.lg.com/es"
