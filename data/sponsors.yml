@@ -1,8 +1,4 @@
 -
-    id: 1
-    name: asus
-    url: "http://www.asus.com/es"
--
     id: 2
     name: eii
     url: "http://www.eii.ulpgc.es/"
@@ -19,10 +15,6 @@
     name: club-3d
     url: "http://www.club-3d.com/"
 -
-    id: 6
-    name: gigabyte
-    url: "http://es.gigabyte.com/"
--
     id: 7
     name: cabildo-gran-canaria
     url: "http://cabildo.grancanaria.com/"
@@ -35,10 +27,6 @@
     name: movistar
     url: "http://www.movistar.es/"
 -
-    id: 10
-    name: corsair
-    url: "http://www.corsair.com/es-es"
--
     id: 11
     name: voxia
     url: "http://www.voxia.es/"
@@ -46,10 +34,6 @@
     id: 12
     name: monster-energy
     url: "http://www.monsterenergy.com/es/es"
--
-    id: 13
-    name: dlink
-    url: "http://www.dlink.com/es/es"
 -
     id: 14
     name: lg
