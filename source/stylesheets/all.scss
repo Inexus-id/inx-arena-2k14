@@ -1,7 +1,13 @@
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Raleway:200,300,400,500);
 @import "compass";
 @import "compass/reset";
 @import "susy";
+@import "mixins";
+@import "keyframes";
+@import "sponsors";
+
+@import "icons/*.png";
+@include all-icons-sprites;
 
 $total-columns: 12;
 $column-width:  60px;
@@ -10,70 +16,423 @@ $grid-padding:  10px;
 $container-style: static;
 $container-width: 1140px;
 
-* { 
-  font-family: 'Montserrat', sans-serif;
+a {
+  @include unstyled-link;
+  cursor: pointer;
+}
+
+html {-webkit-font-smoothing: antialiased}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
   text-align: center;
   color: white;
-  text-shadow: rgba(0,0,0,0.9) 0 0 10px;
-}
-body { 
   background-image: url('/images/bg.jpg');
   background-repeat: repeat-y;
   background-position: center;
   background-color: black;
 }
 
-header {
+header#header {
   background-repeat: no-repeat;
   background-position: center;
   height: 277px;
   background-image: url('/images/topbg.jpg');
-  background-position: top;
-  background-attachment: fixed;
-  text-transform: uppercase;
-  nav{
-    @include susy-grid-background;
+
+  #header-countdown {
     @include container;
-    ul#nav-links{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: right;
+    padding-top: 37px;
+
+    .kkcountdown {
+      .kkcountdown-box { margin-left: 10px; }
+      font-weight: 500;
+      .kkc-days-text, .kkc-hours-text, .kkc-min-text, .kkc-sec-text {
+        margin-right: 6px;
+      }
+    }
+  }
+
+  nav{
+    @include container;
+    text-transform: uppercase;
+
+    ul#nav-links {
       @include horizontal-list;
-      li{
+
+      li {
         @include span-columns(2,12);
         @include nth-omega(5);
-        a{
+        padding: 0;
+
+        a {
           @include inline-block;
-          margin-top: 213px;
+          font-family: 'Raleway', sans-serif;
+          font-weight: 300;
+          font-size: 22px;
+          margin-top: 77px;
           margin-right: -4px;
-          span.icon{
-            margin: 0 auto;
+
+          span.icon {
+            @include icon(starsmenu);
+            margin: 0 auto -3px auto;
             display: block;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-image: url('/images/starsmenu.png');
-            height: 42px;
-            width: 95px;
           }
         }
-        &#logo{
-          @include span-columns(4,12);
-          a{ 
-            color: transparent;
-            margin-top: 73px;
+
+        a:hover {
+          text-shadow: -3px -1px 6px rgba(204, 51, 51, 1);
+
+          span.icon {
+            @include icons-sprite(bloodystars);
           }
-          span.icon{
+        }
+
+        &#logo {
+          @include span-columns(4,12);
+          position: relative;
+          z-index: 1;
+
+          a {
+            color: transparent;
+            margin-top: 1px;
+            height: 277px;
+            overflow: hidden;
+          }
+
+          span.icon {
             background-image: url('/images/logoinx.png');
+            background-position: center;
             height: 277px;
             width: 305px;
-         } 
+         }
         }
       }
     }
   }
 }
 
-section#message {
-  text-transform: uppercase;
-  #info {
+section#home {
+  margin-bottom: 34px;
+
+  .slide-stars {
+    @include icon(slidestars);
+    height: 88px;
+    margin-top: -42px;
+    z-index: 1;
+    position: relative;
+  }
+
+  ul#home-header {
+    list-style: none;
+    overflow: hidden;
+    height: 405px;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+
+    .home-header-slide {
+      @include transition-property(opacity);
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      opacity: 0;
+      z-index: -1;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+
+      &.active {
+        opacity: 1;
+        pointer-events: auto;
+        z-index: 0;
+      }
+
+      &.exit {
+        @include animation(scaleUpFadeOut, 1.2s, forwards, ease-in);
+      }
+
+      &.enter {
+        @include animation(scaleDownFadeIn, 1.2s, forwards, ease-in);
+      }
+
+      &:before {
+        @include filter-gradient(#a60000, #000000, vertical); // IE6-9
+        @include background-image(linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%));
+        display: block;
+        height: 40px;
+        content: "";
+      }
+
+      &:after {
+        @include filter-gradient(#000000, #a60000, vertical); // IE6-9
+        @include background-image(linear-gradient(top,  rgba(0,0,0,0) 78%,rgba(0,0,0,0.65) 100%));
+        display: block;
+        height: 205px;
+        content: "";
+      }
+
+      .home-header-slide-content {
+        @include container;
+
+        .home-header-slide-title {
+          display: block;
+          text-align: left;
+          font-family: 'Raleway', sans-serif;
+          font-weight: 400;
+          font-size: 32px;
+        }
+
+        .home-header-tournament-info {
+          text-align: left;
+
+          .home-header-tournament-name {
+            display: block;
+            text-align: left;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 400;
+            font-size: 60px;
+          }
+
+          .home-header-tournament-link {
+            @include inline-block;
+            margin-top: 20px;
+            font-weight: 400;
+            font-size: 28px;
+            background: black;
+            color: red;
+            padding: 10px;
+          }
+        }
+      }
+    }
+
+    #lol {background-image: url('/images/LOL.jpg')}
+    #sc2 {background-image: url('/images/starcraft.jpg')}
+
   }
 }
 
-footer { margin-top: 1.8em; }
+section#home-content {
+  @include container;
+
+  #home-content-calendar {
+    @include span-columns(6,12);
+
+    #home-content-calendar-title {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 300;
+      font-size: 24px;
+      margin-bottom: 18px;
+      text-align: left;
+    }
+
+    #home-content-calendar-empty {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 300;
+      font-size: 18px;
+      text-align: left;
+      margin-bottom: 5px;
+    }
+
+    #home-content-calendar-list {
+      .home-content-calendar {
+        margin-bottom: 20px;
+
+        .calendar-title {
+          font-family: 'Raleway', sans-serif;
+          font-weight: 300;
+          font-size: 18px;
+          text-align: left;
+          margin-bottom: 5px;
+        }
+
+        .calendar-event {
+          font-family: 'Raleway', sans-serif;
+          font-weight: 300;
+          text-align: left;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  #home-content-tournaments {
+    @include span-columns(6 omega, 12);
+
+    h3#home-content-main-title {
+      @include span-columns(3, 6);
+      @include inline-block;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 300;
+      font-size: 24px;
+      text-align: left;
+    }
+
+    a#home-content-tournaments-all-links {
+      @include span-columns(3 omega, 6);
+      font-family: 'Raleway', sans-serif;
+      font-weight: 200;
+      font-size: 18px;
+      text-decoration: none;
+      line-height: 26px;
+      text-align: right;
+    }
+
+    ul#home-content-tournament-list {
+      @include span-columns(6, 6);
+      margin-top: 20px;
+
+      #lol {
+        a.home-content-tournament-link{
+          span.icon{
+            background-image: url('/images/LOL.png');
+          }
+        }
+      }
+
+      #sc2 {
+        a.home-content-tournament-link{
+          span.icon{
+            background-image: url('/images/sc2.png');
+          }
+        }
+      }
+
+      li.home-content-tournament {
+        background-color: white;
+        margin-bottom: 8px;
+        text-align: left;
+
+        &:last-child { margin-bottom: 0; }
+
+        a.home-content-tournament-link {
+          @include inline-block;
+          height: 100%;
+          width: 100%;
+
+          span.home-content-tournament-name {
+            @include inline-block;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+            color: black;
+            margin-left: 20px;
+          }
+
+          span.icon {
+            @include inline-block;
+            height: 110px;
+            width: 110px;
+          }
+        }
+      }
+    }
+  }
+}
+
+footer#footer {
+  margin-top: 56px;
+
+  #footer-content {
+    @include container;
+    margin-bottom: 44px;
+
+    #footer-separator-top {
+      @include span-columns(8,12);
+      @include prefix(2);
+      margin-bottom: 26px;
+      span.line {
+        @include span-columns(3,8);
+        @include nth-omega(3);
+        border-top: 1px solid white;
+        margin-top: 12px;
+      }
+
+      span.stars {
+        @include span-columns(2,8);
+        @include inline-block;
+        height: 42px;
+        text-align: center;
+        span.icon-stars {
+          @include icon(starsmenu);
+          margin-top: -20px;
+        }
+      }
+    }
+
+    ul#footer-sponsors {
+      @include span-columns(12,12);
+      li { 
+        @include inline-block;
+        min-width: columns(2,12);
+        margin-bottom: 10px;
+        padding: 1px 10px 10px 10px; 
+      }
+      @each $sponsor in $sponsors {
+        $name: $sponsor;
+        ##{$sponsor} {
+
+          span.icon {
+            @include icon(#{$name}-white);
+            &:hover{
+              @include icon(#{$name}-red);
+            }
+          }
+        }
+      }
+    }
+
+    #footer-separator-bottom {
+      span.line {
+        @include span-columns(12,12);
+        border-top: 1px solid white;
+      }
+    }
+
+    ul#footer-links {
+      @include horizontal-list;
+      @include inline-block;
+      li.footer-link{
+        border-right: 1px solid white;
+        text-transform: uppercase;
+        margin-top: 27px;
+
+        a{
+          @include inline-block;
+          font-family: 'Raleway', sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+          padding: 0 10px;
+        }
+        &:nth-child(6) {
+          border-right: 0;
+        }
+      }
+    }
+  }
+
+  #copyright {
+    display: block;
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 44px;
+    text-transform: uppercase;
+    margin-top: 2px;
+    background-color: black;
+    color: #CC3333;
+  }
+}

@@ -1,0 +1,31 @@
+// animations
+// keyframes mixin
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content; 
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  } 
+}
+
+// call animation
+@mixin animation($animation, $time, $action, $mode) {
+  -webkit-animation: $animation $time $action $mode;
+  -moz-animation: $animation $time $action $mode;
+  -ms-animation: $animation $time $action $mode;
+  animation: $animation $time $action $mode;
+}
+// icons
+@mixin icon($name,$width: icons-sprite-width($name),$height: icons-sprite-height($name)) {
+  width: $width;
+  height: $height;
+  @include icons-sprite($name);
+  @include inline-block; 
+}

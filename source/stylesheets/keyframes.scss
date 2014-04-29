@@ -1,0 +1,24 @@
+@import "compass";
+@import "mixins";
+
+@include keyframes(scaleUpFadeOut) {
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@include keyframes(scaleDownFadeIn) {
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+

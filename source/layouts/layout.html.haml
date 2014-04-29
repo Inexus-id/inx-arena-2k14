@@ -2,45 +2,92 @@
 %html
   %head
     %meta(charset="utf-8")
-    
+
     <!-- Always force latest IE rendering engine or request Chrome Frame -->
     %meta(content="IE=edge,chrome=1" http-equiv="X-UA-Compatible")
     <!-- responsive viewport -->
     %meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1")
-    
+
     <!-- Use title if it's in the page YAML frontmatter -->
     %title= current_page.data.title || "INX-Arena"
-    
+
     = stylesheet_link_tag "all"
     = javascript_include_tag  "all"
-  
+
   %body
-    %header
+    %header#header
+      #header-countdown
+        Cuenta atrás
+        %span.kkcountdown(data-time="1403788222")
       %nav
         %ul#nav-links
           %li.nav-link#news
-            %a(href="#") 
+            %a(href="#")
               %span.icon
               Noticias
-          %li.nav-link#cal 
+          %li.nav-link#cal
             %a(href="#")
               %span.icon
               Calendario
           %li.nav-link#logo
             %a(href="/")
               %span.icon
-              INX-ARENA   
-          %li.nav-link#tournaments 
+              INX-ARENA
+          %li.nav-link#tournaments
             %a(href="#")
               %span.icon
               Torneos
-          %li.nav-link#tickets 
+          %li.nav-link#tickets
             %a(href="#")
               %span.icon
               Entradas
 
     = yield
 
-    %footer
-      Copyright ©2014 inxexus-id. Todos los Derechos Reservados.
-      
+    %footer#footer
+      #footer-content
+        #footer-separator-top
+          %span.line
+          %span.stars
+            %span.icon-stars
+          %span.line
+
+        %ul#footer-sponsors
+          - data.sponsors.each do |sponsor|
+            %li.icon-sponsor{id: sponsor.name}
+              %a(href="#{sponsor['url']}")
+                %span.icon
+
+        #footer-separator-bottom
+          %span.line
+
+        %ul#footer-links
+          %li.footer-link
+            %a(href="#")
+              Términos y condiciones
+          %li.footer-link
+            %a(href="#")
+              Privacidad
+          %li.footer-link
+            %a(href="#")
+              Blog
+          %li.footer-link
+            %a(href="#")
+              Twitter
+          %li.footer-link
+            %a(href="#")
+              Facebook
+          %li.footer-link
+            %a(href="#")
+              Contacto
+
+      #copyright
+        Copyright inexus arena 2014©
+    :javascript
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-17886834-1', 'inx-arena.com');
+      ga('send', 'pageview');

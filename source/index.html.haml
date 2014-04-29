@@ -1,2 +1,52 @@
-%section#message
-  %p Torneo League Of Legends
+---
+tournaments: 
+  - 
+    id: lol
+    name: League Of Legends
+  -
+    id: sc2
+    name: Starcraft 2
+
+events: []
+---
+%section#home
+  %ul#home-header
+    -current_page.data.tournaments.each_with_index do |t,i|
+      %li.home-header-slide{id: t.id, class: (i == 0 ? 'active' : '')}
+        .home-header-slide-content
+          %h2.home-header-slide-title
+            Torneo
+          .home-header-tournament-info  
+            %h3.home-header-tournament-name
+              =t.name
+            %a.home-header-tournament-link(href='#')
+              Próximamente
+  .slide-stars    
+
+%section#home-content
+  #home-content-calendar
+    %h3#home-content-calendar-title
+      Calendario
+    - if current_page.data.events.size > 0
+      %ul#home-content-calendar-list
+        -current_page.data.events.each do |e|
+          %li.home-content-calendar{id: e.id}
+            .calendar-title
+              =e.date
+            .calendar-event
+              =e.name
+    - else
+      #home-content-calendar-empty
+        Próximamente
+  #home-content-tournaments
+    %h3#home-content-main-title
+      Torneos
+    %a#home-content-tournaments-all-links(href="#")
+      Todos los torneos
+    %ul#home-content-tournament-list
+      -current_page.data.tournaments.each do |t|
+        %li.home-content-tournament{id: t.id}
+          %a.home-content-tournament-link(href="#")
+            %span.icon
+            %span.home-content-tournament-name
+              =t.name
