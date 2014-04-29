@@ -380,6 +380,7 @@ footer#footer {
         @include inline-block;
         min-width: columns(2,12);
         margin-bottom: 10px;
+        padding: 1px 10px 10px 10px; 
       }
       @each $sponsor in $sponsors {
         $name: $sponsor;
