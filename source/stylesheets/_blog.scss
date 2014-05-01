@@ -1,0 +1,103 @@
+a:hover, a:visited {
+  color: white;
+}
+
+.rte, .rte blockquote {
+  color: white;
+  font-weight: 400;
+  text-transform: initial;
+}
+
+.rte blockquote {
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+#page-wrap {
+  width: 100%;
+  min-height: 500px;
+  margin: 0;
+  padding-bottom: 0;
+}
+
+
+
+#container-wrap {
+  width: 1120px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: uppercase;
+}
+
+#container-top {
+  height: 28px;
+  background: transparent;
+}
+
+#container-top, #container, #container-bottom {
+  width: 100%;
+}
+
+#container {
+  min-height: 600px;
+  background: transparent;
+  position: relative;
+}
+
+#container-bottom {
+  background: transparent;
+}
+
+.meta a {
+  line-height: 24px;
+}
+
+section#tools {
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  position: fixed;
+  top: 300px;
+  padding: 10px;
+}
+
+#tools li#search a {
+  background-position: -555px -13px;
+}
+
+#tools li#rss a {
+  background-position: -555px -112px;
+}
+
+#tools li#random a {
+  background-position: -555px -79px;
+} 
+
+#tools li#archive a {
+  background-position: -555px -46px;
+}
+
+#tools li#search-field {
+  height: 36px;
+  top: -7px;
+}
+
+#tools input {
+  top: 0px;
+  height: 30px;
+}
