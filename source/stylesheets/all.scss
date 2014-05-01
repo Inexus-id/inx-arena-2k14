@@ -229,11 +229,9 @@ section#home {
 
 footer#footer {
   margin-top: 56px;
-
   #footer-content {
     @include container;
     margin-bottom: 44px;
-
     #footer-separator-top {
       @include span-columns(8,12);
       @include prefix(2);
@@ -244,7 +242,6 @@ footer#footer {
         border-top: 1px solid white;
         margin-top: 12px;
       }
-
       span.stars {
         @include span-columns(2,8);
         @include inline-block;
