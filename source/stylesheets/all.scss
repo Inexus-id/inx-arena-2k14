@@ -85,7 +85,7 @@ header#header {
         }
 
         a:hover {
-          text-shadow: -3px -1px 6px rgba(204, 51, 51, 1);
+          @include text-shadow(rgba(204, 51, 51, 1) -3px -1px 6px);
 
           span.icon {
             @include icons-sprite(bloodystars);
@@ -368,7 +368,7 @@ section#calendar {
     background-position: center;
     padding-top: 36px;
 
-    #calendar-content-date {
+    .calendar-content-date {
       @include span-columns(4,12);
       @include pre(4);
       height: 28px;
@@ -385,7 +385,7 @@ section#calendar {
       }
     }
 
-    ul#calendar-content-list {
+    ul.calendar-content-list {
       @include span-columns(6,12);
       @include pre(3);
       margin-bottom: 40px;
@@ -422,12 +422,14 @@ section#calendar {
           font-size: 16px;
           text-align: left;
 
-          .calendar-content-info-title {
+          .calendar-content-info-streaming:hover a {
+            @include text-shadow(rgba(204, 51, 51, 1) -3px -1px 6px);
           }
 
-          .calendar-content-info-date {
+          .calendar-content-info-date, .calendar-content-info-title {
             margin-bottom: 6px;  
           }
+
        }
       }
     }

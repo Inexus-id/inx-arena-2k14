@@ -1,172 +1,174 @@
 -
   day: jueves
   events:
-    time_start: 18:00
-    time_end: 19:30
-    description: Primera fase 64 equipos
-    streaming: false
-    type: 
-    
-    time_start: 19:30
-    time_end: 20:00
-    description: HS 1/256
-    streaming: false
-    type: PC
-    
-    time_start: 20:00
-    time_end: 21:30
-    description: Segunda fase 32 equipos
-    streaming: false
-    type:
-    
-    time_start: 21:30
-    time_end: 20:30
-    description: HS 1/128
-    streaming: false
-    type: PC
-
-    time_start: 22:00
-    time_end: 23:00
-    description: Tercera fase 16 equipos
-    streaming: false
-    type:
-
+    -
+      time_start: "18:00"
+      time_end: "19:30"
+      description: Primera fase 64 equipos
+      streaming: false
+      type: PC LOL
+    -
+      time_start: "19:30"
+      time_end: "20:00"
+      description: HS 1/256
+      streaming: false
+      type: PC HS
+    -
+      time_start: "20:00"
+      time_end: "21:30"
+      description: Segunda fase 32 equipos
+      streaming: false
+      type: PC LOL
+    -
+      time_start: "21:30"
+      time_end: "20:30"
+      description: HS 1/128
+      streaming: false
+      type: PC HS
+    -
+      time_start: "22:00"
+      time_end: "23:00"
+      description: Tercera fase 16 equipos
+      streaming: false
+      type: PC LOL 
 - 
   day: viernes
   events:
-    time_start: 9:00
-    time_end: 10:30
-    description: Cuarta fase 8 equipos
-    streaming: true
-    type:
-
-    time_start: 10:30
-    time_end: 11:30
-    description: HS 1/64
-    streaming: false
-    type: PC
-
-    time_start: 12:00
-    time_end: 14:30
-    description: Bracket Qi 8 Equipos
-    streaming: true
-    type:
-
-    time_start: 15:00
-    time_end: 16:30
-    description: CS:GO 8 Equipos
-    streaming: false
-    type: PC
-
-    time_start: 16:00
-    time_end: domingo 13:30
-    description: Torneo FIFA 2014
-    streaming: false
-    type: Consola
-
-    time_start: 16:30
-    time_end: 17:30
-    description: HS 1/32
-    streaming: false
-    type: PC
-
-    time_start: 18:00
-    time_end: 20:00
-    description: Bracket Qi 8 Equipos
-    streaming: true
-    type:
-
-    time_start: 20:30
-    time_end: 22:00
-    description: CS:GO 8 Equipos
-    streaming: false
-    type: PC
-
-    time_start: 22:00
-    time_end: 23:00
-    description: HS 1/16 
-    streaming: false
-    type: PC
-
+    -
+      time_start: "9:00"
+      time_end: "10:30"
+      description: Cuarta fase 8 equipos
+      streaming: true
+      type: PC LOL
+    -
+      time_start: "10:30"
+      time_end: "11:30"
+      description: HS 1/64
+      streaming: false
+      type: PC HS
+    -
+      time_start: "12:00"
+      time_end: "14:30"
+      description: Bracket Qi 8 Equipos
+      streaming: true
+      type: PC LOL
+    -
+      time_start: "15:00"
+      time_end: "16:30"
+      description: CS:GO 8 Equipos
+      streaming: false
+      type: PC LOL
+    -
+      time_start: "16:00"
+      time_end: "domingo 13:30"
+      description: Torneo FIFA 2014
+      streaming: false
+      type: Consola FIFA 2014
+    -
+      time_start: "16:30"
+      time_end: "17:30"
+      description: HS 1/32
+      streaming: false
+      type: PC HS
+    -
+      time_start: "18:00"
+      time_end: "20:00"
+      description: Bracket Qi 8 Equipos
+      streaming: true
+      type: PC LOL
+    -
+      time_start: "20:30"
+      time_end: "22:00"
+      description: CS:GO 8 Equipos
+      streaming: false
+      type: PC CS:GO
+    -
+      time_start: "22:00"
+      time_end: "23:00"
+      description: HS 1/16 
+      streaming: false
+      type: PC HS
 -
   day: sabado
   events:
-    time_start: 9:00
-    time_end: 10:30
-    description: CS:GO 6 Equipos
-    streaming: false
-    type: PC
-    
-    time_start: 10:30
-    time_end: 11:30
-    description: HS 1/8
-    streaming: false
-    type: PC
-    
-    time_start: 12:00
-    time_end: 14:00
-    description: Bracket Qi 6 Equipos
-    streaming: true
-    type:
-    
-    time_start: 14:00
-    time_end: 14:30
-    description: HS 1/4 final
-    streaming: false
-    type: PC
-    
-    time_start: 14:30
-    time_end: 16:00
-    description: CS:GO Semifinal Losers
-    streaming: false
-    type: PC
-    
-    time_start: 16:00
-    time_end: 18:00
-    description: Semifinal Losers
-    streaming: true
-    type:
-
-    time_start: 18:00
-    time_end: 21:00
-    description: CS:GO Final Losers
-    streaming: false
-    type: PC
-
-    time_start: 21:00
-    time_end: 21:30
-    description: HS Semifinal
-    streaming: false
-    type: PC
-
-    time_start: 21:30
-    time_end: 23:00
-    description: Final Qi Loser
-    streaming: true
-    type:
+    -
+      time_start: "9:00"
+      time_end: "10:30"
+      description: CS:GO 6 Equipos
+      streaming: false
+      type: PC CS:GO
+    -
+      time_start: "10:30"
+      time_end: "11:30"
+      description: HS 1/8
+      streaming: false
+      type: PC HS
+    -
+      time_start: "12:00"
+      time_end: "14:00"
+      description: Bracket Qi 6 Equipos
+      streaming: true
+      type: PC LOL
+    -
+      time_start: "14:00"
+      time_end: "14:30"
+      description: HS 1/4 final
+      streaming: false
+      type: PC HS
+    -
+      time_start: "14:30"
+      time_end: "16:00"
+      description: CS:GO Semifinal Losers
+      streaming: false
+      type: PC CS:GO
+    -
+      time_start: "16:00"
+      time_end: "18:00"
+      description: Semifinal Losers
+      streaming: true
+      type: PC LOL
+    -
+      time_start: "18:00"
+      time_end: "21:00"
+      description: CS:GO Final Losers
+      streaming: false
+      type: PC LOL
+    -
+      time_start: "21:00"
+      time_end: "21:30"
+      description: HS Semifinal
+      streaming: false
+      type: PC HS
+    -
+      time_start: "21:30"
+      time_end: "23:00"
+      description: Final Qi Loser
+      streaming: true
+      type: PC LOL
 - 
   day: domingo
   events:
-    time_start: 9:00
-    time_end: 11:00
-    description: CS:GO Final
-    streaming: true
-    type: PC
-
-    time_start: 11:00
-    time_end: 12:00
-    description: Final HS
-    streaming: true
-    type: PC
-
-    time_start: 12:00
-    time_end: 17:00
-    description: Final QI Winner
-    streaming: true
-    type:
-
-    time_start: 18:00
-    time_end: 18:30
-    description: Entrega de premios
-    streaming: true
-    type:
+    -
+      time_start: "9:00"
+      time_end: "11:00"
+      description: CS:GO Final
+      streaming: true
+      type: PC CS:GO
+    -
+      time_start: 11:00
+      time_end: 12:00
+      description: Final HS
+      streaming: true
+      type: PC HS
+    -
+      time_start: "12:00"
+      time_end: "17:00"
+      description: Final QI Winner
+      streaming: true
+      type: PC LOL
+    -
+      time_start: "18:00"
+      time_end: "18:30"
+      description: Entrega de premios
+      streaming: true
+      type: Final

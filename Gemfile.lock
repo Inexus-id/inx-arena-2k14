@@ -9,10 +9,17 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.7.0)
+    columnize (0.3.6)
     compass (0.12.4)
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.2.17)
+    debugger (1.6.6)
+      columnize (>= 0.3.1)
+      debugger-linecache (~> 1.2.0)
+      debugger-ruby_core_source (~> 1.3.2)
+    debugger-linecache (1.2.0)
+    debugger-ruby_core_source (1.3.2)
     em-websocket (0.5.0)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.5.3)
@@ -103,6 +110,7 @@ PLATFORMS
 
 DEPENDENCIES
   compass
+  debugger
   font-awesome-middleman
   middleman (~> 3.2.2)
   middleman-livereload (~> 3.1.0)
