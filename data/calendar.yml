@@ -10,7 +10,7 @@
     -
       time_start: "19:30"
       time_end: "20:00"
-      description: HS 1/256
+      description: HS primera ronda 256 jugadores
       streaming: false
       type: PC HS
     -
@@ -21,8 +21,8 @@
       type: PC LOL
     -
       time_start: "21:30"
-      time_end: "20:30"
-      description: HS 1/128
+      time_end: "22:30"
+      description: HS segunda ronda 128 jugadores
       streaming: false
       type: PC HS
     -
@@ -43,7 +43,7 @@
     -
       time_start: "10:30"
       time_end: "11:30"
-      description: HS 1/64
+      description: HS tercera ronda 64 jugadores
       streaming: false
       type: PC HS
     -
@@ -67,7 +67,7 @@
     -
       time_start: "16:30"
       time_end: "17:30"
-      description: HS 1/32
+      description: HS cuarta ronda 32 jugadores
       streaming: false
       type: PC HS
     -
@@ -85,7 +85,7 @@
     -
       time_start: "22:00"
       time_end: "23:00"
-      description: HS 1/16 
+      description: HS quinta ronda 16 jugadores 
       streaming: false
       type: PC HS
 -
@@ -100,7 +100,7 @@
     -
       time_start: "10:30"
       time_end: "11:30"
-      description: HS 1/8
+      description: HS octavos de final
       streaming: false
       type: PC HS
     -
@@ -112,7 +112,7 @@
     -
       time_start: "14:00"
       time_end: "14:30"
-      description: HS 1/4 final
+      description: HS cuartos de final
       streaming: false
       type: PC HS
     -
@@ -155,8 +155,8 @@
       streaming: true
       type: PC CS:GO
     -
-      time_start: 11:00
-      time_end: 12:00
+      time_start: "11:00"
+      time_end: "12:00"
       description: Final HS
       streaming: true
       type: PC HS
