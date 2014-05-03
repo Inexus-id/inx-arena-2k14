@@ -1,0 +1,117 @@
+section#home-content {
+  @include container;
+
+  #home-content-calendar {
+    @include span-columns(6,12);
+
+    #home-content-calendar-title {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 300;
+      font-size: 24px;
+      margin-bottom: 18px;
+      text-align: left;
+    }
+
+    #home-content-calendar-empty {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 300;
+      font-size: 18px;
+      text-align: left;
+      margin-bottom: 5px;
+    }
+
+    #home-content-calendar-list {
+      .home-content-calendar {
+        margin-bottom: 20px;
+
+        .calendar-title {
+          font-family: 'Raleway', sans-serif;
+          font-weight: 300;
+          font-size: 18px;
+          text-align: left;
+          margin-bottom: 5px;
+        }
+
+        .calendar-event {
+          font-family: 'Raleway', sans-serif;
+          font-weight: 300;
+          text-align: left;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  #home-content-tournaments {
+    @include span-columns(6 omega, 12);
+
+    h3#home-content-main-title {
+      @include span-columns(3, 6);
+      @include inline-block;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 300;
+      font-size: 24px;
+      text-align: left;
+    }
+
+    a#home-content-tournaments-all-links {
+      @include span-columns(3 omega, 6);
+      font-family: 'Raleway', sans-serif;
+      font-weight: 200;
+      font-size: 18px;
+      text-decoration: none;
+      line-height: 26px;
+      text-align: right;
+    }
+
+    ul#home-content-tournament-list {
+      @include span-columns(6, 6);
+      margin-top: 20px;
+
+      #lol {
+        a.home-content-tournament-link{
+          span.icon{
+            background-image: url('/images/LOL.png');
+          }
+        }
+      }
+
+      #sc2 {
+        a.home-content-tournament-link{
+          span.icon{
+            background-image: url('/images/sc2.png');
+          }
+        }
+      }
+
+      li.home-content-tournament {
+        background-color: white;
+        margin-bottom: 8px;
+        text-align: left;
+
+        &:last-child { margin-bottom: 0; }
+
+        a.home-content-tournament-link {
+          @include inline-block;
+          height: 100%;
+          width: 100%;
+
+          span.home-content-tournament-name {
+            @include inline-block;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+            color: black;
+            margin-left: 20px;
+          }
+
+          span.icon {
+            @include inline-block;
+            height: 110px;
+            width: 110px;
+          }
+        }
+      }
+    }
+  }
+}
