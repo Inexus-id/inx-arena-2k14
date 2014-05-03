@@ -1,6 +1,6 @@
 -
   day: jueves
-    
+  events:
     time_start: 18:00
     time_end: 19:30
     description: Primera fase 64 equipos
@@ -33,7 +33,7 @@
 
 - 
   day: viernes
-    
+  events:
     time_start: 9:00
     time_end: 10:30
     description: Cuarta fase 8 equipos
@@ -90,7 +90,7 @@
 
 -
   day: sabado
-    
+  events:
     time_start: 9:00
     time_end: 10:30
     description: CS:GO 6 Equipos
@@ -146,7 +146,7 @@
     type:
 - 
   day: domingo
-    
+  events:
     time_start: 9:00
     time_end: 11:00
     description: CS:GO Final
