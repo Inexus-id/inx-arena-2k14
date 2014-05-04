@@ -1,5 +1,8 @@
 window.inxArenaCal = <%= data.calendar.to_json %>
 
+Handlebars.registerHelper "dateToString", (datetime)->
+  new Date(datetime).toLocaleString().split(" ")[0]
+
 window.calculateNextEvents =  () ->
   events = []
   currentTime = new Date().getTime() 
@@ -8,7 +11,8 @@ window.calculateNextEvents =  () ->
       for event in day.events
         if event.timestamp_end > currentTime
           events.push event 
-  events[0..2]
+  events[0..3]
+
 window.replaceEvents = () ->
   eventsObject = {events: calculateNextEvents()}
   template = HandlebarsTemplates['calendar_ul'](eventsObject)
