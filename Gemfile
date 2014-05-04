@@ -13,3 +13,4 @@ gem 'font-awesome-middleman'
 gem "rack-contrib"
 gem "puma"
 gem "debugger"
+gem 'handlebars_assets'

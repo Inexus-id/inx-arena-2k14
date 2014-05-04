@@ -1,0 +1,12 @@
+<ul id="home-content-calendar-list">
+  {{#each events}}
+  <li class="home-content-calendar">
+    <div class="calendar-title">
+      {{this.description}}
+    </div>
+    <div class="calendar-event">
+      {{this.time_start}}
+    </div>
+  </li>
+  {{/each}}
+</ul>

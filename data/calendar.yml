@@ -1,5 +1,6 @@
 -
-  day: jueves
+  day: Jueves  26 de junio, 2014
+  timestamp: 1403740800000
   events:
     -
       time_start: "18:00"
@@ -7,6 +8,8 @@
       description: Primera fase 64 equipos
       streaming: false
       type: PC LOL
+      timestamp_start: 1403891940000
+      timestamp_end: 1403897340000
     -
       time_start: "19:30"
       time_end: "20:00"
@@ -32,7 +35,8 @@
       streaming: false
       type: PC LOL 
 - 
-  day: viernes
+  day: Viernes  27 de junio, 2014
+  timestamp: 1403827200000
   events:
     -
       time_start: "9:00"
@@ -89,7 +93,8 @@
       streaming: false
       type: PC HS
 -
-  day: sabado
+  day: Sabado  28 de junio, 2014
+  timestamp: 1403913600000
   events:
     -
       time_start: "9:00"
@@ -146,7 +151,8 @@
       streaming: true
       type: PC LOL
 - 
-  day: domingo
+  day: Domingo  29 de junio, 2014
+  timestamp: 1404000000000
   events:
     -
       time_start: "9:00"
