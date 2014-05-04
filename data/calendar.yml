@@ -16,24 +16,32 @@
       description: HS primera ronda 256 jugadores
       streaming: false
       type: PC HS
+      timestamp_start: 1403807400000
+      timestamp_end: 1403809200000
     -
       time_start: "20:00"
       time_end: "21:30"
       description: Segunda fase 32 equipos
       streaming: false
       type: PC LOL
+      timestamp_start: 1403809200000
+      timestamp_end: 1403814600000
     -
       time_start: "21:30"
       time_end: "22:30"
       description: HS segunda ronda 128 jugadores
       streaming: false
       type: PC HS
+      timestamp_start: 1403814600000
+      timestamp_end: 1403818200000
     -
       time_start: "22:00"
       time_end: "23:00"
       description: Tercera fase 16 equipos
       streaming: false
       type: PC LOL 
+      timestamp_start: 1403816400000
+      timestamp_end: 1403820000000
 - 
   day: Viernes  27 de junio, 2014
   timestamp: 1403827200000
@@ -44,54 +52,72 @@
       description: Cuarta fase 8 equipos
       streaming: true
       type: PC LOL
+      timestamp_start: 1403856000000
+      timestamp_end: 1403861400000
     -
       time_start: "10:30"
       time_end: "11:30"
       description: HS tercera ronda 64 jugadores
       streaming: false
       type: PC HS
+      timestamp_start: 1403861400000
+      timestamp_end: 1403865000000
     -
       time_start: "12:00"
       time_end: "14:30"
       description: Bracket Qi 8 Equipos
       streaming: true
       type: PC LOL
+      timestamp_start: 1403866800000
+      timestamp_end: 1403875800000
     -
       time_start: "15:00"
       time_end: "16:30"
       description: CS:GO 8 Equipos
       streaming: false
       type: PC LOL
+      timestamp_start: 1403877600000
+      timestamp_end: 1403883000000
     -
       time_start: "16:00"
       time_end: "domingo 13:30"
       description: Torneo FIFA 2014
       streaming: false
       type: Consola FIFA 2014
+      timestamp_start: 1403881200000
+      timestamp_end: 1404045000000
     -
       time_start: "16:30"
       time_end: "17:30"
       description: HS cuarta ronda 32 jugadores
       streaming: false
       type: PC HS
+      timestamp_start: 1403883000000
+      timestamp_end: 1403886600000
     -
       time_start: "18:00"
       time_end: "20:00"
       description: Bracket Qi 8 Equipos
       streaming: true
       type: PC LOL
+      timestamp_start: 1403888400000
+      timestamp_end: 1403895600000
     -
       time_start: "20:30"
       time_end: "22:00"
       description: CS:GO 8 Equipos
       streaming: false
       type: PC CS:GO
+      timestamp_start: 1403897400000
+      timestamp_end: 1403902800000
     -
       time_start: "22:00"
       time_end: "23:00"
       description: HS quinta ronda 16 jugadores 
       streaming: false
       type: PC HS
+      timestamp_start: 1403902800000
+      timestamp_end: 1403906400000
 -
   day: Sabado  28 de junio, 2014
   timestamp: 1403913600000
@@ -102,54 +128,72 @@
       description: CS:GO 6 Equipos
       streaming: false
       type: PC CS:GO
+      timestamp_start: 1403942400000
+      timestamp_end: 1403947800000
     -
       time_start: "10:30"
       time_end: "11:30"
       description: HS octavos de final
       streaming: false
       type: PC HS
+      timestamp_start: 1403947800000
+      timestamp_end: 1403951400000
     -
       time_start: "12:00"
       time_end: "14:00"
       description: Bracket Qi 6 Equipos
       streaming: true
       type: PC LOL
+      timestamp_start: 1403953200000
+      timestamp_end: 1403960400000
     -
       time_start: "14:00"
       time_end: "14:30"
       description: HS cuartos de final
       streaming: false
       type: PC HS
+      timestamp_start: 1403960400000
+      timestamp_end: 1403962200000
     -
       time_start: "14:30"
       time_end: "16:00"
       description: CS:GO Semifinal Losers
       streaming: false
       type: PC CS:GO
+      timestamp_start: 1403962200000
+      timestamp_end: 1403967600000
     -
       time_start: "16:00"
       time_end: "18:00"
       description: Semifinal Losers
       streaming: true
       type: PC LOL
+      timestamp_start: 1403967600000
+      timestamp_end: 1403974800000
     -
       time_start: "18:00"
       time_end: "21:00"
       description: CS:GO Final Losers
       streaming: false
       type: PC LOL
+      timestamp_start: 1403974800000
+      timestamp_end: 1403985600000
     -
       time_start: "21:00"
       time_end: "21:30"
       description: HS Semifinal
       streaming: false
       type: PC HS
+      timestamp_start: 1403985600000
+      timestamp_end: 1403987400000
     -
       time_start: "21:30"
       time_end: "23:00"
       description: Final Qi Loser
       streaming: true
       type: PC LOL
+      timestamp_start: 1403987400000
+      timestamp_end: 1403992800000
 - 
   day: Domingo  29 de junio, 2014
   timestamp: 1404000000000
@@ -160,21 +204,29 @@
       description: CS:GO Final
       streaming: true
       type: PC CS:GO
+      timestamp_start: 1404028800000
+      timestamp_end: 1404036000000
     -
       time_start: "11:00"
       time_end: "12:00"
       description: Final HS
       streaming: true
       type: PC HS
+      timestamp_start: 1404036000000
+      timestamp_end: 1404039600000
     -
       time_start: "12:00"
       time_end: "17:00"
       description: Final QI Winner
       streaming: true
       type: PC LOL
+      timestamp_start: 1404039600000
+      timestamp_end: 1404057600000
     -
       time_start: "18:00"
       time_end: "18:30"
       description: Entrega de premios
       streaming: true
       type: Final
+      timestamp_start: 1404061200000
+      timestamp_end: 1404063000000
