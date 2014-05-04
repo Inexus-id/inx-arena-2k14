@@ -1,0 +1,15 @@
+-
+  id: sc2
+  name: Starcraft 2
+  description:
+    - Starcraft II The Wings of Liberty sigue siendo el RTS del momento.
+    - ¿A qué esperas para demostrar tus skills en nuestro torneo 1v1?
+  official_link: "http://eu.battle.net/sc2/es/"
+  image_path: "/images/starcraft2.jpg"
+  format: 1VS1
+  awards:
+    - Gráfica Club3D HD 7870
+    - Teclado Logitech G19
+  participants: 32
+  platform: PC último parche
+  rules: Eliminación simple(Bol), a partir de cuartos se jugará Bol3 y la final a Bo5. TBA
