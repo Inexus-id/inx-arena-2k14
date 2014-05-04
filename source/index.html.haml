@@ -6,8 +6,6 @@ tournaments:
   -
     id: sc2
     name: Starcraft 2
-
-events: []
 ---
 %section#home
   %ul#home-header
@@ -27,17 +25,8 @@ events: []
   #home-content-calendar
     %h3#home-content-calendar-title
       Calendario
-    - if current_page.data.events.size > 0
-      %ul#home-content-calendar-list
-        -current_page.data.events.each do |e|
-          %li.home-content-calendar{id: e.id}
-            .calendar-title
-              =e.date
-            .calendar-event
-              =e.name
-    - else
-      #home-content-calendar-empty
-        Próximamente
+    #home-content-calendar-list
+      Cargando
   #home-content-tournaments
     %h3#home-content-main-title
       Torneos
