@@ -1,0 +1,8 @@
+%section#tournaments
+  %ul#tournaments-list
+    - data.tournaments.each do |t|
+      %li.tournament{id: t.id}
+        %a.tournament-link(href="/tournaments/#{t.id}")
+          %span.icon
+          %span.tournament-name
+            =t.name
