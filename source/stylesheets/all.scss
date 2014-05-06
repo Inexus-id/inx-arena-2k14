@@ -2,11 +2,6 @@
 @import "compass";
 @import "compass/reset";
 @import "susy";
-@import "mixins";
-@import "keyframes";
-@import "sponsors";
-@import "index";
-@import "blog";
 
 @import "icons/*.png";
 @include all-icons-sprites;
@@ -17,6 +12,14 @@ $gutter-width:  20px;
 $grid-padding:  10px;
 $container-style: static;
 $container-width: 1140px;
+
+@import "mixins";
+@import "keyframes";
+@import "sponsors";
+@import "index";
+@import "blog";
+@import "calendar";
+@import "terms-and-conditions";
 
 a {
   @include unstyled-link;
@@ -87,7 +90,7 @@ header#header {
         }
 
         a:hover {
-          text-shadow: -3px -1px 6px rgba(204, 51, 51, 1);
+          @include text-shadow(rgba(204, 51, 51, 1) -3px -1px 6px);
 
           span.icon {
             @include icons-sprite(bloodystars);
@@ -104,6 +107,9 @@ header#header {
             margin-top: 1px;
             height: 277px;
             overflow: hidden;
+            &:hover {
+              @include text-shadow(rgba(204, 51, 51, 0) 0 0 0)
+            }
           }
 
           span.icon {
@@ -115,132 +121,6 @@ header#header {
         }
       }
     }
-  }
-}
-
-section#home {
-  margin-bottom: 34px;
-
-  .slide-stars {
-    @include icon(slidestars);
-    height: 88px;
-    margin-top: -42px;
-    z-index: 1;
-    position: relative;
-  }
-
-  ul#home-header {
-    list-style: none;
-    overflow: hidden;
-    height: 405px;
-    width: 100%;
-    max-width: 100%;
-    position: relative;
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-
-    .home-header-slide {
-      @include transition-property(opacity);
-      overflow: hidden;
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      pointer-events: none;
-      opacity: 0;
-      z-index: -1;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 100%;
-
-      &.active {
-        opacity: 1;
-        pointer-events: auto;
-        z-index: 0;
-      }
-
-      &.exit {
-        @include animation(scaleUpFadeOut, 1.2s, forwards, ease-in);
-      }
-
-      &.enter {
-        @include animation(scaleDownFadeIn, 1.2s, forwards, ease-in);
-      }
-
-      &:before {
-        @include filter-gradient(#a60000, #000000, vertical); // IE6-9
-        @include background-image(linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%));
-        display: block;
-        height: 40px;
-        content: "";
-      }
-
-      &:after {
-        @include filter-gradient(#000000, #a60000, vertical); // IE6-9
-        @include background-image(linear-gradient(top,  rgba(0,0,0,0) 78%,rgba(0,0,0,0.65) 100%));
-        display: block;
-        height: 205px;
-        content: "";
-      }
-
-      .home-header-slide-content {
-        @include container;
-
-        .home-header-slide-title {
-          display: block;
-          text-align: left;
-          font-family: 'Raleway', sans-serif;
-          font-weight: 400;
-          font-size: 32px;
-        }
-
-        .home-header-tournament-info {
-          text-align: left;
-
-          .home-header-tournament-name {
-            display: block;
-            text-align: left;
-            font-family: 'Raleway', sans-serif;
-            font-weight: 400;
-            font-size: 60px;
-          }
-
-          .home-header-tournament-link {
-            @include inline-block;
-            margin-top: 20px;
-            font-weight: 400;
-            font-size: 28px;
-            background: black;
-            color: red;
-            padding: 10px;
-          }
-        }
-      }
-    }
-
-    #lol {background-image: url('/images/LOL.jpg')}
-    #sc2 {background-image: url('/images/starcraft.jpg')}
-
-  }
-}
-
-section#terms-and-conditions{
-  @include container;
-  margin-top: 50px;
-
-  .title {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-    font-size: 18px;
-    text-align: left;
-    margin: 10px;
-  }
-
-  p {
-    margin: 10px;
-    text-align:justify;
   }
 }
 

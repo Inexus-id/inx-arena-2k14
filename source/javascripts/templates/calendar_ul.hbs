@@ -1,0 +1,12 @@
+<ul id="home-content-calendar-list">
+  {{#each events}}
+  <li class="home-content-calendar">
+    <div class="home-content-calendar-date">
+      {{dateToString this.timestamp_start}} | {{this.time_start}} - {{this.time_end}}
+    </div>
+    <div class="home-content-calendar-event">
+      {{this.type}}: {{this.description}}
+    </div>
+  </li>
+  {{/each}}
+</ul>

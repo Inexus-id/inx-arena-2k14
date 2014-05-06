@@ -1,0 +1,92 @@
+section#calendar {
+  #calendar-header {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('/images/calendario.jpg');
+    background-size: 100%;
+    height: 200px;
+
+    #calendar-header-title {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 400;
+      font-size: 20px;
+      padding-top: 135px;
+      text-transform: uppercase;
+      @include text-shadow(rgba(105, 105, 105, 0.2) 1px 1px 0, rgba(105, 105, 105, 0.2) 2px 2px 0, rgba(105, 105, 105, 0.2) 3px 3px 0);
+    }
+  }
+
+  #calendar-content {
+    @include container;
+    background-image: url('/images/line.jpg');
+    background-repeat: repeat-y;
+    background-position: center;
+    padding-top: 36px;
+
+    .calendar-content-date {
+      @include span-columns(4,12);
+      @include pre(4);
+      height: 28px;
+      margin-bottom: 50px;
+
+      h3 {
+        background-color: white;
+        color: black;
+        text-align: center;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        margin: 0 40px;
+      }
+    }
+
+    ul.calendar-content-list {
+      @include span-columns(6,12);
+      @include pre(3);
+      margin-bottom: 40px;
+      
+      li.calendar-content {
+        @include span-columns(6,6);
+        font-family: 'Raleway', sans-serif;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+
+        .calendar-content-indicator {
+          margin-bottom: -15px;
+
+          span.icon {
+            @include inline-block;
+            @include border-radius(4px);
+            height: 8px;
+            width: 8px;
+            background: white;
+            margin-left: 2.5px;
+          }
+        }
+
+        .calendar-content-event-type {
+          @include span-columns(3,6);
+          font-weight: 500;
+          font-size: 16px;
+          text-align: right;
+        }
+
+        .calendar-content-info {
+          @include span-columns(3 omega, 6);
+          font-weight: 400;
+          font-size: 16px;
+          text-align: left;
+
+          .calendar-content-info-streaming:hover a {
+            @include text-shadow(rgba(204, 51, 51, 1) -3px -1px 6px);
+          }
+
+          .calendar-content-info-date, .calendar-content-info-title {
+            margin-bottom: 6px;  
+          }
+
+       }
+      }
+    }
+  }
+}
