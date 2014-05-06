@@ -19,6 +19,7 @@ $container-width: 1140px;
 @import "index";
 @import "blog";
 @import "calendar";
+@import "terms-and-conditions";
 
 a {
   @include unstyled-link;
@@ -122,7 +123,6 @@ header#header {
     }
   }
 }
-
 
 footer#footer {
   margin-top: 56px;
