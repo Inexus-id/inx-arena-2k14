@@ -1,5 +1,5 @@
 %section#tournament
-  #tournament-header
+  .tournament-header{id: tournament.id}
     %h2.tournament-header-title
       =tournament.name
   #tournament-content
@@ -18,6 +18,11 @@
         %span.label
           Formato:
         #{tournament.format}
+      -unless tournament.maps.nil?
+        #tournament-details-maps
+          %span.label
+            Mapas:
+          #{tournament.maps}
       #tournament-details-awards
         %h3#tournament-details-awards-title
           %span.label
