@@ -1,0 +1,19 @@
+
+section#terms-and-conditions{
+  @include container;
+  margin-top: 50px;
+
+  .title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: left;
+    margin: 10px;
+  }
+
+  p {
+    margin: 10px;
+    text-align:justify;
+  }
+}
+

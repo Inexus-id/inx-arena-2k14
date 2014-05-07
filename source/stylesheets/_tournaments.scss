@@ -1,0 +1,39 @@
+section#tournaments {
+  ul#tournaments-list {
+    @include container;
+    margin-top: 20px;
+    li.tournament {
+      @include span-columns(6, 12);
+      @include nth-omega(2n);
+      background-color: white;
+      margin-bottom: 8px;
+      text-align: left;
+
+      &:last-child { margin-bottom: 0; }
+
+      a.tournament-link {
+        @include span-columns(6, 6);
+        height: 100%;
+        width: 100%;
+
+        span.tournament-name {
+          @include inline-block;
+          font-family: 'Raleway', sans-serif;
+          font-weight: 400;
+          font-size: 20px;
+          color: black;
+          margin-left: 20px;
+        }
+
+        span.icon {
+          @include inline-block;
+          height: 110px;
+          width: 110px;
+        }
+      }
+
+      &#sc2 .icon { background-image: url('/images/sc2.png'); }
+      &#lol .icon { background-image: url('/images/LOL.png'); }
+    }
+  }
+}
