@@ -1,0 +1,38 @@
+// font styles
+
+%font {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  color: white;
+}
+
+%font-book {
+  @extend %font;
+  font-weight: 300;
+}
+
+%font-regular {
+  @extend %font;
+  font-weight: 400;
+}
+
+%font-medium {
+  @extend %font;
+  font-weight: 500;
+}
+
+// background general helphers.
+
+%background-center {
+  background-position: center;
+}
+
+%background-repeat-y {
+  @extend %background-center;
+  background-repeat: repeat-y;
+}
+ 
+%background-no-repeat {
+  @extend %background-center;
+  background-repeat: no-repeat;
+}

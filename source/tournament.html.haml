@@ -1,0 +1,45 @@
+%section#tournament
+  .tournament-header{id: tournament.id}
+    %h2.tournament-header-title
+      = tournament.name
+  #tournament-content
+    #tournament-info
+      %h2#tournament-info-title
+        Acerca de #{tournament.name}
+      #tournamet-info-description
+        - tournament.description.each do |paragraph|
+          %p= paragraph
+      %a#tournament-info-link{href: tournament.official_link}
+        Web Oficial de #{tournament.name}
+    #tournament-details
+      %h2#tournament-details-title
+        Detalles del torneo
+      #tournament-details-format
+        %span.label
+          Formato:
+        #{tournament.format}
+      - unless tournament.maps.nil?
+        #tournament-details-maps
+          %span.label
+            Mapas:
+          #{tournament.maps}
+      #tournament-details-awards
+        %h3#tournament-details-awards-title
+          %span.label
+            Premios:
+        %ul#tournament-details-awards-list
+          - tournament.awards.each_with_index do |award, idx|
+            %li.tournament-details-award
+              #{idx + 1}º #{award}
+      #tournament-details-participants
+        %span.label
+          Nº participantes:
+        #{tournament.participants} participantes
+      #tournament-details-platform
+        %span.label
+          Plataforma:
+        #{tournament.platform}
+      #tournament-details-rules
+        %span.label
+          Reglas:
+        #{tournament.rules}

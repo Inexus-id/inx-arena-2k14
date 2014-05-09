@@ -1,0 +1,59 @@
+section#tournaments {
+  #tournaments-header {
+    @extend %background-no-repeat;
+    background-image: url('/images/calendario.jpg');
+    background-size: 100%;
+    height: 200px;
+
+    #tournaments-header-title {
+      @extend %font-regular;
+      font-size: 20px;
+      padding-top: 135px;
+      text-transform: uppercase;
+      @include text-shadow(rgba(105, 105, 105, 0.2) 1px 1px 0, rgba(105, 105, 105, 0.2) 2px 2px 0, rgba(105, 105, 105, 0.2) 3px 3px 0);
+    }
+  }
+  ul#tournaments-list {
+    @include container;
+    margin-top: 20px;
+    li.tournament {
+      @include span-columns(6, 12);
+      @include nth-omega(2n);
+      background-color: white;
+      margin-bottom: 8px;
+      text-align: left;
+
+      &:last-child { margin-bottom: 0; }
+
+      a.tournament-link {
+        @include span-columns(6, 6);
+        height: 100%;
+        width: 100%;
+
+        span.tournament-name {
+          @include inline-block;
+          @extend %font-regular;
+          font-size: 20px;
+          color: black;
+          margin-left: 20px;
+        }
+
+        span.icon {
+          @include inline-block;
+          height: 110px;
+          width: 110px;
+        }
+      }
+
+      &#sc2 .icon { background-image: url('/images/sc2.png'); }
+
+      &#lol .icon { background-image: url('/images/LOL.png'); }
+
+      &#hs .icon { background-image: url('/images/hs.png'); }
+
+      &#diablo3 .icon { background-image: url('/images/d3.png'); }
+
+      &#csgo .icon { background-image: url('/images/csgo.png'); }
+    }
+  }
+}

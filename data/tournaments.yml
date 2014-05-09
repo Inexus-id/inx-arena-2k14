@@ -1,0 +1,84 @@
+-
+  id: sc2
+  name: Starcraft 2
+  description:
+    - Starcraft II sigue siendo el RTS del momento.
+    - ¿A qué esperas para demostrar tus skills en nuestro torneo 1v1?
+  official_link: "http://eu.battle.net/sc2/es/"
+  image_path: "/images/starcraft2.jpg"
+  format: 1VS1
+  awards:
+    - Próximamente
+  participants: 32
+  platform: PC último parche
+  rules: "Eliminación simple(Bo1), a partir de cuartos se jugará Bo3 y la final a Bo5. TBA"
+
+-
+  id: csgo
+  name: Counter Strike Global Offensive
+  description: 
+    - Seguimos apostando por el CSGO Canario.
+    - Un clásico imposible de retirar de nuestra cartelería.
+    - Corre busca equipo y consigue premio seguro. 
+  official_link: "http://www.cs-go.es/"
+  image_path: "/images/csgo.jpg"
+  format: 5vs5
+  maps: de_dust2, de_nuke, de_inferno, de_train, de_mirage_ce, de_mirage, de_season, de_cache
+  awards:
+    - 500€
+    - 300€
+    - 200€
+  participants: 16
+  platform: PC
+  rules: Eliminatoria directa (Bo3), posibilidad de bracket winner y loser, segun registro de equipos. TBA
+
+-
+  id: hs
+  name: Hearth Stone
+  description:
+    - ¡Estamos anonadados con la aceptación de este juego!
+    - Ven con tu mazo más bestia y proclámate el más animal de todos.
+  official_link: "http://eu.battle.net/hearthstone/es/"
+  image_path: "/images/hs.jpg"
+  format: 1vs1
+  awards:
+    - Próximamente
+  participants: 128
+  platform: PC
+  rules: Eliminatoria directa (Bo3). Límite de la baraja 3000 Polvos Arcanos. Cada carta de tu baraja costará los siguientes puntos para el límite de 3000. Legendaria - 1600,  Épica - 400, Poco común - 100, Común - 40, Básica - 0. TBA
+
+-
+  id: lol
+  name: League of Legends
+  description:
+    - El League of Legends es uno de los MOBA más importantes, desarrollado por Riot Games.
+    - Apúntate con tu equipo y demuestra quién es el mejor en la Grieta del Invocador.
+  official_link: "http://euw.leagueoflegends.com/es"
+  image_path: "/images/leagueoflegends.jpg"
+  format: 5vs5
+  awards:
+    - 2500€
+    - 1750€
+    - 1000€
+    - 500€
+    - 300€
+    - 300€
+    - 300€
+    - 300€
+  participants: 64
+  platform: PC
+  rules: Eliminación simple (Bo1), los cuatro finalistas entrarán en la bracket QiCanarias, enfrentándose a los cuatro campeones de la liga On-line. La bracket será winner y losers. TBA
+
+-
+  id: diablo3
+  name: Diablo 3
+  description:
+    - Diablo 3 Reaper of Souls ha captado nuestro interés para realizar un evento a lo largo de nuestra LAN.
+  official_link: "http://eu.battle.net/d3/es/"
+  image_path: "images/diablo3.jpg "
+  format: incondicional
+  awards: 
+    - Próximamente
+  participants: sin límite de
+  platform: PC
+  rules: Crear personaje en incondicional a partir del Jueves 26 a las 16h, bajo supervisión del equipo técnico, anotando los datos del personaje y cuenta battlenet. El evento acabará el Domingo 29 a las 14h. Estando por testigo el equipo técnico para anotar level y oro como medida de desempate.

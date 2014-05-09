@@ -77,3 +77,7 @@ configure :build do
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
 end
+
+data.tournaments.each do |t|
+  proxy "/tournaments/#{t.id}.html", "/tournament.html", :locals => { tournament: t }, :ignore => true
+end

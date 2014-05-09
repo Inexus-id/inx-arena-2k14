@@ -22,6 +22,7 @@ section#home {
 
     .home-header-slide {
       @include transition-property(opacity);
+      @extend %background-no-repeat;
       overflow: hidden;
       width: 100%;
       height: 100%;
@@ -31,8 +32,6 @@ section#home {
       pointer-events: none;
       opacity: 0;
       z-index: -1;
-      background-position: center;
-      background-repeat: no-repeat;
       background-size: 100%;
 
       &.active {
@@ -69,10 +68,9 @@ section#home {
         @include container;
 
         .home-header-slide-title {
+          @extend %font-regular;
           display: block;
           text-align: left;
-          font-family: 'Raleway', sans-serif;
-          font-weight: 400;
           font-size: 32px;
         }
 
@@ -80,17 +78,16 @@ section#home {
           text-align: left;
 
           .home-header-tournament-name {
+            @extend %font-regular;
             display: block;
             text-align: left;
-            font-family: 'Raleway', sans-serif;
-            font-weight: 400;
             font-size: 60px;
           }
 
           .home-header-tournament-link {
+            @extend %font-regular;
             @include inline-block;
             margin-top: 20px;
-            font-weight: 400;
             font-size: 28px;
             background: black;
             color: red;
@@ -113,8 +110,7 @@ section#home-content {
     @include span-columns(6,12);
 
     #home-content-calendar-title {
-      font-family: 'Raleway', sans-serif;
-      font-weight: 300;
+      @extend %font-book;
       font-size: 24px;
       margin-bottom: 18px;
       text-align: left;
@@ -128,15 +124,13 @@ section#home-content {
         padding: 10px 0 20px 10px;
 
         .home-content-calendar-date {
-          font-family: 'Raleway', sans-serif;
-          font-weight: 300;
+          @extend %font-book;
           font-size: 18px;
           text-align: left;
           margin-bottom: 10px;
         }
         .home-content-calendar-event {
-          font-family: 'Raleway', sans-serif;
-          font-weight: 300;
+          @extend %font-book;
           text-align: left;
           font-size: 20px;
         }
@@ -171,48 +165,39 @@ section#home-content {
       @include span-columns(6, 6);
       margin-top: 20px;
 
-      #lol {
-        a.home-content-tournament-link{
-          span.icon{
-            background-image: url('/images/LOL.png');
-          }
-        }
-      }
+      #lol span.icon { background-image: url('/images/LOL.png'); }
+      #sc2 span.icon{ background-image: url('/images/sc2.png'); }
+      #csgo span.icon{ background-image: url('/images/csgo.png'); }
+      #hs span.icon{ background-image: url('/images/hs.png'); }
+      #diablo3 span.icon{ background-image: url('/images/d3.png'); }
 
-      #sc2 {
-        a.home-content-tournament-link{
-          span.icon{
-            background-image: url('/images/sc2.png');
-          }
-        }
-      }
+    }
 
-      li.home-content-tournament {
-        background-color: white;
-        margin-bottom: 8px;
-        text-align: left;
+    li.home-content-tournament {
+      background-color: white;
+      margin-bottom: 8px;
+      text-align: left;
 
-        &:last-child { margin-bottom: 0; }
+      &:last-child { margin-bottom: 0; }
 
-        a.home-content-tournament-link {
+      a.home-content-tournament-link {
+        @include inline-block;
+        height: 100%;
+        width: 100%;
+
+        span.home-content-tournament-name {
           @include inline-block;
-          height: 100%;
-          width: 100%;
+          font-family: 'Raleway', sans-serif;
+          font-weight: 400;
+          font-size: 20px;
+          color: black;
+          margin-left: 20px;
+        }
 
-          span.home-content-tournament-name {
-            @include inline-block;
-            font-family: 'Raleway', sans-serif;
-            font-weight: 400;
-            font-size: 20px;
-            color: black;
-            margin-left: 20px;
-          }
-
-          span.icon {
-            @include inline-block;
-            height: 110px;
-            width: 110px;
-          }
+        span.icon {
+          @include inline-block;
+          height: 110px;
+          width: 110px;
         }
       }
     }

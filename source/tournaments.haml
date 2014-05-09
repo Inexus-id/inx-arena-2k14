@@ -1,0 +1,11 @@
+%section#tournaments
+  #tournaments-header
+    %h2#tournaments-header-title
+      Torneos
+  %ul#tournaments-list
+    - data.tournaments.each do |t|
+      %li.tournament{id: t.id}
+        %a.tournament-link(href="/tournaments/#{t.id}")
+          %span.icon
+          %span.tournament-name
+            =t.name
