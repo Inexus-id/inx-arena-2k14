@@ -31,6 +31,7 @@ section#tournament {
     #tournament-info {
       @include span-columns(5,12);
       @extend %font-regular;
+      text-align: left;
 
       h2#tournament-info-title {
         font-size: 24px;
@@ -50,11 +51,13 @@ section#tournament {
       @include span-columns(7 omega,12);
       @extend %font-regular;
       margin-bottom: 10px;
+      text-align: left;
 
       h2#tournament-details-title {
         @extend %font-medium;
         font-size: 24px;
         margin-bottom: 10px;
+        text-align: left;
       }
 
       span.label {
@@ -75,6 +78,7 @@ section#tournament {
         h3#tournament-details-awards-title {
           @extend %font-medium;
           font-size: 20px;
+          text-align: left;
         }
 
         ul#tournament-details-awards-list {
