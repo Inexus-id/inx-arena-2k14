@@ -1,0 +1,195 @@
+a {
+  @include unstyled-link;
+  cursor: pointer;
+}
+
+html {-webkit-font-smoothing: antialiased}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  color: white;
+  background-image: url('/images/bg.jpg');
+  background-repeat: repeat-y;
+  background-position: center;
+  background-color: black;
+}
+
+header#header {
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 277px;
+  background-image: url('/images/topbg.jpg');
+
+  #header-countdown {
+    @include container;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: right;
+    padding-top: 37px;
+
+    .kkcountdown {
+      .kkcountdown-box { margin-left: 10px; }
+      font-weight: 500;
+      .kkc-days-text, .kkc-hours-text, .kkc-min-text, .kkc-sec-text {
+        margin-right: 6px;
+      }
+    }
+  }
+
+  nav{
+    @include container;
+    text-transform: uppercase;
+
+    ul#nav-links {
+      @include horizontal-list;
+
+      li {
+        @include span-columns(2,12);
+        @include nth-omega(5);
+        padding: 0;
+
+        a {
+          @include inline-block;
+          font-family: 'Raleway', sans-serif;
+          font-weight: 300;
+          font-size: 22px;
+          margin-top: 77px;
+          margin-right: -4px;
+
+          span.icon {
+            @include icon(starsmenu);
+            margin: 0 auto -3px auto;
+            display: block;
+          }
+        }
+
+        a:hover {
+          @include text-shadow(rgba(204, 51, 51, 1) -3px -1px 6px);
+
+          span.icon {
+            @include icons-sprite(bloodystars);
+          }
+        }
+
+        &#logo {
+          @include span-columns(4,12);
+          position: relative;
+          z-index: 1;
+
+          a {
+            color: transparent;
+            margin-top: 1px;
+            height: 277px;
+            overflow: hidden;
+            &:hover {
+              @include text-shadow(rgba(204, 51, 51, 0) 0 0 0)
+            }
+          }
+
+          span.icon {
+            background-image: url('/images/logoinx.png');
+            background-position: center;
+            height: 277px;
+            width: 305px;
+         }
+        }
+      }
+    }
+  }
+}
+
+
+footer#footer {
+  margin-top: 56px;
+  #footer-content {
+    @include container;
+    margin-bottom: 44px;
+    #footer-separator-top {
+      @include span-columns(8,12);
+      @include prefix(2);
+      margin-bottom: 26px;
+      span.line {
+        @include span-columns(3,8);
+        @include nth-omega(3);
+        border-top: 1px solid white;
+        margin-top: 12px;
+      }
+      span.stars {
+        @include span-columns(2,8);
+        @include inline-block;
+        height: 42px;
+        text-align: center;
+        span.icon-stars {
+          @include icon(starsmenu);
+          margin-top: -20px;
+        }
+      }
+    }
+
+    ul#footer-sponsors {
+      @include span-columns(12,12);
+      li { 
+        @include inline-block;
+        min-width: columns(2,12);
+        margin-bottom: 10px;
+        padding: 1px 10px 10px 10px; 
+      }
+      @each $sponsor in $sponsors {
+        $name: $sponsor;
+        ##{$sponsor} {
+
+          span.icon {
+            @include icon(#{$name}-white);
+            &:hover{
+              @include icon(#{$name}-red);
+            }
+          }
+        }
+      }
+    }
+
+    #footer-separator-bottom {
+      span.line {
+        @include span-columns(12,12);
+        border-top: 1px solid white;
+      }
+    }
+
+    ul#footer-links {
+      @include horizontal-list;
+      @include inline-block;
+      li.footer-link{
+        border-right: 1px solid white;
+        text-transform: uppercase;
+        margin-top: 27px;
+
+        a{
+          @include inline-block;
+          font-family: 'Raleway', sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+          padding: 0 10px;
+        }
+        &:nth-child(6) {
+          border-right: 0;
+        }
+      }
+    }
+  }
+
+  #copyright {
+    display: block;
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 44px;
+    text-transform: uppercase;
+    margin-top: 2px;
+    background-color: black;
+    color: #CC3333;
+  }
+}
