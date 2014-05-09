@@ -6,33 +6,27 @@ a {
 html {-webkit-font-smoothing: antialiased}
 
 body {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
-  text-align: center;
-  color: white;
+  @extend %font-book;
+  @extend %background-repeat-y;
   background-image: url('/images/bg.jpg');
-  background-repeat: repeat-y;
-  background-position: center;
   background-color: black;
 }
 
 header#header {
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 277px;
+  @extend %background-no-repeat;
   background-image: url('/images/topbg.jpg');
+  height: 277px;
 
   #header-countdown {
     @include container;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 300;
+    @extend %font-book;
     font-size: 18px;
     text-align: right;
     padding-top: 37px;
 
     .kkcountdown {
+      @extend %font-medium;
       .kkcountdown-box { margin-left: 10px; }
-      font-weight: 500;
       .kkc-days-text, .kkc-hours-text, .kkc-min-text, .kkc-sec-text {
         margin-right: 6px;
       }
@@ -53,8 +47,7 @@ header#header {
 
         a {
           @include inline-block;
-          font-family: 'Raleway', sans-serif;
-          font-weight: 300;
+          @extend %font-book;
           font-size: 22px;
           margin-top: 77px;
           margin-right: -4px;
@@ -90,8 +83,8 @@ header#header {
           }
 
           span.icon {
+            @extend %background-center;
             background-image: url('/images/logoinx.png');
-            background-position: center;
             height: 277px;
             width: 305px;
          }
@@ -168,8 +161,7 @@ footer#footer {
 
         a{
           @include inline-block;
-          font-family: 'Raleway', sans-serif;
-          font-weight: 400;
+          @extend %font-regular;
           font-size: 16px;
           padding: 0 10px;
         }
@@ -183,8 +175,7 @@ footer#footer {
   #copyright {
     display: block;
     height: 100%;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
+    @extend %font-regular;
     font-size: 16px;
     line-height: 44px;
     text-transform: uppercase;
