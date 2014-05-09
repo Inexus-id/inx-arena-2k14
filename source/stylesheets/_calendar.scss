@@ -1,14 +1,12 @@
 section#calendar {
   #calendar-header {
-    background-repeat: no-repeat;
-    background-position: center;
+    @extend %background-no-repeat;
     background-image: url('/images/calendario.jpg');
     background-size: 100%;
     height: 200px;
 
     #calendar-header-title {
-      font-family: 'Raleway', sans-serif;
-      font-weight: 400;
+      @extend %font-regular;
       font-size: 20px;
       padding-top: 135px;
       text-transform: uppercase;
@@ -18,9 +16,8 @@ section#calendar {
 
   #calendar-content {
     @include container;
+    @extend %background-repeat-y;
     background-image: url('/images/line.jpg');
-    background-repeat: repeat-y;
-    background-position: center;
     padding-top: 36px;
 
     .calendar-content-date {
@@ -30,11 +27,9 @@ section#calendar {
       margin-bottom: 50px;
 
       h3 {
+        @extend %font-medium;
         background-color: white;
         color: black;
-        text-align: center;
-        font-family: 'Raleway', sans-serif;
-        font-weight: 500;
         font-size: 18px;
         margin: 0 40px;
       }
@@ -47,7 +42,6 @@ section#calendar {
       
       li.calendar-content {
         @include span-columns(6,6);
-        font-family: 'Raleway', sans-serif;
         text-transform: uppercase;
         margin-bottom: 20px;
 
@@ -66,14 +60,14 @@ section#calendar {
 
         .calendar-content-event-type {
           @include span-columns(3,6);
-          font-weight: 500;
+          @extend %font-medium;
           font-size: 16px;
           text-align: right;
         }
 
         .calendar-content-info {
           @include span-columns(3 omega, 6);
-          font-weight: 400;
+          @extend %font-regular;
           font-size: 16px;
           text-align: left;
 
@@ -84,7 +78,6 @@ section#calendar {
           .calendar-content-info-date, .calendar-content-info-title {
             margin-bottom: 6px;  
           }
-
        }
       }
     }

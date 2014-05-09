@@ -4,8 +4,7 @@ section#terms-and-conditions{
   margin-top: 50px;
 
   .title {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
+    @extend %font-medium;
     font-size: 18px;
     text-align: left;
     margin: 10px;

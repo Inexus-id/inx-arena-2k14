@@ -1,14 +1,12 @@
 section#tournaments {
   #tournaments-header {
-    background-repeat: no-repeat;
-    background-position: center;
+    @extend %background-no-repeat;
     background-image: url('/images/calendario.jpg');
     background-size: 100%;
     height: 200px;
 
     #tournaments-header-title {
-      font-family: 'Raleway', sans-serif;
-      font-weight: 400;
+      @extend %font-regular;
       font-size: 20px;
       padding-top: 135px;
       text-transform: uppercase;
@@ -34,8 +32,7 @@ section#tournaments {
 
         span.tournament-name {
           @include inline-block;
-          font-family: 'Raleway', sans-serif;
-          font-weight: 400;
+          @extend %font-regular;
           font-size: 20px;
           color: black;
           margin-left: 20px;
