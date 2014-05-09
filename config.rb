@@ -79,5 +79,5 @@ configure :build do
 end
 
 data.tournaments.each do |t|
-  proxy "/tournaments/#{t.id}.html", "/tournament.html", :locals => { :tournament => t }, :ignore => true
+  proxy "/tournaments/#{t.id}.html", "/tournament.html", :locals => { tournament: t }, :ignore => true
 end

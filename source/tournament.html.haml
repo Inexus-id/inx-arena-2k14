@@ -1,14 +1,14 @@
 %section#tournament
   .tournament-header{id: tournament.id}
     %h2.tournament-header-title
-      =tournament.name
+      = tournament.name
   #tournament-content
     #tournament-info
       %h2#tournament-info-title
         Acerca de #{tournament.name}
       #tournamet-info-description
-        -tournament.description.each do |paragraph|
-          %p=paragraph
+        - tournament.description.each do |paragraph|
+          %p= paragraph
       %a#tournament-info-link{href: tournament.official_link}
         Web Oficial de #{tournament.name}
     #tournament-details
@@ -18,7 +18,7 @@
         %span.label
           Formato:
         #{tournament.format}
-      -unless tournament.maps.nil?
+      - unless tournament.maps.nil?
         #tournament-details-maps
           %span.label
             Mapas:
@@ -28,7 +28,7 @@
           %span.label
             Premios:
         %ul#tournament-details-awards-list
-          -tournament.awards.each_with_index do |award, idx|
+          - tournament.awards.each_with_index do |award, idx|
             %li.tournament-details-award
               #{idx + 1}º #{award}
       #tournament-details-participants
