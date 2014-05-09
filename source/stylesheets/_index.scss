@@ -171,48 +171,39 @@ section#home-content {
       @include span-columns(6, 6);
       margin-top: 20px;
 
-      #lol {
-        a.home-content-tournament-link{
-          span.icon{
-            background-image: url('/images/LOL.png');
-          }
-        }
-      }
+      #lol span.icon { background-image: url('/images/LOL.png'); }
+      #sc2 span.icon{ background-image: url('/images/sc2.png'); }
+      #csgo span.icon{ background-image: url('/images/csgo.png'); }
+      #hs span.icon{ background-image: url('/images/hs.png'); }
+      #diablo3 span.icon{ background-image: url('/images/d3.png'); }
 
-      #sc2 {
-        a.home-content-tournament-link{
-          span.icon{
-            background-image: url('/images/sc2.png');
-          }
-        }
-      }
+    }
 
-      li.home-content-tournament {
-        background-color: white;
-        margin-bottom: 8px;
-        text-align: left;
+    li.home-content-tournament {
+      background-color: white;
+      margin-bottom: 8px;
+      text-align: left;
 
-        &:last-child { margin-bottom: 0; }
+      &:last-child { margin-bottom: 0; }
 
-        a.home-content-tournament-link {
+      a.home-content-tournament-link {
+        @include inline-block;
+        height: 100%;
+        width: 100%;
+
+        span.home-content-tournament-name {
           @include inline-block;
-          height: 100%;
-          width: 100%;
+          font-family: 'Raleway', sans-serif;
+          font-weight: 400;
+          font-size: 20px;
+          color: black;
+          margin-left: 20px;
+        }
 
-          span.home-content-tournament-name {
-            @include inline-block;
-            font-family: 'Raleway', sans-serif;
-            font-weight: 400;
-            font-size: 20px;
-            color: black;
-            margin-left: 20px;
-          }
-
-          span.icon {
-            @include inline-block;
-            height: 110px;
-            width: 110px;
-          }
+        span.icon {
+          @include inline-block;
+          height: 110px;
+          width: 110px;
         }
       }
     }

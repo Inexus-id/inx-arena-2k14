@@ -1,4 +1,20 @@
 section#tournaments {
+  #tournaments-header {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('/images/calendario.jpg');
+    background-size: 100%;
+    height: 200px;
+
+    #tournaments-header-title {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 400;
+      font-size: 20px;
+      padding-top: 135px;
+      text-transform: uppercase;
+      @include text-shadow(rgba(105, 105, 105, 0.2) 1px 1px 0, rgba(105, 105, 105, 0.2) 2px 2px 0, rgba(105, 105, 105, 0.2) 3px 3px 0);
+    }
+  }
   ul#tournaments-list {
     @include container;
     margin-top: 20px;
@@ -33,7 +49,14 @@ section#tournaments {
       }
 
       &#sc2 .icon { background-image: url('/images/sc2.png'); }
+
       &#lol .icon { background-image: url('/images/LOL.png'); }
+
+      &#hs .icon { background-image: url('/images/hs.png'); }
+
+      &#diablo3 .icon { background-image: url('/images/d3.png'); }
+
+      &#csgo .icon { background-image: url('/images/csgo.png'); }
     }
   }
 }

@@ -17,8 +17,9 @@ tournaments:
           .home-header-tournament-info  
             %h3.home-header-tournament-name
               =t.name
-            %a.home-header-tournament-link(href='#')
-              Próximamente
+            %a.home-header-tournament-link(href='/tournaments/#{t.id}')
+              Ver información
+              
   .slide-stars    
 
 %section#home-content
@@ -30,12 +31,12 @@ tournaments:
   #home-content-tournaments
     %h3#home-content-main-title
       Torneos
-    %a#home-content-tournaments-all-links(href="#")
+    %a#home-content-tournaments-all-links(href="/tournaments")
       Todos los torneos
     %ul#home-content-tournament-list
-      -current_page.data.tournaments.each do |t|
+      - data.tournaments[0..2].each do |t|
         %li.home-content-tournament{id: t.id}
-          %a.home-content-tournament-link(href="#")
+          %a.home-content-tournament-link(href="/tournaments/#{t.id}")
             %span.icon
             %span.home-content-tournament-name
               =t.name

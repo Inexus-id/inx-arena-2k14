@@ -8,11 +8,10 @@
   image_path: "/images/starcraft2.jpg"
   format: 1VS1
   awards:
-    - Gráfica Club3D HD 7870
-    - Teclado Logitech G19
+    - Próximamente
   participants: 32
   platform: PC último parche
-  rules: Eliminación simple(Bol), a partir de cuartos se jugará Bol3 y la final a Bo5. TBA
+  rules: "Eliminación simple(Bo1), a partir de cuartos se jugará Bo3 y la final a Bo5. TBA"
 
 -
   id: csgo
@@ -43,7 +42,7 @@
   image_path: "/images/hs.jpg"
   format: 1vs1
   awards:
-    - 0
+    - Próximamente
   participants: 128
   platform: PC
   rules: Eliminatoria directa (Bo3). Límite de la baraja 3000 Polvos Arcanos. Cada carta de tu baraja costará los siguientes puntos para el límite de 3000. Legendaria - 1600,  Épica - 400, Poco común - 100, Común - 40, Básica - 0. TBA
@@ -79,7 +78,7 @@
   image_path: "images/diablo3.jpg "
   format: incondicional
   awards: 
-    - 0
+    - Próximamente
   participants: sin límite de
   platform: PC
   rules: Crear personaje en incondicional a partir del Jueves 26 a las 16h, bajo supervisión del equipo técnico, anotando los datos del personaje y cuenta battlenet. El evento acabará el Domingo 29 a las 14h. Estando por testigo el equipo técnico para anotar level y oro como medida de desempate.
