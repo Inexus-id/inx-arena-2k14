@@ -7,9 +7,12 @@ section#tournament {
     h2.tournament-header-title {
       @exted %font-regular;
       display: block;
-      font-size: 32px;
+      font-size: 24px;
       line-height: 200px;
       @include text-shadow(rgba(105, 105, 105, 0.2) 1px 1px 0, rgba(105, 105, 105, 0.2) 2px 2px 0, rgba(105, 105, 105, 0.2) 3px 3px 0);
+      @include at-breakpoint(12) {
+        font-size: 32px;
+      }
     }
   }
 
@@ -29,9 +32,13 @@ section#tournament {
     padding-top: 20px;
 
     #tournament-info {
-      @include span-columns(5,12);
+      display: block;
+      margin-bottom: 20px;
       @extend %font-regular;
       text-align: left;
+      @include at-breakpoint(12){
+        @include span-columns(5,12);
+      }
 
       h2#tournament-info-title {
         font-size: 24px;
@@ -48,10 +55,13 @@ section#tournament {
     }
 
     #tournament-details {
+      display: block;
+      @include at-breakpoint(12) {
       @include span-columns(7 omega,12);
       @extend %font-regular;
       margin-bottom: 10px;
       text-align: left;
+    }
 
       h2#tournament-details-title {
         @extend %font-medium;

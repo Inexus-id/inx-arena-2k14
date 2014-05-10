@@ -8,9 +8,12 @@ section#calendar {
     #calendar-header-title {
       @extend %font-regular;
       font-size: 20px;
-      padding-top: 135px;
       text-transform: uppercase;
       @include text-shadow(rgba(105, 105, 105, 0.2) 1px 1px 0, rgba(105, 105, 105, 0.2) 2px 2px 0, rgba(105, 105, 105, 0.2) 3px 3px 0);
+      padding-top: 90px;
+      @include at-breakpoint(12) {
+        padding-top: 135px;
+      }
     }
   }
 
@@ -27,11 +30,13 @@ section#calendar {
       margin-bottom: 50px;
 
       h3 {
-        @extend %font-medium;
         background-color: white;
+        @extend %font-medium;
         color: black;
         font-size: 18px;
-        margin: 0 40px;
+        @include at-breakpoint(12) {
+          margin: 0 40px;
+        }
       }
     }
 

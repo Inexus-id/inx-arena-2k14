@@ -138,28 +138,33 @@ header#header {
   }
 }
 
-
 footer#footer {
   margin-top: 56px;
+  
   #footer-content {
     @include container;
     margin-bottom: 44px;
+
     #footer-separator-top {
       @include span-columns(8,12);
       @include prefix(2);
       margin-bottom: 26px;
+  
       span.line {
         @include span-columns(3,8);
         @include nth-omega(3);
         border-top: 1px solid white;
         margin-top: 12px;
       }
+  
       span.stars {
         @include span-columns(2,8);
         @include inline-block;
         height: 42px;
         text-align: center;
+  
         span.icon-stars {
+          margin: 5px;
           @include icon(starsmenu);
           margin-top: -20px;
         }
@@ -190,6 +195,7 @@ footer#footer {
 
     #footer-separator-bottom {
       span.line {
+        width: 50%;
         @include span-columns(12,12);
         border-top: 1px solid white;
       }

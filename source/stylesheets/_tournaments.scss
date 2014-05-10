@@ -8,9 +8,12 @@ section#tournaments {
     #tournaments-header-title {
       @extend %font-regular;
       font-size: 20px;
-      padding-top: 135px;
       text-transform: uppercase;
+      padding-top: 90px;
       @include text-shadow(rgba(105, 105, 105, 0.2) 1px 1px 0, rgba(105, 105, 105, 0.2) 2px 2px 0, rgba(105, 105, 105, 0.2) 3px 3px 0);
+      @include at-breakpoint(12) {
+        padding-top: 135px;
+      }
     }
   }
   ul#tournaments-list {
@@ -22,6 +25,14 @@ section#tournaments {
       background-color: white;
       margin-bottom: 8px;
       text-align: left;
+      width: 100%;
+      @include at-breakpoint(12) {
+        @include span-columns(6, 12);
+        @include nth-omega(2n);
+        background-color: white;
+        margin-bottom: 8px;
+        text-align: left;
+      }
 
       &:last-child { margin-bottom: 0; }
 
@@ -33,9 +44,12 @@ section#tournaments {
         span.tournament-name {
           @include inline-block;
           @extend %font-regular;
-          font-size: 20px;
           color: black;
           margin-left: 20px;
+          font-size: 12px;
+          @include at-breakpoint(12) {
+            font-size: 20px;
+          }
         }
 
         span.icon {
