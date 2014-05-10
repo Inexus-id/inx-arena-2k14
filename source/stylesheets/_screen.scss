@@ -15,22 +15,29 @@ body {
 header#header {
   @extend %background-no-repeat;
   background-image: url('/images/topbg.jpg');
-  height: 277px;
+  height: 150px;
+  @include at-breakpoint(12) {
+    height: 277px;
+  }
 
   #header-countdown {
-    @include container;
-    @extend %font-book;
-    font-size: 18px;
-    text-align: right;
-    padding-top: 37px;
+    @include at-breakpoint(12) {
+      @include container;
+      text-align: right;
+      padding-top: 37px;
+      float: right;
+      @extend %font-book;
+      font-size: 18px;
 
-    .kkcountdown {
-      @extend %font-medium;
-      .kkcountdown-box { margin-left: 10px; }
-      .kkc-days-text, .kkc-hours-text, .kkc-min-text, .kkc-sec-text {
-        margin-right: 6px;
+      .kkcountdown {
+        @extend %font-medium;
+        .kkcountdown-box { margin-left: 10px; }
+        .kkc-days-text, .kkc-hours-text, .kkc-min-text, .kkc-sec-text {
+          margin-right: 6px;
+        }
       }
     }
+    display: none;
   }
 
   nav{
@@ -44,13 +51,21 @@ header#header {
         @include span-columns(2,12);
         @include nth-omega(5);
         padding: 0;
+        display: none;
+        margin-top: 24px;
+        @include at-breakpoint(12) {
+          display: block;
+          margin-top: 0;
+        }
 
         a {
           @include inline-block;
           @extend %font-book;
           font-size: 22px;
-          margin-top: 77px;
           margin-right: -4px;
+          @include at-breakpoint(12) {
+            margin-top: 77px;
+          }
 
           span.icon {
             @include icon(starsmenu);
@@ -67,16 +82,40 @@ header#header {
           }
         }
 
+        &#menu {
+          @include at-breakpoint(12) {
+            display: none;
+          }
+          @include span-columns(3,12);
+          a {
+            width: 100%;
+            &:hover {
+              @include text-shadow(rgba(204, 51, 51, 0) 0 0 0)
+            }
+            span.icon {
+              @extend %background-no-repeat;
+              height: 64px;
+              background-image: url('/images/mobile.png');
+              width: 100%;
+            }
+          }
+
+        }
+
         &#logo {
-          @include span-columns(4,12);
-          position: relative;
-          z-index: 1;
+            @include span-columns(6,12);
+            position: relative;
+            z-index: 1;
 
           a {
+            width: 100%;
             color: transparent;
             margin-top: 1px;
-            height: 277px;
             overflow: hidden;
+            height: 150px;
+            @include at-breakpoint(12) {
+              height: 277px;
+            }
             &:hover {
               @include text-shadow(rgba(204, 51, 51, 0) 0 0 0)
             }
@@ -85,9 +124,14 @@ header#header {
           span.icon {
             @extend %background-center;
             background-image: url('/images/logoinx.png');
-            height: 277px;
-            width: 305px;
-         }
+            width: 100%;
+            background-size: 114%;
+            @include inline-block;
+            height: 150px;
+            @include at-breakpoint(12) {
+              height: 277px;
+            }
+          }
         }
       }
     }
