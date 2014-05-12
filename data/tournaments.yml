@@ -82,3 +82,16 @@
   participants: sin límite de
   platform: PC
   rules: Crear personaje en incondicional a partir del Jueves 26 a las 16h, bajo supervisión del equipo técnico, anotando los datos del personaje y cuenta battlenet. El evento acabará el Domingo 29 a las 14h. Estando por testigo el equipo técnico para anotar level y oro como medida de desempate.
+-
+  id: st4
+  name:  Super street fighter IV
+  description:
+    - ¡El street fighter más potente de todos los tiempos!
+  official_link: "http://www.streetfighter.com/es/ssfiv"
+  image_path: "images/st4.jpg"
+  format: 1vs1
+  awards: 
+    - Próximamente
+  participants: 32
+  platform: PS3
+  rules: Límite máximo de 99 segundos por ronda, Todos los personajes permitidos, el escenario será aleatorio a no ser que ambos jugadores se pongan de acuerdo, después de cada combate se puede pedir un cambio de escenario, en un enfrentamiento el jugador que pierda un combate puede cambiar de personaje, el que gane debe mantener el personaje que ha elegido en el anterior combate del mismo enfrentamiento, la organización se reserva el derecho de descalificar o penalizar a aquel que pulse el botón start en medio de un combate, se permiten pads propios de los participantes, rondas 16/32, 8/16, 4/8, 2/4 se disputaran a 1 partida 3 rondas y la final a 3 partidas Bo3.
