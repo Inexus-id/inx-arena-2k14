@@ -1,5 +1,5 @@
 -
-  day: Jueves  26 de junio, 2014
+  day: Jueves, 26 de junio 2014
   timestamp: 1403740800000
   events:
     -
@@ -43,7 +43,7 @@
       timestamp_start: 1403816400000
       timestamp_end: 1403820000000
 - 
-  day: Viernes  27 de junio, 2014
+  day: Viernes, 27 de junio 2014
   timestamp: 1403827200000
   events:
     -
@@ -119,7 +119,7 @@
       timestamp_start: 1403902800000
       timestamp_end: 1403906400000
 -
-  day: Sabado  28 de junio, 2014
+  day: Sábado, 28 de junio 2014
   timestamp: 1403913600000
   events:
     -
@@ -195,7 +195,7 @@
       timestamp_start: 1403987400000
       timestamp_end: 1403992800000
 - 
-  day: Domingo  29 de junio, 2014
+  day: Domingo, 29 de junio 2014
   timestamp: 1404000000000
   events:
     -
