@@ -146,7 +146,6 @@ header#header {
           z-index: 1;
           @include at-breakpoint(12) {
             @include span-columns(4,12);
-            margin-top: 58px;
           }
 
           a {
