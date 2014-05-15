@@ -23,6 +23,7 @@ section#home {
     .home-header-slide {
       @include transition-property(opacity);
       @extend %background-no-repeat;
+      background-size: cover;
       overflow: hidden;
       width: 100%;
       height: 100%;
@@ -32,7 +33,6 @@ section#home {
       pointer-events: none;
       opacity: 0;
       z-index: -1;
-      background-size: 100%;
 
       &.active {
         opacity: 1;
@@ -107,7 +107,10 @@ section#home-content {
   @include container;
 
   #home-content-calendar {
-    @include span-columns(6,12);
+    display: block;
+    @include at-breakpoint(12){
+      @include span-columns(6,12);
+    }
 
     #home-content-calendar-title {
       @extend %font-book;
@@ -140,21 +143,22 @@ section#home-content {
   }
 
   #home-content-tournaments {
-    @include span-columns(6 omega, 12);
+    display: block;
+    @include at-breakpoint(12) {
+      @include span-columns(6 omega, 12);
+    }
 
     h3#home-content-main-title {
       @include span-columns(3, 6);
       @include inline-block;
-      font-family: 'Raleway', sans-serif;
-      font-weight: 300;
+      @extend %font-book;
       font-size: 24px;
       text-align: left;
     }
 
     a#home-content-tournaments-all-links {
       @include span-columns(3 omega, 6);
-      font-family: 'Raleway', sans-serif;
-      font-weight: 200;
+      @extend %font-regular;
       font-size: 18px;
       text-decoration: none;
       line-height: 26px;
@@ -187,11 +191,14 @@ section#home-content {
 
         span.home-content-tournament-name {
           @include inline-block;
-          font-family: 'Raleway', sans-serif;
-          font-weight: 400;
-          font-size: 20px;
+          @extend %font-regular;
           color: black;
-          margin-left: 20px;
+          font-size: 20px;
+          margin-left: 10px;
+          max-width: 60%;
+          @include at-breakpoint(12){
+            margin-left: 20px;
+          }
         }
 
         span.icon {
