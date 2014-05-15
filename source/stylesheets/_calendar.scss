@@ -8,7 +8,10 @@ section#calendar {
     background-size: cover;
 
     #calendar-header-title {
-      @extend %font-regular;
+      font-family: 'Raleway', sans-serif;
+      text-align: center;
+      font-weight: 400;
+      color: white;
       font-size: 32px;
       text-transform: uppercase;
       @include text-shadow(rgba(105, 105, 105, 0.2) 1px 1px 0, rgba(105, 105, 105, 0.2) 2px 2px 0, rgba(105, 105, 105, 0.2) 3px 3px 0);

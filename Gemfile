@@ -9,8 +9,9 @@ gem "middleman-livereload", "~> 3.1.0"
 
 gem "compass"
 gem "susy"
-gem 'font-awesome-middleman'
 gem "rack-contrib"
 gem "puma"
-gem "debugger"
+group :development do
+  gem "debugger"
+end
 gem 'handlebars_assets'
