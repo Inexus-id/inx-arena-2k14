@@ -15,14 +15,32 @@
     = javascript_include_tag  "all"
 
   %body
+    %nav#mobile
+      %ul#mobile-links
+        %li.mobile-link#news
+          %a(href="http://inx-arena.tumblr.com/")
+            %span.icon
+              Noticias
+          %li.mobile-link#cal
+            %a(href="/calendar")
+              %span.icon
+                Calendario
+          %li.mobile-link#tournaments
+            %a(href="/tournaments")
+              %span.icon
+                Torneos
+          %li.mobile-link#tickets
+            %a(href="#")
+              %span.icon
+                Entradas
     %header#header
       #header-countdown
         Cuenta atrás
         %span.kkcountdown(data-time="1403788222")
-      %nav
+      %nav#header-main-nav
         %ul#nav-links
           %li.nav-link#menu
-            %a(href="#")
+            %a
               %span.icon
           %li.nav-link#news
             %a(href="http://inx-arena.tumblr.com/")
