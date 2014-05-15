@@ -9,7 +9,6 @@ gem "middleman-livereload", "~> 3.1.0"
 
 gem "compass"
 gem "susy"
-gem 'font-awesome-middleman'
 gem "rack-contrib"
 gem "puma"
 group :development do

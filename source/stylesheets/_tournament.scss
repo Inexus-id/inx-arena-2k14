@@ -8,7 +8,10 @@ section#tournament {
     background-size: cover;
 
     h2.tournament-header-title {
-      @exted %font-regular;
+      font-family: 'Raleway', sans-serif;
+      text-align: center;
+      color: white;
+      font-weight: 400;
       font-size: 32px;
       padding-top: 70px;
       @include text-shadow(rgba(105, 105, 105, 0.2) 1px 1px 0, rgba(105, 105, 105, 0.2) 2px 2px 0, rgba(105, 105, 105, 0.2) 3px 3px 0);
