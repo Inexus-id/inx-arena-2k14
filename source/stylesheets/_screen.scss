@@ -209,7 +209,16 @@ footer#footer {
     }
     
     #main-sponsor {
-      span.icon {
+      @include span-columns(12, 12);
+      margin-bottom: 30px;
+      a {
+        @include inline-block;
+        span.icon {
+          @include icon(spegc-white);
+          &:hover{
+            @include icon(spegc-red);
+          }
+        }
       }
     }
 
