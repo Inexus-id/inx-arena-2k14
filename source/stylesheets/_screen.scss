@@ -207,6 +207,11 @@ footer#footer {
         }
       }
     }
+    
+    #main-sponsor {
+      span.icon {
+      }
+    }
 
     ul#footer-sponsors {
       @include span-columns(12,12);
