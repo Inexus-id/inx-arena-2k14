@@ -20,22 +20,27 @@ section#tickets {
   #tickets-content {
     @include container;
     ul#tickets {
-      @include span-columns(12, 12); 
+      @include span-columns(12, 12);
+			margin-top: 30px;
 			margin-bottom: 30px;
       li.ticket {
-				@include span-columns(12, 12); 
+				@include span-columns(12, 12);
 			  @include at-breakpoint(12) {
-      	  @include span-columns(4, 12); 
+      	  @include span-columns(4, 12);
           @include nth-omega(3);
 				}
-				h3 { 
+        li {
+          padding: 10px 0;
+          border-bottom: 1px solid white;
+        }
+				h3 {
           font-size: 28px;
 				}
       }
     }
     #tkt-content {
       height: 718px;
-      @include span-columns(12, 12); 
+      @include span-columns(12, 12);
     }
   }
 }
