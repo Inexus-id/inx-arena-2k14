@@ -5,7 +5,7 @@
   #calendar-content
     - data.calendar.each do |calendar|
       .calendar-content-date
-        %h3= calendar.day 
+        %h3= calendar.day
       %ul.calendar-content-list
         - calendar.events.each do |event|
           %li.calendar-content
@@ -16,11 +16,11 @@
             .calendar-content-info
               .calendar-content-info-date
                 = event.time_start
-                \- 
-                = event.time_end 
+                \-
+                = event.time_end
               .calendar-content-info-title
                 = event.description
               - if event.streaming
                 .calendar-content-info-streaming
-                  %a(href="www.twitch.tv/inx_tv")
+                  %a(href="http://www.twitch.tv/inx_tv")
                     Ver streaming
