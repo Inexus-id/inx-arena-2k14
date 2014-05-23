@@ -1,53 +1,4 @@
 -
-  id: sc2
-  name: Starcraft 2
-  description:
-    - Starcraft II sigue siendo el RTS del momento.
-    - ¿A qué esperas para demostrar tus skills en nuestro torneo 1v1?
-  official_link: "http://eu.battle.net/sc2/es/"
-  image_path: "/images/starcraft2.jpg"
-  format: 1VS1
-  awards:
-    - Próximamente
-  participants: 32
-  platform: PC último parche
-  rules: "Eliminación simple(Bo1), a partir de cuartos se jugará Bo3 y la final a Bo5. TBA"
-
--
-  id: csgo
-  name: Counter Strike Global Offensive
-  description: 
-    - Seguimos apostando por el CSGO Canario.
-    - Un clásico imposible de retirar de nuestra cartelería.
-    - Corre busca equipo y consigue premio seguro. 
-  official_link: "http://www.cs-go.es/"
-  image_path: "/images/csgo.jpg"
-  format: 5vs5
-  maps: de_dust2, de_nuke, de_inferno, de_train, de_mirage_ce, de_mirage, de_season, de_cache
-  awards:
-    - 500€
-    - 300€
-    - 200€
-  participants: 16
-  platform: PC
-  rules: Eliminatoria directa (Bo3), posibilidad de bracket winner y loser, segun registro de equipos. TBA
-
--
-  id: hs
-  name: Hearth Stone
-  description:
-    - ¡Estamos anonadados con la aceptación de este juego!
-    - Ven con tu mazo más bestia y proclámate el más animal de todos.
-  official_link: "http://eu.battle.net/hearthstone/es/"
-  image_path: "/images/hs.jpg"
-  format: 1vs1
-  awards:
-    - Próximamente
-  participants: 128
-  platform: PC
-  rules: Eliminatoria directa (Bo3). Límite de la baraja 3000 Polvos Arcanos. Cada carta de tu baraja costará los siguientes puntos para el límite de 3000. Legendaria - 1600,  Épica - 400, Poco común - 100, Común - 40, Básica - 0. TBA
-
--
   id: lol
   name: League of Legends
   description:
@@ -70,6 +21,63 @@
   rules: Eliminación simple (Bo1), los cuatro finalistas entrarán en la bracket QiCanarias, enfrentándose a los cuatro campeones de la liga On-line. La bracket será winner y losers. TBA
 
 -
+  id: hs
+  name: Hearth Stone
+  description:
+    - ¡Estamos anonadados con la aceptación de este juego!
+    - Ven con tu mazo más bestia y proclámate el más animal de todos.
+  official_link: "http://eu.battle.net/hearthstone/es/"
+  image_path: "/images/hs.jpg"
+  format: 1vs1
+  awards:
+    - 300€
+    - 200€
+    - 100€
+    - 80€
+    - 80€
+    - 80€
+    - 80€
+  participants: 128
+  platform: PC
+  rules: Eliminatoria directa (Bo3). Límite de la baraja 3000 Polvos Arcanos. Cada carta de tu baraja costará los siguientes puntos para el límite de 3000. Legendaria - 1600,  Épica - 400, Poco común - 100, Común - 40, Básica - 0. TBA
+
+-
+  id: csgo
+  name: Counter Strike Global Offensive
+  description: 
+    - Seguimos apostando por el CSGO Canario.
+    - Un clásico imposible de retirar de nuestra cartelería.
+    - Corre busca equipo y consigue premio seguro. 
+  official_link: "http://www.cs-go.es/"
+  image_path: "/images/csgo.jpg"
+  format: 5vs5
+  maps: de_dust2, de_nuke, de_inferno, de_train, de_mirage_ce, de_mirage, de_season, de_cache
+  awards:
+    - 500€
+    - 300€
+    - 200€
+  participants: 16
+  platform: PC
+  rules: Eliminatoria directa (Bo3), posibilidad de bracket winner y loser, segun registro de equipos. TBA
+
+-
+  id: sc2
+  name: Starcraft 2
+  description:
+    - Starcraft II sigue siendo el RTS del momento.
+    - ¿A qué esperas para demostrar tus skills en nuestro torneo 1v1?
+  official_link: "http://eu.battle.net/sc2/es/"
+  image_path: "/images/starcraft2.jpg"
+  format: 1VS1
+  awards:
+    - 300€ + componente de hardware
+    - 100€ + Figura de coleccionismo
+    - Componente de hardware
+  participants: 32
+  platform: PC último parche
+  rules: "Eliminación simple(Bo1), a partir de cuartos se jugará Bo3 y la final a Bo5. TBA"
+
+-
   id: diablo3
   name: Diablo 3
   description:
@@ -78,7 +86,67 @@
   image_path: "images/diablo3.jpg "
   format: incondicional
   awards: 
-    - Próximamente
+    - 150€
+    - 100€
+    - 50€
   participants: sin límite de
   platform: PC
   rules: Crear personaje en incondicional a partir del Jueves 26 a las 16h, bajo supervisión del equipo técnico, anotando los datos del personaje y cuenta battlenet. El evento acabará el Domingo 29 a las 14h. Estando por testigo el equipo técnico para anotar level y oro como medida de desempate.
+
+-
+  id: wow
+  name: World of Warcraft 
+  description:
+    - El mayor MMO de todos los tiempos, creado por Blizzard, no pasará desapercibido en esta lan. En este torneo no todo serán “épicos”, tendrás que demostrar tu habilidad y batir al equipo contrario en arenas de 2v2. 
+  official_link: "eu.battle.net/wow/es/"
+  image_path: "images/wow.jpg"
+  format: 2v2
+  awards: 
+    - Próximamente
+  participants: 32 equipos
+  platform: PC, servidores oficiales (se requiere cuenta activa)
+  rules: "Eliminatoria directa BO1, a partir de cuartos se jugará BO3 y la final a BO5, equipos de 2 jugadores con máximo un suplente, solo se permite participar con un solo personaje nivel 90, está permitido todo tipo de items adquiridos mediante el juego hasta la fecha, está permitido todo tipo de setups, es necesario la conexión de al menos 2 integrantes del grupo a la hora del partido, de lo contrario la descalificación es inmediata."
+
+-
+  id: tt2
+  name: Tekken Tag Tournament 2
+  description:
+    - El Rey del Puño de Hierro no cede su espacio, una vez más. Cuatro puños siempre serán mejor que dos... especialmente en manos de un jugador experto.
+  official_link: "http://www.tekken.com/"
+  image_path: "images/tt2.jpg"
+  format: 2v2
+  awards: 
+    - 100€
+    - 80€
+    - 60€
+  participants: 32 participantes
+  platform: PS3
+  rules: "Cada emparejamiento se juega al mejor de tres; por tanto, el primero en ganar dos combates pasa a la siguiente. La final, sin embargo, será al mejor de cinco, con un mínimo requerido de tres victorias, a su vez, cada ronda se jugará al mejor de cinco, con tres victorias dando un punto en cada emparejamiento, el tiempo de los combates será de 80 segundos, cualquier cambio en los controles se hará al principio del emparejamiento, parar el juego resultará en la concesión de la ronda al rival, el combate individual no está permitido: se debe jugar por fuerza con una pareja, la elección de escenario es aleatoria o de mutuo acuerdo, el jugador derrotado tiene derecho a cambiar de personajes."
+
+-
+  id: USF4
+  name: Ultra Street Fighter IV
+  description:
+    - La incombustible cuarta entrega de la veteranísima franquicia presenta su cuarta versión, que debutará en la Lan Party en  medio de la expectación que le corresponde.
+  official_link: "http://www.streetfighter.com/us/usfiv"
+  image_path: "images/usf4.jpg"
+  format: 2v2
+  awards: 
+    - Próximamente
+  participants: 32 participantes
+  platform: PS3
+  rules: "Cada emparejamiento se juega al mejor de tres; por tanto, el primero en ganar dos combates pasa a la siguiente. A partir de cuartos de final, sin embargo, será al mejor de cinco, con un mínimo requerido de tres victorias, a su vez, cada ronda se jugará igualmente al mejor de tres, con dos victorias dando un punto en cada emparejamiento, cualquier cambio en los controles se hará en la pantalla de selección de personaje (YA ERA HORA, JODER), el tiempo de los combates será de 99 segundos, parar el juego sin permiso resultará en la concesión de la ronda al rival, la elección de escenarios es aleatoria o de mutuo acuerdo, el jugador derrotado tiene derecho a cambiar de personaje y Ultra. El ganador también podrá cambiar su Ultra pero no su personaje."
+
+-
+  id: dc4
+  name: Dance central
+  description:
+    - La incombustible cuarta entrega de la veteranísima franquicia presenta su cuarta versión, que debutará en la Lan Party en  medio de la expectación que le corresponde.
+  official_link: "http://www.streetfighter.com/us/usfiv"
+  image_path: "images/dc3.jpg"
+  format: 1v1
+  awards: 
+    - Próximamente
+  participants: 32 participantes
+  platform: XBOX
+  rules: "La canción a bailar será diferente en cada enfrentamiento, subiendo su dificultad conforme se avance en el torneo, la final será al mejor de 3 canciones, está prohibido obstaculizar al otro jugador mientras baila, ya sea entorpeciendo sus movimientos o interponiéndose entre él y Kinect, la canción de cada partida será elegida por la propia organización, en el caso de que el número de inscripciones no sea el esperado, el sistema de juego podrá variar ligeramente."
