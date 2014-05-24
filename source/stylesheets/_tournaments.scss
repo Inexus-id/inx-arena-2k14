@@ -73,7 +73,6 @@ section#tournaments {
       &#titanfall .tournament-link .icon { background-image: url('/images/ttf.jpg'); }
       &#blazblue .tournament-link .icon { background-image: url('/images/blazblue.png'); }
 
-
       .tournament-inscription-enable, .tournament-inscription-close, .tournament-inscription-dissable {
         @include span-columns(2 omega, 6);
         text-align: right;
