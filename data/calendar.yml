@@ -55,6 +55,14 @@
       timestamp_start: 1403856000000
       timestamp_end: 1403861400000
     -
+      time_start: "11:00"
+      time_end: "23:00"
+      descripcion: Tercera fase 16 equipos
+      streaming: no
+      type: PC
+      timestamp_start:
+      timestamp_end:
+    -
       time_start: "10:30"
       time_end: "11:30"
       description: HS tercera ronda 64 jugadores
@@ -171,6 +179,14 @@
       timestamp_start: 1403967600000
       timestamp_end: 1403974800000
     -
+      time_start: "17:00"
+      time_end: "20:00"
+      description: Cuartos de final
+      streaming: false
+      type: PC
+      timestamp_start:
+      timestamp_end:
+    -
       time_start: "18:00"
       time_end: "21:00"
       description: CS:GO Final Losers
@@ -214,6 +230,14 @@
       type: PC HS
       timestamp_start: 1404036000000
       timestamp_end: 1404039600000
+    -
+      time_start: "11:00"
+      time_end: "20:00"
+      description: Final Fifa 
+      streaming: false
+      type: PC
+      timestamp_start:
+      timestamp_end:
     -
       time_start: "12:00"
       time_end: "17:00"
