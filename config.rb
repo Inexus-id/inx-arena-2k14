@@ -56,6 +56,7 @@ set :js_dir, 'javascripts'
 set :images_dir, 'images'
 
 after_configuration do 
+  sprockets.append_path 'vendor/stylesheets'
   sprockets.append_path 'vendor/javascript'
   sprockets.append_path HandlebarsAssets.path
 end

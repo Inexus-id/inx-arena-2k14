@@ -24,14 +24,13 @@ section#tournaments {
     li.tournament {
       @include span-columns(6, 12);
       @include nth-omega(2n);
-      background-color: white;
+      background-color: black;
       margin-bottom: 8px;
       text-align: left;
       width: 100%;
       @include at-breakpoint(12) {
         @include span-columns(6, 12);
         @include nth-omega(2n);
-        background-color: white;
         margin-bottom: 8px;
         text-align: left;
       }
@@ -39,20 +38,16 @@ section#tournaments {
       &:last-child { margin-bottom: 0; }
 
       a.tournament-link {
-        @include span-columns(6, 6);
+        @include span-columns(4, 6);
         height: 100%;
-        width: 100%;
 
         span.tournament-name {
           @include inline-block;
           @extend %font-regular;
-          color: black;
+          text-align: left;
+          color: white;
           font-size: 20px;
-          max-width: 60%;
-          margin-left: 10px;
-          @include at-breakpoint(12) {
-            margin-left: 20px;
-          }
+          max-width: 64%;
         }
 
         span.icon {
@@ -62,15 +57,24 @@ section#tournaments {
         }
       }
 
-      &#sc2 .icon { background-image: url('/images/sc2.png'); }
-      &#lol .icon { background-image: url('/images/LOL.png'); }
-      &#hs .icon { background-image: url('/images/hs.png'); }
-      &#diablo3 .icon { background-image: url('/images/d3.png'); }
-      &#csgo .icon { background-image: url('/images/csgo.png'); }
-      &#wow .icon { background-image: url('/images/wow.jpg'); }
-      &#tt2 .icon { background-image: url('/images/tt2.jpg'); }
-      &#dc4 .icon { background-image: url('/images/dc3.jpg'); }
-      &#USF4 .icon { background-image: url('/images/usf4.jpg'); }
+      &#sc2 .tournament-link .icon { background-image: url('/images/sc2.png'); }
+      &#lol .tournament-link .icon { background-image: url('/images/LOL.png'); }
+      &#hs .tournament-link .icon { background-image: url('/images/hs.png'); }
+      &#diablo3 .tournament-link .icon { background-image: url('/images/d3.png'); }
+      &#csgo .tournament-link .icon { background-image: url('/images/csgo.png'); }
+      &#wow .tournament-link .icon { background-image: url('/images/wow.jpg'); }
+      &#tt2 .tournament-link .icon { background-image: url('/images/tt2.jpg'); }
+      &#dc4 .tournament-link .icon { background-image: url('/images/dc3.jpg'); }
+      &#USF4 .tournament-link .icon { background-image: url('/images/usf4.jpg'); }
+
+      .tournament-inscription-enable {
+        @include span-columns(2 omega, 6);
+        text-align: right;
+        .icon {
+          @include icon(inscripcion);
+          margin-right: -4px;
+        }
+      }
     }
   }
 }

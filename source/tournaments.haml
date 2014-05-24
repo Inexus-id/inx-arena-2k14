@@ -9,3 +9,10 @@
           %span.icon
           %span.tournament-name
             =t.name
+        %a.tournament-inscription-enable(href="##{t.id}")
+          %span.icon
+
+.remodal-bg
+  - data.tournaments.each do |t|
+    .remodal(data-remodal-id="#{t.id}")
+      Test test
