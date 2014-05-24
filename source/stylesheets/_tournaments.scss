@@ -109,6 +109,7 @@ section#tournaments {
       @include text-shadow(rgba(105, 105, 105, 0.2) 1px 1px 0, rgba(105, 105, 105, 0.2) 2px 2px 0, rgba(105, 105, 105, 0.2) 3px 3px 0);
     }
   }
+
   &#sc2 header {background-image: url('/images/starcraft2.jpg')}
   &#csgo header {background-image: url('/images/csgo.jpg')}
   &#lol header {background-image: url('/images/leagueoflegends.jpg')}
@@ -122,6 +123,7 @@ section#tournaments {
   &#halo header {background-image: url('/images/halo4.jpg')}
   &#blazblue header {background-image: url('/images/bb.png')}
   &#fifa14 header {background-image: url('/images/fifa14.jpg')}
+
   .stars {
     margin-top: -82px;
     display: block;
