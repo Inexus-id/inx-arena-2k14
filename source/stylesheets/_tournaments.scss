@@ -18,6 +18,7 @@ section#tournaments {
       }
     }
   }
+
   ul#tournaments-list {
     @include container;
     margin-top: 20px;
@@ -57,15 +58,21 @@ section#tournaments {
         }
       }
 
-      &#sc2 .tournament-link .icon { background-image: url('/images/sc2.png'); }
-      &#lol .tournament-link .icon { background-image: url('/images/LOL.png'); }
-      &#hs .tournament-link .icon { background-image: url('/images/hs.png'); }
-      &#diablo3 .tournament-link .icon { background-image: url('/images/d3.png'); }
-      &#csgo .tournament-link .icon { background-image: url('/images/csgo.png'); }
-      &#wow .tournament-link .icon { background-image: url('/images/wow.jpg'); }
-      &#tt2 .tournament-link .icon { background-image: url('/images/tt2.jpg'); }
-      &#dc4 .tournament-link .icon { background-image: url('/images/dc3.jpg'); }
-      &#USF4 .tournament-link .icon { background-image: url('/images/usf4.jpg'); }
+      &#sc2 .icon { background-image: url('/images/sc2.png'); }
+      &#lol .icon { background-image: url('/images/LOL.png'); }
+      &#hs .icon { background-image: url('/images/hs.png'); }
+      &#diablo3 .icon { background-image: url('/images/d3.png'); }
+      &#csgo .icon { background-image: url('/images/csgo.png'); }
+      &#wow .icon { background-image: url('/images/wow.jpg'); }
+      &#tt2 .icon { background-image: url('/images/tt2.jpg'); }
+      &#dc4 .icon { background-image: url('/images/dc3.jpg'); }
+      &#usf4 .icon { background-image: url('/images/usf4.jpg'); }
+      &#halo .icon { background-image: url('/images/halo.jpg'); }
+      &#fifa14 .icon { background-image: url('/images/fifa.jpg'); }
+      &#tekken .icon { background-image: url('/images/tt2.jpg'); }
+      &#titanfall .icon { background-image: url('/images/ttf.jpg'); }
+      &#blazblue .icon { background-image: url('/images/blazblue.png'); }
+
 
       .tournament-inscription-enable, .tournament-inscription-close, .tournament-inscription-dissable {
         @include span-columns(2 omega, 6);
