@@ -3,6 +3,7 @@
 @import "compass/reset";
 @import "susy";
 @import "jquery.remodal";
+@import "remodal-overwrite";
 
 @import "icons/*.png";
 @include all-icons-sprites;
