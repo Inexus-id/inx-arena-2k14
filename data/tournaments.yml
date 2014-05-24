@@ -124,7 +124,7 @@
   rules: "Cada emparejamiento se juega al mejor de tres; por tanto, el primero en ganar dos combates pasa a la siguiente. La final, sin embargo, será al mejor de cinco, con un mínimo requerido de tres victorias, a su vez, cada ronda se jugará al mejor de cinco, con tres victorias dando un punto en cada emparejamiento, el tiempo de los combates será de 80 segundos, cualquier cambio en los controles se hará al principio del emparejamiento, parar el juego resultará en la concesión de la ronda al rival, el combate individual no está permitido: se debe jugar por fuerza con una pareja, la elección de escenario es aleatoria o de mutuo acuerdo, el jugador derrotado tiene derecho a cambiar de personajes."
 
 -
-  id: USF4
+  id: usf4
   name: Ultra Street Fighter IV
   description:
     - La incombustible cuarta entrega de la veteranísima franquicia presenta su cuarta versión, que debutará en la Lan Party en  medio de la expectación que le corresponde.

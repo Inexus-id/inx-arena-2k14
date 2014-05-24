@@ -18,6 +18,7 @@ section#tournaments {
       }
     }
   }
+
   ul#tournaments-list {
     @include container;
     margin-top: 20px;
@@ -70,7 +71,7 @@ section#tournaments {
       &#wow .icon { background-image: url('/images/wow.jpg'); }
       &#tt2 .icon { background-image: url('/images/tt2.jpg'); }
       &#dc4 .icon { background-image: url('/images/dc3.jpg'); }
-      &#USF4 .icon { background-image: url('/images/usf4.jpg'); }
+      &#usf4 .icon { background-image: url('/images/usf4.jpg'); }
     }
   }
 }
