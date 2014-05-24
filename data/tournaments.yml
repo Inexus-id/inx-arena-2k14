@@ -83,7 +83,7 @@
   description:
     - Diablo 3 Reaper of Souls ha captado nuestro interés para realizar un evento a lo largo de nuestra LAN.
   official_link: "http://eu.battle.net/d3/es/"
-  image_path: "images/diablo3.jpg "
+  image_path: "/images/diablo3.jpg "
   format: incondicional
   awards: 
     - 150€
@@ -99,11 +99,11 @@
   description:
     - El mayor MMO de todos los tiempos, creado por Blizzard, no pasará desapercibido en esta lan. En este torneo no todo serán “épicos”, tendrás que demostrar tu habilidad y batir al equipo contrario en arenas de 2v2. 
   official_link: "eu.battle.net/wow/es/"
-  image_path: "images/wow.jpg"
+  image_path: "/images/wwow.jpg"
   format: 2v2
   awards: 
     - Próximamente
-  participants: 32 equipos
+  participants: 32
   platform: PC, servidores oficiales (se requiere cuenta activa)
   rules: "Eliminatoria directa BO1, a partir de cuartos se jugará BO3 y la final a BO5, equipos de 2 jugadores con máximo un suplente, solo se permite participar con un solo personaje nivel 90, está permitido todo tipo de items adquiridos mediante el juego hasta la fecha, está permitido todo tipo de setups, es necesario la conexión de al menos 2 integrantes del grupo a la hora del partido, de lo contrario la descalificación es inmediata."
 
@@ -113,13 +113,13 @@
   description:
     - El Rey del Puño de Hierro no cede su espacio, una vez más. Cuatro puños siempre serán mejor que dos... especialmente en manos de un jugador experto.
   official_link: "http://www.tekken.com/"
-  image_path: "images/tt2.jpg"
+  image_path: "/images/tekken.jpg"
   format: 2v2
   awards: 
     - 100€
     - 80€
     - 60€
-  participants: 32 participantes
+  participants: 32
   platform: PS3
   rules: "Cada emparejamiento se juega al mejor de tres; por tanto, el primero en ganar dos combates pasa a la siguiente. La final, sin embargo, será al mejor de cinco, con un mínimo requerido de tres victorias, a su vez, cada ronda se jugará al mejor de cinco, con tres victorias dando un punto en cada emparejamiento, el tiempo de los combates será de 80 segundos, cualquier cambio en los controles se hará al principio del emparejamiento, parar el juego resultará en la concesión de la ronda al rival, el combate individual no está permitido: se debe jugar por fuerza con una pareja, la elección de escenario es aleatoria o de mutuo acuerdo, el jugador derrotado tiene derecho a cambiar de personajes."
 
@@ -129,11 +129,13 @@
   description:
     - La incombustible cuarta entrega de la veteranísima franquicia presenta su cuarta versión, que debutará en la Lan Party en  medio de la expectación que le corresponde.
   official_link: "http://www.streetfighter.com/us/usfiv"
-  image_path: "images/usf4.jpg"
+  image_path: "/images/wstreetfighter.jpg"
   format: 2v2
-  awards: 
-    - Próximamente
-  participants: 32 participantes
+  awards:
+    - 100€
+    - 80€
+    - 60€ 
+  participants: 32
   platform: PS3
   rules: "Cada emparejamiento se juega al mejor de tres; por tanto, el primero en ganar dos combates pasa a la siguiente. A partir de cuartos de final, sin embargo, será al mejor de cinco, con un mínimo requerido de tres victorias, a su vez, cada ronda se jugará igualmente al mejor de tres, con dos victorias dando un punto en cada emparejamiento, cualquier cambio en los controles se hará en la pantalla de selección de personaje (YA ERA HORA, JODER), el tiempo de los combates será de 99 segundos, parar el juego sin permiso resultará en la concesión de la ronda al rival, la elección de escenarios es aleatoria o de mutuo acuerdo, el jugador derrotado tiene derecho a cambiar de personaje y Ultra. El ganador también podrá cambiar su Ultra pero no su personaje."
 
@@ -142,11 +144,75 @@
   name: Dance central
   description:
     - La incombustible cuarta entrega de la veteranísima franquicia presenta su cuarta versión, que debutará en la Lan Party en  medio de la expectación que le corresponde.
-  official_link: "http://www.streetfighter.com/us/usfiv"
-  image_path: "images/dc3.jpg"
+  official_link: "http://www.dancecentral.com/"
+  image_path: "/images/dance.jpg"
   format: 1v1
   awards: 
-    - Próximamente
-  participants: 32 participantes
+    - Premios varios para los 3 primeros.
+  participants: 32
   platform: XBOX
   rules: "La canción a bailar será diferente en cada enfrentamiento, subiendo su dificultad conforme se avance en el torneo, la final será al mejor de 3 canciones, está prohibido obstaculizar al otro jugador mientras baila, ya sea entorpeciendo sus movimientos o interponiéndose entre él y Kinect, la canción de cada partida será elegida por la propia organización, en el caso de que el número de inscripciones no sea el esperado, el sistema de juego podrá variar ligeramente."
+-
+  id: blazblue 
+  name: Blazblue
+  description:
+  - Arc System Works cierra magníficamente la primera trilogía de su nuevo buque insignia. ¡Te toca demostrar lo que has aprendido en estos últimos seis años!
+  official_link: "http://www.blazblue.com/"
+  image_path: "/images/bb.png"
+  format: 1v1
+  awards: 
+    - 100€
+    - 80€
+    - 60€
+  participants: 32
+  platform: PS4
+  rules: "Cada emparejamiento se juega al mejor de tres, por tanto, el primero en ganar dos combates pasa a la siguiente. La final, sin embargo, será al mejor de cinco, con un mínimo requerido de tres victorias. A su vez, cada ronda se jugará igualmente al mejor de tres, con dos victorias dando un punto en cada emparejamiento. El tiempo de los combates será el establecido por defecto en el juego. Cualquier cambio en los controles se hará al principio del emparejamiento. Parar el juego sin permiso resultará en la concesión de la ronda al rival. Los personajes ilimitados están baneados del torneo. La elección de escenario es aleatoria o de mutuo acuerdo. El jugador derrotado tiene derecho a cambiar de personaje." 
+-
+  id: titanfall
+  name: TitanFall
+  description:
+    - Algo grande se acerca. Sube a bordo y acaba con todos.
+  official_link: "http://www.titanfall.com/es" 
+  image_path: "/images/titanfall.jpg"
+  format: 4vs4
+  awards: 
+    - 400€
+    - 300€
+    - 200€
+  participants: 24
+  platform: XBOX 360 Último parche
+  rules: "Eliminaciónn doble. Final en modo Último titán en pie"
+-
+  id: fifa14
+  name: Fifa14
+  description:
+  - Vive la emoción de marcar auténticos golazos con FIFA 14. El juego refleja la forma en que se disputan los grandes encuentros de fútbol, con innovaciones en la galardonada jugabilidad que sirve de inspiración para que los seguidores de la serie orquesten el juego en el centro del campo e impongan el ritmo del partido.  Siente la tensión de crear ocasiones de gol y la emoción de meter el balón en la portería.
+  official_link: "http://www.easports.com/es/fifa" 
+  image_path: "/images/fifa14.jpg"
+  format: 1v1
+  awards: 
+    - 300€
+    - 200€
+    - 100€
+    - 80€
+    - 80€
+    - 80€
+    - 80€
+  participants: 64
+  platform: PC
+  rules: "La modalidad de los partidos sera de 1 vs 1. Los participantes podrán elegir cualquier equipo, ya sea club o selección. El tipo de partida será igualada y la duración de cada parte seá de 6 minutos. Velocidad del juego sera normal. Lesiones No. Fuera de juego y tarjetas Sí y el numero de sustituciones sera de 3 por equipo. La climatología sera despejada y la hora del partido de noche. La configuración personal así como los botones, podrá ser variada por cada jugador al comienzo de cada partido. En caso de empate al término del partido se irá a la próroga o penaltis si se diera el caso. Sólo se permitirán un total de dos pausas por partido y participante siempre justificadas ante el organizador presente en el torneo. No se permite utilizar equipos modificados, jugadores personalizados, estrategias, configuraciones u opciones, aunque estas no incluyan cambios en las plantillas oficiales. La cámara será “Televisión” por defecto. La configuración de los botones, podrá ser variada por cada jugador al comienzo de cada partido."
+-
+  id: halo
+  name: Halo IV
+  description:
+  - El jefe Maestro ha vuelto para quedarse. Demuestra lo que vales en nuestro torneo de HALO 4.
+  official_link: "http://www.halowaypoint.com/es-co/games/halo4" 
+  image_path: "/images/halo4.jpg"
+  format: 4vs4
+  awards: 
+    - 100€
+    - 80€
+    - 60€
+  participants: 32
+  platform: XBOX 360 Último parche
+  rules: "En las primeras rondas juegan con las armas que más les gusten y las habilidades, pero semifinal y final con las mismas armas y sin armas en el entorno. Aunque sí con las habilidades que mejor le vayan a cada uno. (Excepto wall-hack)"
