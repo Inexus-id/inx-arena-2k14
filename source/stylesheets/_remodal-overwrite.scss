@@ -13,9 +13,7 @@
 }
 
 .remodal {
-  @extend %font-book;
-  @extend %background-repeat-y;
-  background-image: url('/images/bg.jpg');
-  background-color: black;
+  background: transparent;
+  @include border-radius(0);
   padding: 0;
 }
