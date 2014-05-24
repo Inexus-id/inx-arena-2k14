@@ -12,7 +12,7 @@
         - if t.inscription_state == "open"
           %a.tournament-inscription-enable(href="##{t.id}")
             %span.icon
-        - elsif t.inscription_state == "close"
+        - elsif t.inscription_state == "closed"
           .tournament-inscription-close
             %span.icon
         - else 
