@@ -9,3 +9,29 @@
           %span.icon
           %span.tournament-name
             =t.name
+        - if t.inscription_state == "open"
+          %a.tournament-inscription-enable(href="##{t.id}")
+            %span.icon
+        - elsif t.inscription_state == "closed"
+          .tournament-inscription-close
+            %span.icon
+        - else 
+          %a.tournament-inscription-dissable
+            %span.icon
+
+.remodal-bg
+  - data.tournaments.each do |t|
+    .remodal(id="#{t.id}" data-remodal-id="#{t.id}")
+      %header#remodal-header
+        %h3.remodal-title=t.name
+      .remodal-content
+        .typeform-widget(data-url="#{t.inscription_form_url}" style="width:100%;height:500px;")
+        :javascript
+          (function(){
+            var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';
+            if(!gi.call(d,id)){
+              js=ce.call(d,'script');js.id=id;js.src=b+'widget.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)
+            }
+          })()
+        %span.stars
+          %span.icon

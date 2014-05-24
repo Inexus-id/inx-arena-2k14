@@ -1,0 +1,19 @@
+.remodal-overlay {
+  background-color: rgba(110, 0, 0, 0.75);
+}
+
+.remodal-close {
+  border-color: rgb(110, 0, 0);
+  &::after {
+    color: rgb(110, 0, 0);
+  }
+  &:hover {
+    background-color: rgb(110, 0, 0);
+  }
+}
+
+.remodal {
+  background: transparent;
+  @include border-radius(0);
+  padding: 0;
+}
