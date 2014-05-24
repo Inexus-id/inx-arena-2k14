@@ -1,6 +1,7 @@
 .remodal-overlay {
   background-color: rgba(110, 0, 0, 0.75);
 }
+
 .remodal-close {
   border-color: rgb(110, 0, 0);
   &::after {
@@ -16,4 +17,5 @@
   @extend %background-repeat-y;
   background-image: url('/images/bg.jpg');
   background-color: black;
+  padding: 0;
 }

@@ -67,13 +67,21 @@ section#tournaments {
       &#dc4 .tournament-link .icon { background-image: url('/images/dc3.jpg'); }
       &#USF4 .tournament-link .icon { background-image: url('/images/usf4.jpg'); }
 
-      .tournament-inscription-enable {
+      .tournament-inscription-enable, .tournament-inscription-close, .tournament-inscription-dissable {
         @include span-columns(2 omega, 6);
         text-align: right;
         .icon {
-          @include icon(inscripcion);
           margin-right: -4px;
         }
+      }
+      .tournament-inscription-enable .icon {
+        @include icon(inscripcion);
+      }
+      .tournament-inscription-close .icon {
+        @include icon(completo);
+      }
+      .tournament-inscription-dissable .icon {
+        @include icon(inactivo);
       }
     }
   }
