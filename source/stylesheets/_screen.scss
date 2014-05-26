@@ -214,10 +214,7 @@ footer#footer {
       a {
         @include inline-block;
         span.icon {
-          @include icon(spegc-white);
-          &:hover{
-            @include icon(spegc-red);
-          }
+          @include icon(spegc);
         }
       }
     }
