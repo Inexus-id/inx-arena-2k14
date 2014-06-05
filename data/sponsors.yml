@@ -40,3 +40,6 @@
 -
     name: dlink
     url: "http://www.dlink.com/es/es"
+-
+    name: sandisk
+    url: "http://www.sandisk.es/"
