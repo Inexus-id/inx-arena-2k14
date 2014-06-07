@@ -72,6 +72,7 @@ section#tournaments {
       &#tekken .tournament-link .icon { background-image: url('/images/tt2.jpg'); }
       &#titanfall .tournament-link .icon { background-image: url('/images/ttf.jpg'); }
       &#blazblue .tournament-link .icon { background-image: url('/images/blazblue.png'); }
+      &#dirt3 .tournament-link .icon { background-image: url('/images/dirt3.jpg'); }
 
       .tournament-inscription-enable, .tournament-inscription-close, .tournament-inscription-dissable {
         @include span-columns(2 omega, 6);
@@ -123,6 +124,7 @@ section#tournaments {
   &#halo header {background-image: url('/images/halo4.jpg')}
   &#blazblue header {background-image: url('/images/bb.png')}
   &#fifa14 header {background-image: url('/images/fifa14.jpg')}
+  &#dirt3 header {background-image: url('/images/dirt3.png')}
 
   .stars {
     margin-top: -82px;

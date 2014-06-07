@@ -241,3 +241,18 @@
   participants: 32
   platform: XBOX 360 Último parche
   rules: "En las primeras rondas juegan con las armas que más les gusten y las habilidades, pero semifinal y final con las mismas armas y sin armas en el entorno. Aunque sí con las habilidades que mejor le vayan a cada uno. (Excepto wall-hack)"
+-
+  id: dirt3
+  name: Dirt 3
+  description:
+  - ¡Prepárate para Dirt 3! Corre a través de la nieve, la lluvia y el barro y vive emocionantes carreras nocturnas en una secuela que tiene más contenido de rally que nunca.
+  official_link: "http://www.codemasters.com/es/dirt3/pc/"
+  image_path: "/images/dirt3.png"
+  format: 1vs1
+  awards:
+    - Coche R/C réplica del de Ken Block valorado en 400€
+    - Pack Monster
+    - Pack Monster
+  participants: 64
+  platform: PC
+  rules: "Se correrá 1 partidas de 1 tramo. Los daños sufridos por los vehículos serán totales. Las ayudas al vehículo se permitirán (porque así juega cada uno como le es mejor. Si no quieres por ejemplo el ABS, lo pones o no, tienes la opción). El tipo de carrera será el Rally. El cambio manual no será obligatorio. La vista subjetiva no será obligatoria. Los flashbacks no estarán disponibles. Clima: día despejado. Los ajustes al vehículo NO se permitirán."
