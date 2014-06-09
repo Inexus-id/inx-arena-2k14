@@ -4,32 +4,48 @@ section#tournament {
     @extend %background-no-repeat;
     @extend %background-shadow;
     @extend %font-regular;
-    background-size: 100%;
     height: 200px;
+    background-size: 100%;
     background-size: cover;
+
+    &:after {
+      margin-top: 38px;
+    }
+
+    &.open {
+      &:after {
+       margin-top: -19px;
+      }
+    }
 
     h2.tournament-header-title {
       color: white;
       font-size: 32px;
+      margin-top: 50px;
       padding-top: 70px;
       @include text-shadow(rgba(105, 105, 105, 0.2) 1px 1px 0, rgba(105, 105, 105, 0.2) 2px 2px 0, rgba(105, 105, 105, 0.2) 3px 3px 0);
       @include at-breakpoint(12) {
         display: block;
-        line-height: 200px;
         padding-top: 0;
       }
     }
 
-    a.tournament-header-join-button {
-      @include inline-block;
-      font-size: 28px;
-      text-transform: uppercase;
-      color: #009145;
-      background: white;
-      line-height: 47px;
-      padding-left: 10px;
-      padding-right: 10px;
-      @include at-breakpoint(12) {
+    span {
+      display: block;
+
+      a.tournament-header-join-button {
+        @include inline-block;
+        height: 47px;
+        line-height: 47px;
+        font-size: 28px;
+        text-transform: uppercase;
+        color: #009145;
+        background: white;
+        margin-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        @include at-breakpoint(12) {
+        }
       }
     }
   }
