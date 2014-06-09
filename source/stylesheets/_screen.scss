@@ -191,19 +191,23 @@ footer#footer {
       @include prefix(2);
       margin-bottom: 26px;
       span.line {
-        @include span-columns(3,8);
-        @include nth-omega(3);
         border-top: 1px solid white;
         margin-top: 12px;
+        @include at-breakpoint(12) {
+          @include span-columns(3,8);
+          @include nth-omega(3);
+        }
       }
       span.stars {
-        @include span-columns(2,8);
         @include inline-block;
         height: 42px;
         text-align: center;
         span.icon-stars {
           @include icon(starsmenu);
           margin-top: -20px;
+        }
+        @include at-breakpoint(12) {
+          @include span-columns(2,8);
         }
       }
     }
