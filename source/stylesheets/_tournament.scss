@@ -20,17 +20,21 @@ section#tournament {
         line-height: 200px;
         padding-top: 0;
       }
-    }
 
-    .tournament-header-join-button {
-      @include inline-block;
-      @extend %font-regular;
-      font-size: 28px;
-      text-align: center;
-      text-transform: uppercase;
-      background: white;
-      color: green;
-      padding: 10px;
+      a.tournament-header-join-button {
+        @include inline-block;
+        @extend %font-regular;
+        background: white;
+        height: 47px;
+        line-height: 47px;
+        font-size: 28px;
+        text-align: center;
+        text-transform: uppercase;
+        color: green;
+        padding: 10px;
+        @include at-breakpoint(12) {
+        }
+      }
     }
   }
 
