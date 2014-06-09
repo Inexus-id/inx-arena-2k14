@@ -10,12 +10,8 @@ section#tournaments {
       @extend %font-regular;
       font-size: 32px;
       text-transform: uppercase;
-      padding-top: 70px;
+      margin-top: 70px;
       @include text-shadow(rgba(105, 105, 105, 0.2) 1px 1px 0, rgba(105, 105, 105, 0.2) 2px 2px 0, rgba(105, 105, 105, 0.2) 3px 3px 0);
-      @include at-breakpoint(12) {
-        line-height: 200px;
-        padding-top: 0;
-      }
     }
   }
 
