@@ -42,8 +42,7 @@ section#tournament {
         margin-top: 10px;
         padding-left: 10px;
         padding-right: 10px;
-        @include at-breakpoint(12) {
-        }
+        @include text-shadow(none);
       }
     }
   }
