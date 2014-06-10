@@ -1,59 +1,4 @@
 -
-  id: lol-teemo
-  inscription_state: open
-  inscription_form_url: "https://inx-arena.typeform.com/to/Z8wzvH"
-  name: LOL 1vs1 “best teemo WORLD“
-  description:
-    - El League of Legends es uno de los MOBA más importantes, desarrollado por Riot Games.
-    - Apúntate con tu equipo y demuestra quién es el mejor en la Grieta del Invocador.
-  official_link: "http://euw.leagueoflegends.com/es"
-  image_path: "/images/leagueoflegends.jpg"
-  format: 1vs1
-  awards:
-    - gorro de teemo + skin + póster teemo + alfombrilla INX-Arena
-    - skin + póster teemo + alfombrilla INX-Arena
-    - póster teemo + alfombrilla INX-Arena
-  participants: 32
-  platform: PC
-  rules: Mapa ARAM. Ganador primero en hacer first blood, derribar la primera torre o conseguir 100 minions. A jugar con las cuentas de Qi. Se resetea el cliente a la configuración por defecto y cada jugador tiene 2 minutos (hasta que salen los primeros minions para configurar el cliente a su gusto). Al mejor de 1 (Bo1) exceptuando semifinal, y final que es Bo3.
-
--
-  id: lol-lee
-  inscription_state: open
-  inscription_form_url: "https://inx-arena.typeform.com/to/x44YQc"
-  name: LOL 1vs1 “best lee sin WORLD“
-  description:
-    - El League of Legends es uno de los MOBA más importantes, desarrollado por Riot Games.
-    - Apúntate con tu equipo y demuestra quién es el mejor en la Grieta del Invocador.
-  official_link: "http://euw.leagueoflegends.com/es"
-  image_path: "/images/leagueoflegends.jpg"
-  format: 1vs1
-  awards:
-    - skin Premium + póster lee sin + alfombrilla INX-Arena
-    - skin + póster lee sin + alfombrilla INX-Arena
-    - póster lee sin + alfombrilla INX-Arena
-  participants: 32
-  platform: PC
-  rules: Mapa ARAM. Ganador primero en hacer first blood, derribar la primera torre o conseguir 100 minions. A jugar con las cuentas de Qi. Se resetea el cliente a la configuración por defecto y cada jugador tiene 2 minutos (hasta que salen los primeros minions para configurar el cliente a su gusto.). Al mejor de 1 (Bo1) exceptuando semifinal, y final que es Bo3. 
-
--
-  id: lol-libre
-  inscription_state: open
-  inscription_form_url: "https://inx-arena.typeform.com/to/mGizpl"
-  name: LOL 1vs1 libre
-  description:
-    - El League of Legends es uno de los MOBA más importantes, desarrollado por Riot Games.
-    - Apúntate con tu equipo y demuestra quién es el mejor en la Grieta del Invocador.
-  official_link: "http://euw.leagueoflegends.com/es"
-  image_path: "/images/leagueoflegends.jpg"
-  format: 1vs1
-  awards:
-    -
-  participants: 128
-  platform: PC
-  rules: Mapa ARAM, modo reclutamiento, 3 bans por jugador. Ganador primero en hacer first blood, derribar la primera torre o conseguir 100 minions. A jugar con las cuentas de cada jugador. Se resetea el cliente a la configuración por defecto y cada jugador tiene 2 minutos (hasta que salen los primeros minions para configurar el cliente a su gusto) Bracket de 128 jugadores. Al mejor de 1 (Bo1) exceptuando semifinal, y final que es Bo3. A realizar en 2 o 3 días, dependiendo del número de inscritos
-
--
   id: lol
   inscription_state: open
   inscription_form_url: "https://inx-arena.typeform.com/to/CosKvv"
@@ -313,3 +258,59 @@
   participants: 64
   platform: PC
   rules: "Se correrá 1 partidas de 1 tramo. Los daños sufridos por los vehículos serán totales. Las ayudas al vehículo se permitirán (porque así juega cada uno como le es mejor. Si no quieres por ejemplo el ABS, lo pones o no, tienes la opción). El tipo de carrera será el Rally. El cambio manual no será obligatorio. La vista subjetiva no será obligatoria. Los flashbacks no estarán disponibles. Clima: día despejado. Los ajustes al vehículo NO se permitirán."
+
+-
+  id: lol-teemo
+  inscription_state: open
+  inscription_form_url: "https://inx-arena.typeform.com/to/Z8wzvH"
+  name: LOL 1vs1 “best teemo WORLD“
+  description:
+    - El League of Legends es uno de los MOBA más importantes, desarrollado por Riot Games.
+    - Apúntate con tu equipo y demuestra quién es el mejor en la Grieta del Invocador.
+  official_link: "http://euw.leagueoflegends.com/es"
+  image_path: "/images/leagueoflegends.jpg"
+  format: 1vs1
+  awards:
+    - gorro de teemo + skin + póster teemo + alfombrilla INX-Arena
+    - skin + póster teemo + alfombrilla INX-Arena
+    - póster teemo + alfombrilla INX-Arena
+  participants: 32
+  platform: PC
+  rules: Mapa ARAM. Ganador primero en hacer first blood, derribar la primera torre o conseguir 100 minions. A jugar con las cuentas de Qi. Se resetea el cliente a la configuración por defecto y cada jugador tiene 2 minutos (hasta que salen los primeros minions para configurar el cliente a su gusto). Al mejor de 1 (Bo1) exceptuando semifinal, y final que es Bo3.
+
+-
+  id: lol-lee
+  inscription_state: open
+  inscription_form_url: "https://inx-arena.typeform.com/to/x44YQc"
+  name: LOL 1vs1 “best lee sin WORLD“
+  description:
+    - El League of Legends es uno de los MOBA más importantes, desarrollado por Riot Games.
+    - Apúntate con tu equipo y demuestra quién es el mejor en la Grieta del Invocador.
+  official_link: "http://euw.leagueoflegends.com/es"
+  image_path: "/images/leagueoflegends.jpg"
+  format: 1vs1
+  awards:
+    - skin Premium + póster lee sin + alfombrilla INX-Arena
+    - skin + póster lee sin + alfombrilla INX-Arena
+    - póster lee sin + alfombrilla INX-Arena
+  participants: 32
+  platform: PC
+  rules: Mapa ARAM. Ganador primero en hacer first blood, derribar la primera torre o conseguir 100 minions. A jugar con las cuentas de Qi. Se resetea el cliente a la configuración por defecto y cada jugador tiene 2 minutos (hasta que salen los primeros minions para configurar el cliente a su gusto.). Al mejor de 1 (Bo1) exceptuando semifinal, y final que es Bo3. 
+
+-
+  id: lol-libre
+  inscription_state: open
+  inscription_form_url: "https://inx-arena.typeform.com/to/mGizpl"
+  name: LOL 1vs1 libre
+  description:
+    - El League of Legends es uno de los MOBA más importantes, desarrollado por Riot Games.
+    - Apúntate con tu equipo y demuestra quién es el mejor en la Grieta del Invocador.
+  official_link: "http://euw.leagueoflegends.com/es"
+  image_path: "/images/leagueoflegends.jpg"
+  format: 1vs1
+  awards:
+    -
+  participants: 128
+  platform: PC
+  rules: Mapa ARAM, modo reclutamiento, 3 bans por jugador. Ganador primero en hacer first blood, derribar la primera torre o conseguir 100 minions. A jugar con las cuentas de cada jugador. Se resetea el cliente a la configuración por defecto y cada jugador tiene 2 minutos (hasta que salen los primeros minions para configurar el cliente a su gusto) Bracket de 128 jugadores. Al mejor de 1 (Bo1) exceptuando semifinal, y final que es Bo3. A realizar en 2 o 3 días, dependiendo del número de inscritos
+
