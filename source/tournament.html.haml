@@ -1,7 +1,12 @@
+- state = tournament.inscription_state == 'open'
 %section#tournament
-  .tournament-header{id: tournament.id}
+  .tournament-header{id: tournament.id, class: ('open' if state)}
     %h2.tournament-header-title
       = tournament.name
+      - if state
+        %span
+          %a.tournament-header-join-button(href="#{tournament.inscription_form_url}")
+            apúntate
   #tournament-content
     #tournament-info
       %h2#tournament-info-title

@@ -3,22 +3,46 @@ section#tournament {
   .tournament-header {
     @extend %background-no-repeat;
     @extend %background-shadow;
-    background-size: 100%;
+    @extend %font-regular;
     height: 200px;
+    background-size: 100%;
     background-size: cover;
 
+    &:after {
+      margin-top: 38px;
+    }
+
+    &.open {
+      &:after {
+        margin-top: -19px;
+      }
+    }
+
     h2.tournament-header-title {
-      font-family: 'Raleway', sans-serif;
-      text-align: center;
       color: white;
-      font-weight: 400;
       font-size: 32px;
-      padding-top: 70px;
+      margin-top: 50px;
       @include text-shadow(rgba(105, 105, 105, 0.2) 1px 1px 0, rgba(105, 105, 105, 0.2) 2px 2px 0, rgba(105, 105, 105, 0.2) 3px 3px 0);
       @include at-breakpoint(12) {
         display: block;
-        line-height: 200px;
-        padding-top: 0;
+      }
+    }
+
+    span {
+      display: block;
+
+      a.tournament-header-join-button {
+        @include inline-block;
+        height: 47px;
+        line-height: 47px;
+        font-size: 28px;
+        text-transform: uppercase;
+        color: #009145;
+        background: white;
+        margin-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        @include text-shadow(none);
       }
     }
   }
