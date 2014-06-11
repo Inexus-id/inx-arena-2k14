@@ -12,6 +12,23 @@ body {
   background-color: black;
 }
 
+nav#gctic {
+  background-color: rgba(255, 255, 255, 0.75);
+  a {
+    span.text {
+      color: black;
+      @extend %font-medium;
+      font-size: 24px;
+    }
+    span.icon {
+      @include inline-block;
+      height: 133px;
+      width: 200px;
+      background-image: url('/images/gctic.png');
+    }
+  }
+}
+
 nav#mobile {
   height: 0;
   overflow: hidden;
