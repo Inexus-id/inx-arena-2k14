@@ -103,6 +103,31 @@ section#home {
   }
 }
 
+section#intro {
+  @include container;
+  margin-bottom: 20px;
+  h2#intro-title {
+    @extend %font-book;
+    font-size: 24px;
+    margin-bottom: 18px;
+    text-align: left;
+  }
+  #intro-content {
+    text-align: left;
+    @extend %font-book;
+    font-size: 18px;
+    p {
+      padding: 5px 0;
+      a {
+        @extend %font-medium;
+        &:hover {
+          color: red;
+        }
+      }
+    }
+  }
+}
+
 section#home-content {
   @include container;
 

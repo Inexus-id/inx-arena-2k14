@@ -16,6 +16,7 @@ nav#gctic {
   background-color: rgba(255, 255, 255, 0.75);
   a {
     span.text {
+      @include inline-block;
       color: black;
       @extend %font-medium;
       font-size: 24px;
