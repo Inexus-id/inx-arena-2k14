@@ -325,8 +325,8 @@
   image_path: "/images/pokemon.jpg"
   format: 1vs1
   awards:
-    -
-  participants:
+    - por determinar
+  participants: 64
   platform: Nintendo 3DS/2Ds
   rules:
 -
@@ -340,8 +340,8 @@
   image_path: "/images/pokemon.jpg"
   format: 1vs1
   awards:
-    -
-  participants:
+    - por determinar
+  participants: 64
   platform: Nintendo 3DS/2DS
   rules:
 -
@@ -355,7 +355,7 @@
   image_path: "/images/pokemon.jpg"
   format: 1vs1
   awards:
-    -
-  participants:
+    - por determinar
+  participants: 64
   platform: Nntendo 3DS/2DS
   rules:
