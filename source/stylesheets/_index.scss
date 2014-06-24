@@ -97,9 +97,14 @@ section#home {
       }
     }
 
-    #lol {background-image: url('/images/LOL.jpg')}
-    #sc2 {background-image: url('/images/starcraft.jpg')}
-    #club3d {background-image: url('/images/club3d.jpeg')}
+    #lol {background-image: url('/images/LOL.jpg');}
+    #sc2 {background-image: url('/images/starcraft.jpg');}
+    #club3d {
+      background-image: url('/images/club3d.jpeg');
+      &:after {
+        height: 365px;
+      }
+    }
 
   }
 }
