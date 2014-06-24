@@ -314,3 +314,48 @@
   platform: PC
   rules: Mapa ARAM, modo reclutamiento, 3 bans por jugador. Ganador primero en hacer first blood, derribar la primera torre o conseguir 100 minions. A jugar con las cuentas de cada jugador. Se resetea el cliente a la configuración por defecto y cada jugador tiene 2 minutos (hasta que salen los primeros minions para configurar el cliente a su gusto) Bracket de 128 jugadores. Al mejor de 1 (Bo1) exceptuando semifinal, y final que es Bo3. A realizar en 2 o 3 días, dependiendo del número de inscritos
 
+-
+  id: pokemon-cutecup
+  inscription_state: open
+  inscription_form_url: "https://inx-arena.typeform.com/to/OUonZ9"
+  name: Pokemon CuteCup
+  description:
+    - Torneo que se realiza con Pokémon preevolucionados con ciertas restricciones
+  official_link: "http://www.pokemon.com/es/"
+  image_path: "/images/pokemon.jpg"
+  format: 1vs1
+  awards:
+    - por determinar
+  participants: 64
+  platform: Nintendo 3DS/2Ds
+  rules:
+-
+  id: pokemon-monotipo
+  inscription_state: open
+  inscription_form_url: "https://inx-arena.typeform.com/to/lZMnL8"
+  name: Pokemon Monotipo
+  description:
+    - Torneo que se realiza con un equipo de Pokémon con un solo tipo, pero están permitidos los Pokémon con dos tipos. 
+  official_link: "http://www.pokemon.com/es/"
+  image_path: "/images/pokemon.jpg"
+  format: 1vs1
+  awards:
+    - por determinar
+  participants: 64
+  platform: Nintendo 3DS/2DS
+  rules:
+-
+  id: pokemon-tournament
+  inscription_state: open 
+  inscription_form_url: "https://inx-arena.typeform.com/to/NtBvnq"
+  name: Pokemon Tournament
+  description:
+    - Torneo normal como de costumbre que se realiza organizándolo de 8, 16, 32, 64 jugadores. El torneo se realiza con un equipo de Pokémon de 6 Pokémon por equipo, se utilizan 4 por combate pero sin poder modificar los 6 elegidos para el torneo dando la opción a utilizar los dos restantes del banquillo
+  official_link: "http://www.pokemon.com/es/"
+  image_path: "/images/pokemon.jpg"
+  format: 1vs1
+  awards:
+    - por determinar
+  participants: 64
+  platform: Nntendo 3DS/2DS
+  rules:

@@ -45,6 +45,11 @@
           Plataforma:
         #{tournament.platform}
       #tournament-details-rules
-        %span.label
-          Reglas:
-        #{tournament.rules}
+        - if "#{tournament.name}".include?("Pokemon") 
+          %span.label
+            %a(href="/reglamento-#{tournament.id}.pdf")
+              Descargar reglas
+        - else
+          %span.label
+            Reglas:
+          #{tournament.rules}
