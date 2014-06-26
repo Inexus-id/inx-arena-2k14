@@ -1,4 +1,4 @@
--
+
   id: lol
   inscription_state: open
   inscription_form_url: "https://inx-arena.typeform.com/to/CosKvv"
@@ -78,9 +78,9 @@
   image_path: "/images/starcraft2.jpg"
   format: 1VS1
   awards:
-    - 300€ + componente de hardware
-    - 100€ + Figura de coleccionismo
-    - Componente de hardware
+    - Monitor Benq de gaming 24 pulgadas + Libro de guía de Starcraft
+    - SSD de 240 Gb
+    - Auriculares + Alfombrilla
   participants: 32
   platform: PC último parche
   rules: "Eliminación simple(Bo1), a partir de cuartos se jugará Bo3 y la final a Bo5. TBA"
@@ -92,6 +92,7 @@
   name: Diablo 3
   description:
     - Diablo 3 Reaper of Souls ha captado nuestro interés para realizar un evento a lo largo de nuestra LAN.
+    - La competición consiste en obtener la mayor cantidad de legendarios posible creando un nuevo personaje en el modo incondicional desde el jueves 26 de junio hasta el domingo 29 de junio que finalizará a las 14:00
   official_link: "http://eu.battle.net/d3/es/"
   image_path: "/images/diablo3.jpg "
   format: incondicional
@@ -99,9 +100,17 @@
     - 150€
     - 100€
     - 50€
-  participants: sin límite de
+  participants: sin límite
   platform: PC
-  rules: Crear personaje en incondicional a partir del Jueves 26 a las 16h, bajo supervisión del equipo técnico, anotando los datos del personaje y cuenta battlenet. El evento acabará el Domingo 29 a las 14h. Estando por testigo el equipo técnico para anotar level y oro como medida de desempate.
+  rules: 
+    - Todos los iparticipantes deberan unirse al clan INX Arena.
+    - El personaje se debe de crear en modo incondicional (hardcore).
+    - Sólo se contarán los legendarios que aparezcan al identificarlos uno mismo y que salga en la lista del clan.
+    - Se hará un recuento diario. Si mueres tienes que volver a crear el personaje.
+    - Pueds utilizar objetos que ya tengas anteriormente.
+    - El método para subir al 70 es de su propia elección.
+    - No se tendrán en cuenta los niveles de paragon.
+    - Los lengendarios obtenidos se pueden destrozar o tirar, con que aparezca el log del clan vale.
 
 -
   id: wow
@@ -252,7 +261,6 @@
   image_path: "/images/dirt3.png"
   format: 1vs1
   awards:
-    - Coche R/C réplica del de Ken Block valorado en 400€
     - Pack Monster
     - Pack Monster
   participants: 64
